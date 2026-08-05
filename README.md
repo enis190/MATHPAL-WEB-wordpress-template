@@ -1,0 +1,1 @@
+# MATHPAL-WEB-wordpress-template
