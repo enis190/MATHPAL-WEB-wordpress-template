@@ -1,0 +1,260 @@
+.suscripcion-1 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/bg-suscripcion-1.png");
+  background-size: cover;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  &.bg-2 {
+    background-image: url("../img/bg-suscripcion-2.png");
+  }
+  &.bg-3 {
+    background-image: url("../img/bg-suscripcion-3.png");
+    background-color: #000;
+    h2 {
+      color: #fff;
+    }
+  }
+  h2 {
+    color: $color_1;
+  }
+  .bloques {
+    margin-top: 70px;
+    .bloque {
+      background-color: #fff;
+      .item {
+        min-height: 80px;
+        padding-left: 20px;
+        border-bottom: 1px solid #e3e1e1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        &.item-head {
+          border-bottom: 0px;
+          color: #000;
+          font-family: "Poppins-Bold";
+          font-size: 1.3rem;
+          min-height: 80px;
+          padding-top: 20px;
+        }
+        &.item-title {
+          color: #000;
+          font-family: "Poppins-Bold";
+        }
+        &.item-footer {
+          min-height: 80px;
+          border-bottom: 0px;
+          text-align: center;
+          padding-top: 20px;
+        }
+      }
+      &.bloque-2,
+      &.bloque-4 {
+        .item-title {
+          color: $color_1;
+        }
+      }
+      &.bloque-3 {
+        position: relative;
+        padding: 0px;
+        .item {
+          color: #fff;
+          border-bottom: 1px solid #1f1f1f;
+          background-color: #000;
+          border-left: 5px solid $color_2;
+          border-right: 5px solid $color_2;
+
+          &.item-footer {
+            .btn-1 {
+              background-color: $color_2;
+              color: #000;
+            }
+          }
+        }
+        .item-title {
+          color: $color_1;
+        }
+        .tag-inicio {
+          //   position: absolute;
+          //   width: 100%;
+          //   margin-top: -15px;
+          height: 30px;
+          background-color: #000;
+          margin-top: -30px;
+          border: 5px solid $color_2;
+          border-bottom: 0px;
+          border-radius: 20px 20px 0px 0px;
+          //text-align: center;
+          position: relative;
+          .tag-content {
+            width: 100%;
+            position: absolute;
+            margin-top: -15px;
+            text-align: center;
+            span {
+              background-color: $color_1;
+              color: #fff;
+              font-family: "Poppins-Bold";
+              font-size: 0.8rem;
+              padding: 5px 14px;
+              border-radius: 50px;
+            }
+          }
+        }
+        .tag-fin {
+          height: 30px;
+          background-color: #000;
+          margin-bottom: -30px;
+          border: 5px solid $color_2;
+          border-top: 0px;
+          border-radius: 0px 0px 20px 20px;
+        }
+      }
+      &.bloque-1 {
+        border-radius: 25px 0px 0px 25px;
+      }
+      &.bloque-4 {
+        border-radius: 0px 25px 25px 0px;
+      }
+    }
+  }
+  .bloques-xs {
+    margin-top: 30px;
+    .bloque-head {
+      .bloque-1,
+      .bloque-2,
+      .bloque-3 {
+        background-color: $color_2;
+        display: floor($number: 0);
+        justify-content: center;
+        align-items: center;
+        min-height: 70px;
+        padding: 7px;
+        text-align: center;
+        h4 {
+          text-align: center;
+          font-size: 0.9rem;
+          font-family: "Poppins-Bold";
+          color: #000;
+          margin-bottom: 0px;
+          display: block;
+        }
+        span{
+          &.precio{
+            //background-color: $color_1;
+            color: $color_1;
+            font-family: 'Poppins-SemiBold';  
+            font-size: .8rem;
+            padding: 3px 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .bloque-2 {
+        background-color: #000;
+        h4 {
+          color: #fff;
+        }
+      }
+      &.fixed {
+        position: fixed;
+        width: 100%;
+        top: 128px;
+        z-index: 9999;
+      }
+    }
+    .bloque-body {
+      .titulo {
+        border-top: 1px solid #bfd3fb;
+        background-color: #fff;
+        padding: 10px 10px;
+        position: relative;
+        box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        -webkit-box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        p {
+          margin-bottom: 0px;
+          font-family: 'Poppins-SemiBold';  
+          font-size: 0.8rem;
+        }
+      }
+      .det {
+        .c-block-1,
+        .c-block-2 {
+          padding: 15px 7px;
+          background-color: #e9ffd1;
+          text-align: center;
+          p {
+            font-size: 0.8rem;
+            font-family: "Poppins-Regular";
+            margin-bottom: 0px;
+          }
+        }
+        .c-block-2 {
+          background-color: #fff5f7;
+        }
+        .btn-1{
+          display: inline-block;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .suscripcion-1{
+    .bloques-title{
+      padding-top: 15px;
+      padding-bottom: 7px;
+      //background-color: #FFF;
+      h2{
+        font-size: 1.5rem;
+      }
+      &.fixed {
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        z-index: 99999;
+      }
+      &.bloques-title-3{
+        background-color: #000;
+      }
+    }
+    .bloques-xs{
+      margin-top: 0px;
+    }
+    &.bg-3{
+      padding-top: 0px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.suscripcion-2 {
+  background-image: url("../img/bg-suscripcion-1.png");
+}

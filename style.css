@@ -1,0 +1,19 @@
+/*
+Theme Name: Mathpal Template
+Theme URI: www.berlitz.com/es-pe
+Description: Tema desarrollado para Elvis Nicolas
+Version: 1
+Author: Elvis Nicolas
+Author URI: www.berlitz.com/es-pe
+Text Domain: twentynineteen
+Tags: Responsive, HTML5, Wordpress, CSS3
+*/
+
+/*Estilos generales alineaciones para el articulo*/
+
+
+.c-slider h1,
+.c-slider h2,
+.c-slider h3 {
+  color: #fff !important;
+}

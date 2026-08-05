@@ -1,0 +1,13 @@
+.container-fluid.header-title {
+  padding-top: 200px; }
+
+.notas_de_blog {
+  padding: 80px 0; }
+  .notas_de_blog h2 {
+    margin-bottom: 70px; }
+  .notas_de_blog article h3 a {
+    color: #000000;
+    font-family: "Retroica";
+    text-decoration: none; }
+
+/*# sourceMappingURL=blog.css.map */

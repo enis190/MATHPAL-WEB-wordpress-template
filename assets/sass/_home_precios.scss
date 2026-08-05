@@ -1,0 +1,291 @@
+.promo-school{
+    background:#8b00ff;
+    padding:20px 15px;
+    text-align:center;
+    display:inline-block;
+}
+
+.promo-school h2{
+    margin:0 0 12px;
+    color:#fff;
+    font-family:Arial, sans-serif;
+    font-size:34px;
+    font-weight:900;
+    line-height:1;
+}
+.precios {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/bg-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color_1;
+  h2 {
+    color: #fff;
+  }
+  &.bg-2 {
+    background-image: url("../img/bg-suscripcion-3.png");
+    background-size: cover;
+  }
+  .slider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .item {
+      padding: 25px;
+      .c-block {
+        background-color: #fff;
+        transition: 0.3s;
+        padding: 25px;
+        text-align: center;
+        border-radius: 10px;
+        h4 {
+          font-family: "Retroica";
+          font-size: 1.2rem;
+          margin: 0 0 0.75rem;
+          line-height: 1.25;
+          &.precio {
+            font-size: clamp(3.25rem, 12vw, 6rem);
+            line-height: 1;
+            margin: 0.25rem 0 0;
+            position: relative;
+            &::before {
+              content: "$";
+              position: absolute;
+              left: -0.5em;
+              top: 0.2em;
+              font-size: 0.42em;
+              font-family: "Poppins-SemiBold";
+            }
+          }
+          &.det {
+            font-family: "Poppins-SemiBold";
+            font-size: 1rem;
+            margin: 0.5rem 0 0;
+            line-height: 1.3;
+          }
+        }
+        ul {
+          text-align: left;
+          font-family: "Poppins-Regular";
+          color: #000;
+        }
+        .fa-bullets,
+        .fa-ul {
+          list-style: none; /* sacamos las viñetas por defecto */
+          padding-left: 0;
+          li {
+            position: relative;
+            //padding-left: 25px; /* espacio para el icono */
+            margin-bottom: 15px;
+            i{
+              color: $color_1;
+            }
+            .fa-li{
+              //position: relative;
+            }
+          }
+        }
+
+        .fa-bullets li::before {
+          content: "\f058"; /* código unicode del ícono de Font Awesome (ejemplo: check) */
+          font-family: "FontAwesome"; /* o "Font Awesome 6 Free", según versión */
+          font-weight: 900; /* necesario para íconos sólidos */
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: $color_2; /* color del icono */
+        }
+      }
+      &:hover,
+      &.active {
+        .c-block {
+          scale: 1.05;
+          background-color: #000;
+          border: 5px solid $color_2;
+          h4,
+          ul,
+          ul li,
+          p {
+            color: #fff;
+          }
+          .btn-1 {
+            background-color: $color_2;
+            color: #000;
+          }
+          .fa-ul{
+            li{
+              i{
+                color: $color_2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slick-dots {
+    //bottom: -50px;
+    //bottom: -55px;
+
+    li {
+      height: 10px;
+      width: 10px;
+      button {
+        &::before {
+          color: #fff;
+          transition: 0.3s;
+          font-size: 10px;
+        }
+      }
+      &.slick-active,
+      &:hover {
+        button {
+          &::before {
+            color: $color_2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.precios-2 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #000;
+  background-image: url("../img/bg-precio-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  h3 {
+    color: #fff;
+  }
+  .block {
+    margin-top: 50px;
+    justify-content: center;
+    .item {
+      .c-block {
+        padding: 2rem 1.75rem;
+        border-radius: 15px;
+        border: 4px solid $color_2;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:has(.img) {
+          padding-top: 50px;
+        }
+        .img {
+          position: absolute;
+          left: -130px;
+          top: -50px;
+          img {
+            max-width: 210px;
+          }
+        }
+        h4 {
+          &.precio {
+            display: inline-flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 0.1em;
+            font-size: clamp(3.25rem, 10vw, 6rem);
+            line-height: 1;
+            margin: 0 0 1.25rem;
+            padding: 0;
+            color: #fff;
+            font-family: "Retroica";
+            &::before {
+              content: "$";
+              position: relative;
+              font-size: 0.42em;
+              font-family: "Poppins-SemiBold";
+              align-self: flex-start;
+              margin: 0.2em 0.08em 0 0;
+            }
+            &::after {
+              content: "/class";
+              font-size: 0.22em;
+              font-family: "Poppins-SemiBold";
+              position: relative;
+              margin: 0 0 0.55em 0.2em;
+            }
+          }
+        }
+        .fa-bullets,
+        .fa-ul {
+          list-style: none;
+          text-align: left;
+          display: inline-block;
+          width: 100%;
+          max-width: 320px;
+          margin: 0 auto 1.5rem;
+          padding-left: 1.75em;
+          li {
+            position: relative;
+            margin-bottom: 15px;
+            font-family: "Poppins-Regular";
+            color: #fff;
+            line-height: 1.45;
+            &::before {
+              font-family: "FontAwesome";
+              font-weight: 900;
+              position: absolute;
+              left: 0;
+              top: 0;
+              color: $color_2;
+            }
+          }
+        }
+
+        .fa-bullets li::before {
+        }
+        .btn-1 {
+          background-color: $color_2;
+          color: #000;
+          min-width: 220px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .precios-2 {
+    background-image: none;
+    .item {
+      .img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home_precios {
+    .slider {
+      .item {
+        .c-block {
+          min-height: 650px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

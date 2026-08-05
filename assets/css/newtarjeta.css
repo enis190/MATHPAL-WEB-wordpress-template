@@ -1,0 +1,48 @@
+.premium-card {
+	border: 2px solid #B6FF00; /* verde neón */
+	border-radius: 12px;
+}
+
+.badge-new {
+	display: inline-block;
+	background: #B6FF00;
+	color: #000;
+	font-weight: 800;
+	padding: 6px 10px;
+	border-radius: 6px;
+	font-size: 12px;
+	letter-spacing: 0.4px;
+}
+
+.price-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+}
+
+.launch-special {
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1.1;
+	color: #B6FF00;
+	text-transform: uppercase;
+}
+
+.prices .old-price {
+	font-size: 34px;
+	font-weight: 800;
+	text-decoration: line-through;
+	opacity: 0.7;
+}
+
+.prices .new-price {
+	font-size: 42px;
+	font-weight: 900;
+	color: #B6FF00; /* o blanco si tu fondo es claro */
+}
+
+.divider-line {
+	height: 1px;
+	background: rgba(182, 255, 0, 0.35);
+}

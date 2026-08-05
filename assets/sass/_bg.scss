@@ -1,0 +1,137 @@
+.bg-negro {
+  background-color: #000;
+}
+.bg-morado {
+  background-color: $color_1;
+}
+.bg-blanco {
+  background-color: #fff;
+  background-image: none;
+}
+.bg-verde {
+  background-color: $color_2 !important;
+}
+
+.bg-amarillo {
+  background-color: #ffbb29;
+}
+
+.bg-10 {
+  background-image: url(../img/bg-10.png) !important;
+  background-size: cover;
+}
+
+.bg-11 {
+  background-image: url(../img/bg-11.png) !important;
+  background-size: cover;
+  background-color: $color_1;
+}
+
+.bg-12 {
+  background-image: url(../img/bg-12.png) !important;
+  //background-size: cover;
+  //background-color: $color_1;
+}
+
+.bg-13 {
+  background-image: url(../img/bg-13.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.bg-14 {
+  background-image: url(../img/bg-14.png) !important;
+  background-size: cover;
+  background-color: #000;
+}
+.bg-15 {
+  background-image: url(../img/bg-15.png) !important;
+  background-size: cover;
+  background-color: $color_1;
+}
+.bg-16 {
+  background-image: url(../img/bg-16.png) !important;
+  background-size: cover;
+  background-color: #000;
+}
+.bg-17 {
+  background-image: url(../img/bg-17.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+.bg-18 {
+  background-image: url(../img/bg-18.png) !important;
+  background-size: 100%;
+  background-color: #f7f6f7;
+  background-repeat: no-repeat;
+}
+.bg-19 {
+  background-image: url(../img/bg-19.png) !important;
+  background-size: 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+}
+.bg-20 {
+  background-image: url(../img/bg-20.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+.bg-21 {
+  background-image: url(../img/bg-21.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+.bg-22 {
+  background-image: url(../img/bg-22.png) !important;
+  background-size: cover;
+  background-color: $color_1;
+}
+.bg-23 {
+  background-image: url(../img/bg-23.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+.bg-24 {
+  background-image: url(../img/bg-24.png) !important;
+  background-size: cover;
+  background-color: $color_1;
+}
+.bg-25 {
+  background-image: url(../img/bg-25.png) !important;
+  background-size: cover;
+  background-color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bg-14 {
+    background-color: #000;
+    background-image: none !important;
+  }
+  .bg-15 {
+    background-image: none !important;
+  }
+  .bg-23, .bg-21, .bg-20, .bg-25 {
+    background-image: none !important;
+    
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

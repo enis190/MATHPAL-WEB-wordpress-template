@@ -1,0 +1,103 @@
+.cintillo-1{
+    background-color: $color_2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h3{
+        color: #000;
+        font-family: 'Poppins-Bold'; 
+        font-size: 1.3rem;
+        span{
+             font-family: 'Poppins-Regular'; 
+             font-size: 1rem;
+             &.code{
+                background-color: #FFF;
+                border-radius: 5px;
+                padding: 5px 10px;
+                margin-left: 10px;
+                cursor: pointer;
+                a{
+                    cursor: pointer;
+                    i{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+             }
+        }
+    }
+}
+
+
+
+/* Estilo base del botón/div */
+#btn_code_copy {
+  position: relative;   /* necesario para posicionar el tooltip */
+  cursor: pointer;
+}
+
+/* Tooltip al agregar la clase "copiado" */
+#btn_code_copy.copiado::after {
+  content: "Copiado";        /* texto del tooltip */
+  position: absolute;
+  top: -35px;                /* ajusta la posición vertical */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+
+  /* Animación de aparición/desaparición */
+  animation: fadeOutTooltip 5s forwards;
+}
+
+/* Pequeño triángulo inferior del tooltip */
+#btn_code_copy.copiado::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  opacity: 0;
+  animation: fadeOutTooltip 5s forwards;
+}
+
+/* Animación: aparece rápido y luego se desvanece */
+@keyframes fadeOutTooltip {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

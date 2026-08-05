@@ -1,0 +1,183 @@
+.home_form {
+  &--page-top {
+    padding-top: calc(var(--mp-cintillo-height, 0px) + var(--mp-header-height, 90px) + var(--mp-admin-bar-height, 0px) + 1.5rem);
+
+    .home_form__title {
+      margin: 0 0 1.5rem;
+    }
+  }
+  .img {
+    background-image: url("../img/bg-form.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .form {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .content-form {
+    .form-columns-2,
+    .form-columns-1 {
+      width: 100%;
+      max-width: none;
+    }
+    .hs_firstname,
+    .hs_lastname,
+    .hs_cual_es_tu_rango_de_edad_,
+    .hs_email,
+    .hs_mathpal___edad,
+    .hs_idiomar_preferido_2 {
+      label {
+        color: #000;
+        font-family: "Poppins-Bold";
+        font-size: 0.8rem;
+      }
+      .hs-input {
+        width: 100% !important;
+        background-color: #faf6ff;
+        border: 1px solid #b8b8b8;
+        border-radius: 5px;
+        padding: 10px 15px;
+        min-height: 50px;
+        margin-bottom: 15px;
+
+        select {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .hs_phone {
+      input,
+      select {
+        background-color: #faf6ff;
+        border: 1px solid #b8b8b8;
+        border-radius: 5px;
+        padding: 10px 15px;
+        min-height: 50px;
+        margin-bottom: 15px;
+      }
+      label {
+        color: #000;
+        font-family: "Poppins-Bold";
+        font-size: 0.8rem;
+      }
+    }
+
+    .hs_tutoria {
+      label {
+        color: #000;
+        font-family: "Poppins-Bold";
+        font-size: 0.8rem;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+        li {
+          text-align: center;
+          padding: 5px;
+          label {
+            border: 1px solid #b8b8b8;
+            transition: 0.3s;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            min-height: 80px;
+            display: flex;
+            justify-content: center; /* Centra horizontal */
+            align-items: center;
+          }
+          input {
+            display: none;
+          }
+          &.active,
+          &:hover {
+            label {
+              border: 1px solid $color_1;
+              background-color: $color_1;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .hs_pe_tyc_1 {
+      ul {
+        list-style: none;
+        li {
+          label {
+            input {
+              position: absolute;
+              margin-left: -20px;
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+    }
+    .hs-error-msgs {
+      list-style: none;
+      padding-left: 0px;
+      .hs-error-msg {
+        background-color: red;
+        min-height: 23px;
+        max-height: 23px;
+        color: #fff;
+        font-size: 0.6rem;
+        padding: 3px;
+        border-radius: 3px;
+        font-family: "Poppins-Regular";
+      }
+    }
+    .hs_submit {
+      input {
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home_form {
+    .content-form {
+      .hs_tutoria {
+        ul {
+          display: contents;
+          li {
+            width: 50%;
+            float: left;
+            label{
+              font-size: .7rem;
+              min-height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home_form {
+    .content-form {
+      padding-right: 70px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

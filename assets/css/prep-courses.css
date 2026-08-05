@@ -1,0 +1,1910 @@
+/* Prep Courses — Hero */
+.mp-prep-hero {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: calc(var(--mp-cintillo-height, 0px) + var(--mp-header-height, 90px) + 24px) 0 72px;
+}
+
+body:has(.submenu.margin-menu-principal) .mp-prep-hero {
+  padding-top: 32px;
+}
+
+.mp-prep-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.mp-prep-hero__media {
+  position: relative;
+}
+
+.mp-prep-hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  object-fit: cover;
+  min-height: 420px;
+}
+
+.mp-prep-hero__content {
+  padding-top: 12px;
+}
+
+.mp-prep-hero__badge {
+  display: inline-block;
+  background: #a4ff48;
+  color: #111;
+  font-family: "Retroica", sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 12px 22px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.mp-prep-hero__title {
+  color: #9300ff;
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(2.6rem, 4vw, 4.4rem);
+  line-height: 0.98;
+  font-weight: 400;
+  margin: 0 0 18px;
+}
+
+.mp-prep-hero__title-line {
+  display: block;
+}
+
+.mp-prep-hero--act .mp-prep-hero__badge {
+  border-radius: 20px;
+}
+
+.mp-prep-hero--act .mp-prep-hero__text {
+  max-width: 480px;
+}
+
+.mp-prep-hero__highlight {
+  display: inline-block;
+  background: #9300ff;
+  color: #fff;
+  font-family: "Retroica", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.15;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 0 0 22px;
+}
+
+.mp-prep-hero__text {
+  color: #111;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 28px;
+  max-width: 520px;
+}
+
+.mp-prep-hero__btn.btn-1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 1.05rem;
+  background-color: #9300ff !important;
+  color: #fff !important;
+  border: none;
+}
+
+.mp-prep-hero__btn.btn-1:hover,
+.mp-prep-hero__btn.btn-1:focus {
+  background-color: #7a00d4 !important;
+  color: #fff !important;
+}
+
+.mp-prep-hero__btn.btn-1 i {
+  color: #fff;
+}
+
+.mp-prep-hero__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-hero__deco--circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #9300ff;
+  left: -40px;
+  top: 42%;
+}
+
+.mp-prep-hero__deco--plus {
+  left: 42px;
+  top: 58%;
+  width: 28px;
+  height: 28px;
+  background:
+    linear-gradient(#111, #111) center/100% 4px no-repeat,
+    linear-gradient(#111, #111) center/4px 100% no-repeat;
+}
+
+.mp-prep-hero__deco--dot {
+  left: 78px;
+  top: 66%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #111;
+}
+
+.mp-prep-hero__deco--stroke-purple {
+  right: 8%;
+  top: 18%;
+  width: 42px;
+  height: 18px;
+  border-radius: 999px;
+  background: #9300ff;
+  transform: rotate(-18deg);
+}
+
+.mp-prep-hero__deco--stroke-green {
+  right: 10%;
+  top: 48%;
+  width: 34px;
+  height: 14px;
+  border-radius: 999px;
+  background: #a4ff48;
+  transform: rotate(12deg);
+}
+
+.mp-prep-hero__deco--ring {
+  right: 4%;
+  bottom: 8%;
+  width: 72px;
+  height: 72px;
+  border: 5px solid #9300ff;
+  border-radius: 50%;
+  background: transparent;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-hero {
+    padding: calc(var(--mp-cintillo-height, 0px) + var(--mp-header-height, 96px) + 16px) 0 56px;
+  }
+
+  body:has(.submenu.margin-menu-principal) .mp-prep-hero {
+    padding-top: 24px;
+  }
+
+  .mp-prep-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .mp-prep-hero__image {
+    min-height: 300px;
+  }
+
+  .mp-prep-hero__deco--circle {
+    width: 80px;
+    height: 80px;
+    left: -24px;
+    top: 18%;
+  }
+
+  .mp-prep-hero__deco--plus,
+  .mp-prep-hero__deco--dot {
+    display: none;
+  }
+}
+
+/* Prep Courses — bloque NEW at MATHPAL */
+.mp-prep-announce {
+  background: #9300ff;
+  padding: 72px 0 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mp-prep-announce .mp-prep-cta__deco {
+  z-index: 1;
+}
+
+.mp-prep-announce__stage {
+  --announce-person-space: clamp(200px, 34%, 380px);
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--announce-person-space) minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+  z-index: 2;
+}
+
+.mp-prep-announce__panel {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  padding: 120px 28px 28px calc(var(--announce-person-space) + 28px);
+  overflow: visible;
+  z-index: 1;
+}
+
+.mp-prep-announce__panel-deco {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1059 / 289;
+  object-fit: cover;
+  object-position: top center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mp-prep-announce__badge {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-23%);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  max-width: min(68%, 500px);
+  background: #a4ff48;
+  border-radius: 20px;
+  padding: 18px 36px 18px 68px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+
+.mp-prep-announce__badge-icon {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-62%);
+  width: 108px;
+  height: 108px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+}
+
+.mp-prep-announce__badge-icon img {
+  width: 180%;
+  height: 180%;
+  object-fit: contain;
+}
+
+.mp-prep-announce__badge-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #111;
+  line-height: 19px;
+}
+
+.mp-prep-announce__badge-copy strong {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(1.65rem, 2.2vw, 2rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.mp-prep-announce__badge-copy span {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+}
+
+.mp-prep-announce__badge-copy em {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 4px 14px;
+  border-radius: 8px;
+  background: #9300ff;
+  color: #fff;
+  font-style: normal;
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.mp-prep-announce__content {
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+}
+
+.mp-prep-announce__lead,
+.mp-prep-announce__text {
+  color: #111 !important;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+}
+
+.mp-prep-announce__lead strong {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.mp-prep-announce__checks {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
+.mp-prep-announce__checks li {
+  position: relative;
+  padding-left: 36px;
+  color: #111;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.mp-prep-announce__checks li::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: #a4ff48;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.mp-prep-announce__checks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: var(--announce-check-icon, url("https://www.mathpal.us/wp-content/uploads/2026/06/%E2%9C%93.png")) center / 28px auto no-repeat;
+  z-index: 1;
+}
+
+.mp-prep-announce__person {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  justify-self: end;
+  margin-right: -24px;
+  z-index: 4;
+  pointer-events: none;
+  align-self: center;
+}
+
+.mp-prep-announce__person-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Prep Courses — Pricing */
+.mp-prep-pricing {
+  position: relative;
+  overflow: visible;
+  background: #000;
+  padding: 88px 0 88px;
+}
+
+.mp-prep-pricing__title {
+  color: #fff;
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  text-align: center;
+  margin: 0 0 48px;
+  font-weight: 400;
+}
+
+.mp-prep-pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+  padding-top: 36px;
+}
+
+.mp-prep-pricing__card {
+  position: relative;
+  border-radius: 22px;
+  text-align: center;
+  background: #000;
+  border: 2px solid #a4ff48;
+  color: #fff;
+  overflow: visible;
+  transition: background 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.mp-prep-pricing__card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 34px 24px 28px;
+}
+
+.mp-prep-pricing__card--premium .mp-prep-pricing__card-inner {
+  padding-top: 62px;
+}
+
+@media (hover: hover) {
+  .mp-prep-pricing__card:hover,
+  .mp-prep-pricing__card:focus-within {
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+    transform: scale(1.03);
+    z-index: 2;
+  }
+}
+
+.mp-prep-pricing__new-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(84%, 252px);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #a4ff48;
+  color: #111;
+  border-radius: 16px;
+  padding: 11px 14px 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mp-prep-pricing__new-badge-head {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mp-prep-pricing__new-badge-head i {
+  font-size: 1.05rem;
+}
+
+.mp-prep-pricing__new-badge-head strong {
+  font-family: "Retroica", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.mp-prep-pricing__new-badge-sub {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.15;
+}
+
+.mp-prep-pricing__new-badge-tag {
+  display: block;
+  width: 100%;
+  margin: 2px 0 0;
+  background: #9300ff;
+  color: #fff;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 8px 10px;
+  border-radius: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.mp-prep-pricing__plan-title {
+  font-family: "Retroica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 18px;
+  line-height: 1.15;
+  text-transform: none;
+  color: #fff;
+}
+
+.mp-prep-pricing__price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.mp-prep-pricing__price .currency {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 1.65rem;
+  line-height: 1;
+  margin-top: 18px;
+  margin-right: 6px;
+  color: #fff;
+}
+
+.mp-prep-pricing__price .amount {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(5rem, 7vw, 6.25rem);
+  font-weight: 400;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.mp-prep-pricing__desc {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin: 0 0 16px;
+  max-width: 300px;
+  color: #fff;
+}
+
+.mp-prep-pricing__validity {
+  font-family: "Retroica", sans-serif;
+  font-size: 1rem;
+  margin: 0 0 18px;
+  color: #fff;
+}
+
+.mp-prep-pricing__validity--accent {
+  color: #a4ff48;
+}
+
+.mp-prep-pricing__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 290px;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.mp-prep-pricing__features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: #fff;
+}
+
+.mp-prep-pricing__features li::before {
+  content: "\f058";
+  font-family: "FontAwesome", "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a4ff48;
+}
+
+@media (hover: hover) {
+  .mp-prep-pricing__card:hover .mp-prep-pricing__plan-title,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__plan-title,
+  .mp-prep-pricing__card:hover .mp-prep-pricing__price .currency,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__price .currency,
+  .mp-prep-pricing__card:hover .mp-prep-pricing__price .amount,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__price .amount,
+  .mp-prep-pricing__card:hover .mp-prep-pricing__desc,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__desc,
+  .mp-prep-pricing__card:hover .mp-prep-pricing__validity:not(.mp-prep-pricing__validity--accent),
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__validity:not(.mp-prep-pricing__validity--accent),
+  .mp-prep-pricing__card:hover .mp-prep-pricing__features li,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__features li {
+    color: #111;
+  }
+
+  .mp-prep-pricing__card:hover .mp-prep-pricing__validity--accent,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__validity--accent {
+    color: #111;
+  }
+}
+
+.mp-prep-pricing__btn.btn-1 {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 260px;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-family: "Retroica", sans-serif;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: 0.3s;
+  background: #a4ff48;
+  color: #111;
+  border: none;
+}
+
+.mp-prep-pricing__btn.btn-1 i {
+  font-size: 1.15rem;
+}
+
+@media (hover: hover) {
+  .mp-prep-pricing__card:hover .mp-prep-pricing__btn.btn-1,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__btn.btn-1 {
+    background: #111;
+    color: #fff;
+  }
+
+  .mp-prep-pricing__card:hover .mp-prep-pricing__btn.btn-1:hover,
+  .mp-prep-pricing__card:focus-within .mp-prep-pricing__btn.btn-1:hover {
+    background: #9300ff;
+    color: #fff;
+  }
+}
+
+.mp-prep-pricing__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-pricing__deco--ring {
+  left: 4%;
+  top: 18%;
+  width: 56px;
+  height: 56px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+.mp-prep-pricing__deco--triangle {
+  left: 8%;
+  bottom: 14%;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 28px solid #a4ff48;
+}
+
+.mp-prep-pricing__deco--stroke {
+  right: 6%;
+  top: 22%;
+  width: 48px;
+  height: 16px;
+  border-radius: 999px;
+  background: #9300ff;
+  transform: rotate(-18deg);
+}
+
+.mp-prep-pricing__deco--dot {
+  right: 12%;
+  bottom: 20%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-announce {
+    padding: 56px 0 64px;
+  }
+
+  .mp-prep-announce__stage {
+    --announce-person-space: 0px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    grid-template-columns: none;
+  }
+
+  .mp-prep-announce__person {
+    position: relative;
+    order: 1;
+    grid-column: auto;
+    grid-row: auto;
+    width: min(200px, 62%);
+    max-width: none;
+    margin: 0 auto 4px;
+    justify-self: auto;
+    z-index: 2;
+  }
+
+  .mp-prep-announce__panel {
+    order: 2;
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 96px 22px 24px;
+    z-index: 3;
+  }
+
+  .mp-prep-announce__panel-deco {
+    top: -14px;
+  }
+
+  .mp-prep-announce__badge {
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: min(calc(100% - 20px), 460px);
+    max-width: none;
+    padding: 14px 48px;
+    top: -46px;
+  }
+
+  .mp-prep-announce__badge-copy {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mp-prep-announce__badge-icon {
+    left: -30px;
+    top: 50%;
+    transform: translateY(-58%);
+    width: 84px;
+    height: 84px;
+  }
+
+  .mp-prep-announce__badge-icon img {
+    width: 170%;
+    height: 170%;
+  }
+
+  .mp-prep-announce__badge-copy strong {
+    font-size: 1.35rem;
+  }
+
+  .mp-prep-announce__badge-copy span {
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+
+  .mp-prep-announce__badge-copy em {
+    margin: 4px 4px 0 0;
+  }
+
+  .mp-prep-announce__lead,
+  .mp-prep-announce__text {
+    font-size: 16px;
+  }
+
+  .mp-prep-announce__checks {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mp-prep-announce__checks li {
+    font-size: 16px;
+  }
+
+  .mp-prep-announce .mp-prep-cta__deco--ring,
+  .mp-prep-announce .mp-prep-cta__deco--x,
+  .mp-prep-announce .mp-prep-cta__deco--dot {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .mp-prep-pricing__grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 56px;
+  }
+
+  .mp-prep-pricing__card--premium {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mp-prep-announce {
+    padding: 40px 0 56px;
+  }
+
+  .mp-prep-announce__person {
+    width: min(170px, 58%);
+    margin: 0 auto 0;
+  }
+
+  .mp-prep-announce__panel {
+    padding: 88px 18px 22px;
+    border-radius: 22px;
+  }
+
+  .mp-prep-announce__badge {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 16px);
+    padding: 12px 42px;
+    top: -42px;
+  }
+
+  .mp-prep-announce__badge-copy {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mp-prep-announce__badge-icon {
+    left: -22px;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 72px;
+    height: 72px;
+  }
+
+  .mp-prep-announce__badge-icon img {
+    width: 165%;
+    height: 165%;
+  }
+
+  .mp-prep-announce__badge-copy strong {
+    font-size: 1.15rem;
+  }
+
+  .mp-prep-announce__badge-copy span {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  .mp-prep-announce__badge-copy em {
+    margin: 2px 4px 0 0;
+  }
+
+  .mp-prep-announce__lead,
+  .mp-prep-announce__text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .mp-prep-announce__checks li {
+    font-size: 15px;
+    padding-left: 32px;
+  }
+
+  .mp-prep-announce__checks li::after {
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+  }
+
+  .mp-prep-announce__checks li::before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px auto;
+  }
+
+  .mp-prep-pricing {
+    padding: 56px 0 72px;
+  }
+}
+
+/* Prep Courses — Info (What is the SAT?) */
+.mp-prep-info {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5;
+  padding: 88px 0;
+}
+
+.mp-prep-info__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.mp-prep-info__title {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #111;
+  margin: 0 0 28px;
+}
+
+.mp-prep-info__lead {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  line-height: 1.45;
+  color: #111;
+  margin: 0 0 22px;
+  max-width: 520px;
+}
+
+.mp-prep-info__text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.55;
+  color: #111;
+  margin: 0;
+  max-width: 520px;
+}
+
+.mp-prep-info__text strong {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.mp-prep-info__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 540px;
+}
+
+.mp-prep-info__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mp-prep-info__item-icon-wrap {
+  flex: 0 0 auto;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.mp-prep-info__item-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mp-prep-info__item-text {
+  margin: 4px 0 0;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.55;
+  color: #111;
+}
+
+.mp-prep-info--act .mp-prep-info__lead {
+  max-width: 540px;
+}
+
+.mp-prep-info__media {
+  position: relative;
+  z-index: 2;
+}
+
+.mp-prep-info__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  object-fit: cover;
+  min-height: 380px;
+}
+
+.mp-prep-info__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-info__deco--nums {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+  color: #9300ff;
+  opacity: 0.14;
+}
+
+.mp-prep-info__deco--dot {
+  left: 8%;
+  bottom: 12%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #9300ff;
+}
+
+.mp-prep-info__deco--ring {
+  width: 72px;
+  height: 72px;
+  border: 4px solid #9300ff;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.mp-prep-info__deco--ring-top {
+  right: 6%;
+  top: 10%;
+}
+
+.mp-prep-info__deco--ring-bottom {
+  right: 10%;
+  bottom: 8%;
+  width: 56px;
+  height: 56px;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-info {
+    padding: 64px 0;
+  }
+
+  .mp-prep-info__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .mp-prep-info__content {
+    order: 1;
+  }
+
+  .mp-prep-info__media {
+    order: 2;
+  }
+
+  .mp-prep-info__deco--nums {
+    left: -4%;
+    opacity: 0.1;
+  }
+
+  .mp-prep-info__deco--ring-top,
+  .mp-prep-info__deco--ring-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .mp-prep-info {
+    padding: 48px 0;
+  }
+
+  .mp-prep-info__image {
+    min-height: 260px;
+    border-radius: 24px;
+  }
+
+  .mp-prep-info__item-icon-wrap {
+    width: 64px;
+    height: 64px;
+    padding: 14px;
+  }
+
+  .mp-prep-info__items {
+    gap: 22px;
+  }
+}
+
+/* Prep Courses — Steps */
+.mp-prep-steps {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 88px 0 96px;
+}
+
+.mp-prep-steps__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin: 0 0 56px;
+}
+
+.mp-prep-steps__title-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #9300ff;
+  flex-shrink: 0;
+}
+
+.mp-prep-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.mp-prep-steps__card {
+  position: relative;
+  padding-top: 38px;
+}
+
+.mp-prep-steps__number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #000;
+  color: #a4ff48;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 0 12px #fff;
+}
+
+.mp-prep-steps__card-body {
+  position: relative;
+  border: 3px solid #000;
+  border-radius: 12px;
+  background: #fff;
+  padding: 52px 22px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-prep-steps__card-body::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(76px + 28px);
+  height: 6px;
+  background: #fff;
+  z-index: 2;
+}
+
+.mp-prep-steps__card-title {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+.mp-prep-steps__card-text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #111;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.mp-prep-steps__list {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.mp-prep-steps__list li {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.mp-prep-steps__footer {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #111;
+  margin: auto 0 0;
+  text-align: left;
+}
+
+.mp-prep-steps__card:nth-child(2) .mp-prep-steps__footer {
+  text-align: center;
+}
+
+.mp-prep-steps__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-steps__deco--nums {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.9;
+  color: #9300ff;
+  opacity: 0.14;
+}
+
+.mp-prep-steps__deco--ring {
+  right: 5%;
+  top: 18%;
+  width: 68px;
+  height: 68px;
+  border: 4px solid #9300ff;
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-steps {
+    padding: 64px 0 72px;
+  }
+
+  .mp-prep-steps__grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 48px;
+  }
+
+  .mp-prep-steps__deco--ring {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .mp-prep-steps {
+    padding: 48px 0 64px;
+  }
+
+  .mp-prep-steps__title {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Prep Courses — Steps (ACT) */
+.mp-prep-steps--act .mp-prep-steps__title {
+  display: block;
+  text-align: center;
+}
+
+.mp-prep-steps--act .mp-prep-steps__card-body {
+  border-width: 2px;
+  border-radius: 18px;
+  padding: 54px 28px 28px;
+}
+
+.mp-prep-steps--act .mp-prep-steps__number {
+  width: 72px;
+  height: 72px;
+  font-size: 2.35rem;
+  box-shadow: 0 0 0 10px #fff;
+}
+
+.mp-prep-steps--act .mp-prep-steps__card-body::before {
+  width: calc(72px + 24px);
+  height: 4px;
+  top: -2px;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--num {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 1;
+  color: #9300ff;
+  opacity: 0.14;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--num-1 {
+  left: 4%;
+  top: 22%;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--num-3 {
+  left: 38%;
+  top: 58%;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--num-9 {
+  right: 18%;
+  bottom: 10%;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--dot {
+  left: 6%;
+  top: 10%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #9300ff;
+}
+
+.mp-prep-steps--act .mp-prep-steps__deco--ring {
+  right: 4%;
+  top: 14%;
+  width: 64px;
+  height: 64px;
+  border-width: 3px;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-steps--act .mp-prep-steps__deco--num-3,
+  .mp-prep-steps--act .mp-prep-steps__deco--num-9 {
+    display: none;
+  }
+
+  .mp-prep-steps--act .mp-prep-steps__deco--dot {
+    display: none;
+  }
+}
+
+/* Prep Courses — IXL */
+.mp-prep-ixl {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 88px 0 72px;
+}
+
+.mp-prep-ixl__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 56px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.mp-prep-ixl__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.mp-prep-ixl__badge {
+  display: inline-block;
+  background: #a4ff48;
+  color: #111;
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 400;
+  line-height: 1;
+  padding: 14px 28px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.mp-prep-ixl__title {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+  color: #9300ff;
+  margin: 0 0 24px;
+}
+
+.mp-prep-ixl__text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #111;
+  margin: 0 0 24px;
+}
+
+.mp-prep-ixl__highlight {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #111;
+  margin: 0 0 20px;
+}
+
+.mp-prep-ixl__highlight strong {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.mp-prep-ixl__footnote {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #111;
+  margin: 0;
+}
+
+.mp-prep-ixl__asterisk {
+  color: inherit;
+}
+
+.mp-prep-ixl__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-ixl__deco--dot {
+  left: 4%;
+  top: 14%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #111;
+}
+
+.mp-prep-ixl__deco--stroke {
+  left: 7%;
+  top: 22%;
+  width: 56px;
+  height: 14px;
+  border-radius: 999px;
+  background: #9300ff;
+  transform: rotate(-12deg);
+}
+
+.mp-prep-ixl__deco--x {
+  right: 8%;
+  top: 16%;
+  width: 28px;
+  height: 28px;
+}
+
+.mp-prep-ixl__deco--x::before,
+.mp-prep-ixl__deco--x::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 4px;
+  background: #111;
+  border-radius: 999px;
+}
+
+.mp-prep-ixl__deco--x::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mp-prep-ixl__deco--x::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mp-prep-ixl__deco--green-stroke {
+  right: 10%;
+  top: 24%;
+  width: 42px;
+  height: 12px;
+  border-radius: 999px;
+  background: #a4ff48;
+  transform: rotate(18deg);
+}
+
+.mp-prep-ixl__deco--ring {
+  right: 6%;
+  bottom: 18%;
+  width: 72px;
+  height: 72px;
+  border: 4px solid #9300ff;
+  border-radius: 50%;
+}
+
+.mp-prep-ixl__bottom-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: #9300ff;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-ixl {
+    padding: 64px 0 56px;
+  }
+
+  .mp-prep-ixl__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .mp-prep-ixl__deco--x,
+  .mp-prep-ixl__deco--green-stroke,
+  .mp-prep-ixl__deco--ring {
+    display: none;
+  }
+}
+
+/* Prep Courses — IXL (ACT) */
+.mp-prep-ixl--act {
+  padding: 80px 0;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__image {
+  border-radius: 36px;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__badge {
+  background: #c6f089;
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__title {
+  margin-bottom: 20px;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__text {
+  margin-bottom: 20px;
+}
+
+.mp-prep-ixl--act .mp-prep-ixl__highlight {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-ixl--act {
+    padding: 56px 0;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__media {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__image {
+    border-radius: 28px;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__content {
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .mp-prep-ixl {
+    padding: 48px 0 48px;
+  }
+
+  .mp-prep-ixl--act {
+    padding: 40px 0;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__grid {
+    gap: 22px;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__image {
+    border-radius: 22px;
+    max-height: 260px;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__badge {
+    font-size: 1.1rem;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__title {
+    font-size: clamp(2.2rem, 11vw, 2.8rem);
+    margin-bottom: 16px;
+  }
+
+  .mp-prep-ixl--act .mp-prep-ixl__text,
+  .mp-prep-ixl--act .mp-prep-ixl__highlight {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .mp-prep-ixl__badge {
+    font-size: 1.35rem;
+    padding: 12px 22px;
+  }
+
+  .mp-prep-ixl__text,
+  .mp-prep-ixl__highlight {
+    font-size: 16px;
+  }
+}
+
+/* Prep Courses — CTA */
+.mp-prep-cta {
+  position: relative;
+  overflow: hidden;
+  background: #9300ff;
+  padding: 96px 0;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.mp-prep-cta .container {
+  width: 100%;
+}
+
+.mp-prep-cta__inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.mp-prep-cta__subtitle {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.mp-prep-cta__title {
+  font-family: "Retroica", sans-serif;
+  font-size: clamp(42px, 5.5vw, 56px);
+  font-weight: 400;
+  line-height: 1.08;
+  color: #fff;
+  margin: 0 0 36px;
+}
+
+.mp-prep-cta__btn.btn-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 16px 28px;
+  font-family: "Retroica", sans-serif;
+  font-size: 1.15rem;
+  background: #111 !important;
+  color: #fff !important;
+  border: none;
+  transition: 0.3s;
+}
+
+.mp-prep-cta__btn.btn-1:hover,
+.mp-prep-cta__btn.btn-1:focus {
+  background: #000 !important;
+  color: #a4ff48 !important;
+}
+
+.mp-prep-cta__btn.btn-1 i {
+  font-size: 1.2rem;
+}
+
+.mp-prep-cta__deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mp-prep-cta__deco--check {
+  left: 5%;
+  top: 12%;
+  width: 28px;
+  height: 16px;
+  border-left: 5px solid #a4ff48;
+  border-bottom: 5px solid #a4ff48;
+  transform: rotate(-45deg);
+}
+
+.mp-prep-cta__deco--plus {
+  left: 8%;
+  top: 42%;
+  width: 28px;
+  height: 28px;
+}
+
+.mp-prep-cta__deco--plus::before,
+.mp-prep-cta__deco--plus::after {
+  content: "";
+  position: absolute;
+  background: #a4ff48;
+  border-radius: 2px;
+}
+
+.mp-prep-cta__deco--plus::before {
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.mp-prep-cta__deco--plus::after {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 4px;
+  transform: translateY(-50%);
+}
+
+.mp-prep-cta__deco--square {
+  left: 12%;
+  top: 44%;
+  width: 14px;
+  height: 14px;
+  background: #111;
+}
+
+.mp-prep-cta__deco--arc {
+  left: -40px;
+  bottom: -40px;
+  width: 140px;
+  height: 140px;
+  border: 28px solid #a4ff48;
+  border-radius: 50%;
+}
+
+.mp-prep-cta__deco--circle {
+  right: 8%;
+  top: 10%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.mp-prep-cta__deco--ring {
+  right: 5%;
+  top: 8%;
+  width: 56px;
+  height: 56px;
+  border: 4px solid #a4ff48;
+  border-radius: 50%;
+}
+
+.mp-prep-cta__deco--x {
+  right: 10%;
+  top: 42%;
+  width: 36px;
+  height: 36px;
+}
+
+.mp-prep-cta__deco--x::before,
+.mp-prep-cta__deco--x::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 36px;
+  height: 5px;
+  background: #fff;
+  border-radius: 999px;
+}
+
+.mp-prep-cta__deco--x::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mp-prep-cta__deco--x::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mp-prep-cta__deco--dot {
+  right: 12%;
+  bottom: 16%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #a4ff48;
+}
+
+@media (max-width: 991px) {
+  .mp-prep-cta {
+    padding: 72px 0;
+    min-height: 360px;
+  }
+
+  .mp-prep-cta__subtitle {
+    font-size: 22px;
+  }
+
+  .mp-prep-cta__title {
+    font-size: clamp(34px, 8vw, 42px);
+    margin-bottom: 28px;
+  }
+
+  .mp-prep-cta__deco--ring,
+  .mp-prep-cta__deco--x,
+  .mp-prep-cta__deco--dot,
+  .mp-prep-cta__deco--plus,
+  .mp-prep-cta__deco--square {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .mp-prep-cta {
+    padding: 56px 0;
+  }
+
+  .mp-prep-cta__subtitle {
+    font-size: 20px;
+  }
+
+  .mp-prep-cta__btn.btn-1 {
+    width: 100%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,205 @@
+/* Premium ACT/SAT card — matches SAT Prep layout, slider hover like other c-slider-3 cards */
+
+/* Let the NEW badge extend above the card without clipping */
+.c-slider-3 .slider.responsive9.slick-initialized .slick-list,
+.c-slider-3 .slider.responsive9.slick-initialized .slick-track {
+  overflow: visible;
+}
+
+.c-slider-3 .slider.responsive9.slick-initialized {
+  overflow: visible;
+}
+
+.c-slider-3 .slider.responsive9.slick-initialized .slick-list {
+  padding-top: 52px;
+}
+
+/* Keep the same corner radius on hover for all ACT/SAT slider cards */
+.c-slider-3 .slider.responsive9 .item:hover .c-block,
+.c-slider-3 .slider.responsive9 .item.active .c-block {
+  border-radius: 10px;
+}
+
+.c-slider-3 .col-md-12 {
+  overflow: visible;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #111;
+  overflow: visible;
+  padding: 0;
+  display: block;
+  text-align: center;
+  transition: background 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 62px 25px 25px;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(84%, 252px);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #a4ff48;
+  color: #111;
+  border-radius: 16px;
+  padding: 11px 14px 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge-head {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge-head i {
+  font-size: 1.05rem;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge-head strong {
+  font-family: "Retroica", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge-sub {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.15;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__new-badge-tag {
+  display: block;
+  width: 100%;
+  margin: 2px 0 0;
+  background: #9300ff;
+  color: #fff;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 8px 10px;
+  border-radius: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__plan-title {
+  font-family: "Retroica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.15;
+  text-transform: none;
+  color: #111;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__desc {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 300px;
+  color: #111;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__validity {
+  font-family: "Retroica", sans-serif;
+  font-size: 1rem;
+  margin: 0 0 18px;
+  color: #111;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__validity--accent {
+  color: #7CFF00;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 290px;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: #111;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__features li::before {
+  content: "\f058";
+  font-family: "FontAwesome", "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a4ff48;
+}
+
+.c-slider-3 .slider .item .c-block.mp-prep-pricing__card .btn-1 {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Hover / active — same as other slider cards (black bg, white text) */
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card {
+  scale: 1.05;
+  background: #000;
+  color: #fff;
+  border: 5px solid #a4ff48;
+  border-radius: 10px;
+}
+
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card .mp-prep-pricing__plan-title,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card .mp-prep-pricing__plan-title,
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card h4.precio,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card h4.precio,
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card .mp-prep-pricing__desc,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card .mp-prep-pricing__desc,
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card .mp-prep-pricing__validity,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card .mp-prep-pricing__validity,
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card .mp-prep-pricing__features li,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card .mp-prep-pricing__features li {
+  color: #fff;
+}
+
+.c-slider-3 .slider .item:hover .c-block.mp-prep-pricing__card .mp-prep-pricing__validity--accent,
+.c-slider-3 .slider .item.active .c-block.mp-prep-pricing__card .mp-prep-pricing__validity--accent {
+  color: #a4ff48;
+}
+
+@media (max-width: 991px) {
+  .c-slider-3 .slider.responsive9.slick-initialized .slick-list {
+    padding-top: 58px;
+  }
+
+  .c-slider-3 .slider .item .c-block.mp-prep-pricing__card .mp-prep-pricing__card-inner {
+    padding-top: 66px;
+  }
+}

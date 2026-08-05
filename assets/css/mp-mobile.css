@@ -1,0 +1,120 @@
+/* MathPal — mobile layout fixes (header + home sections) */
+
+.menu-xs {
+  z-index: 10001;
+  top: var(--mp-cintillo-height, 0px);
+  height: calc(100dvh - var(--mp-cintillo-height, 0px));
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .c-head {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .c-head .logo {
+    padding-top: 0;
+  }
+
+  .c-head .logo img {
+    max-height: 44px;
+    width: auto;
+  }
+
+  .c-head .btn-menu {
+    position: static;
+    right: auto;
+    top: auto;
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+  }
+
+  .cintillo_2026__inner {
+    height: auto;
+    overflow: visible;
+  }
+
+  .cintillo_2026__img--desktop {
+    display: none;
+  }
+
+  .cintillo_2026__img--mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #slider_page.c-slider {
+    margin-top: calc(var(--mp-cintillo-height, 48px) + var(--mp-header-height, 64px) + var(--mp-admin-bar-height, 0px));
+  }
+
+  body:has(.cintillo_2026) .header-title-img {
+    padding-top: calc(var(--mp-cintillo-height, 50px) + var(--mp-header-height, 64px));
+  }
+
+  .titulo-h2 {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .c-slider.caracteristicas {
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+
+  .c-slider.caracteristicas .slider .item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .como-funciona {
+    overflow: hidden;
+  }
+
+  .como-funciona .slider .item {
+    padding: 20px 10px;
+  }
+
+  .home-ruta {
+    overflow: hidden;
+  }
+
+  .home-ruta .slider.slick-initialized .slick-list {
+    overflow: hidden;
+  }
+
+  .home-ruta .slider .item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-ruta .slick-prev {
+    left: 0;
+  }
+
+  .home-ruta .slick-next {
+    right: 0;
+  }
+
+  .home_porque {
+    overflow: hidden;
+  }
+
+  .home_porque .slider .item {
+    padding: 12px 8px;
+  }
+
+  .mp-home-cintillo__frame {
+    padding: 10px 12px;
+  }
+
+  .mp-home-cintillo__img {
+    max-height: 120px;
+  }
+}
