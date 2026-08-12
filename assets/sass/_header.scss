@@ -12,6 +12,7 @@
   }
 
   .ctas {
+
     .cta-tel,
     .cta-wa {
       a {
@@ -24,26 +25,34 @@
         text-decoration: none;
         text-align: center;
         transition: 0.5s;
+
         span {
           color: $color_1;
           font-family: "Poppins-Bold";
           font-size: 0.9rem;
-          display: inline-flex; /* Flex en línea */
-          align-items: center; /* Centra verticalmente */
+          display: inline-flex;
+          /* Flex en línea */
+          align-items: center;
+          /* Centra verticalmente */
           gap: 8px;
         }
+
         &:hover {
-          transform: translateY(-3px); /* mueve 5px hacia arriba */
+          transform: translateY(-3px);
+          /* mueve 5px hacia arriba */
         }
       }
     }
+
     .cta-wa {
       a {
         border: 2px solid #b8b8b8;
+
         span {
           color: #000;
         }
       }
+
       img {
         animation: vibrar_wa 0.4s ease-in-out 0s infinite;
         /* Pausa: 6s para que vibre cada 6.4s aprox (0.4s dura el shake + 6s de espera) */
@@ -57,12 +66,14 @@
         animation-delay: 0s;
         animation: vibrar_wa 5s ease-in-out infinite;
       }
+
       &:hover {
         a {
           background-color: #dbdbdb;
         }
       }
     }
+
     .cta-tel {
       img {
         animation: vibrar 0.4s ease-in-out 0s infinite;
@@ -77,6 +88,7 @@
         animation-delay: 0s;
         animation: vibrar 5s ease-in-out infinite;
       }
+
       &:hover {
         a {
           background-color: #e1b8ff;
@@ -84,11 +96,13 @@
       }
     }
   }
+
   .menu {
     ul {
       margin-top: 15px;
       display: inline-flex;
       list-style: none;
+
       li {
         margin-left: 7px;
         margin-right: 7px;
@@ -101,12 +115,15 @@
           font-family: "Poppins-Bold";
           font-size: 0.75rem;
           transition: 0.3s;
+
           &:hover {
             color: $color_1;
           }
+
           &.active {
             color: $color_1;
             position: relative;
+
             &::before {
               content: "";
               height: 2px;
@@ -123,9 +140,11 @@
               align-items: center;
               bottom: -7px;
             }
+
             //color: red;
           }
         }
+
         ul {
           position: absolute;
           top: 100%;
@@ -141,8 +160,10 @@
           visibility: hidden;
           transform: translateY(10px);
           transition: all 0.3s ease;
+
           li {
             transition: all 0.3s ease;
+
             a {
               &.active {
                 &::before {
@@ -152,27 +173,33 @@
             }
           }
         }
+
         &:hover {
           ul {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
+
             li {
               padding-bottom: 5px;
+
               &:hover {
                 padding-left: 3px;
               }
             }
           }
         }
+
         &.has-children {
           ul {
             //position: relative;
             padding: 0px;
+
             li {
               border-bottom: 1px solid #cccccc;
               padding: 7px 12px 7px 7px;
               position: relative;
+
               &::after {
                 position: absolute;
                 font-family: "FontAwesome";
@@ -180,6 +207,7 @@
                 font-size: 0.8rem;
                 right: 5px;
               }
+
               a {
                 text-transform: capitalize;
               }
@@ -189,6 +217,7 @@
       }
     }
   }
+
   .btn-menu {
     font-size: 1.3rem;
     display: none;
@@ -211,6 +240,7 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+
     span {
       font-size: 0.7rem;
       display: grid;
@@ -251,13 +281,16 @@
   ul {
     position: relative;
     list-style: none;
+
     li {
       position: relative;
+
       &.active {
         a {
           //font-family: 'Poppins-Bold';
         }
       }
+
       &::before {
         content: "\f054";
         font-family: "FontAwesome";
@@ -291,15 +324,18 @@
   background-color: $color_1;
   /* background-image: url("../img/bg-cover.png"); */
   background-size: cover;
+
   h1,
   h2,
   h3,
   h4 {
     color: #fff;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   p {
     color: #fff;
     font-size: 1.2rem;
@@ -311,12 +347,15 @@
   padding-bottom: 70px;
   background-image: url("../img/bg-header-title-img.png");
   background-size: cover;
+
   h2 {
     color: $color_1;
   }
+
   .btn-1 {
     background-color: $color_1;
     color: #fff;
+
     &:hover {
       color: #000;
     }
@@ -328,23 +367,29 @@
 }
 
 @keyframes vibrar {
+
   /* --- Fase de vibración (0 s–0.4 s aprox) --- */
   0%,
   1% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   2% {
     transform: translate(-2px, 0) rotate(-5deg);
   }
+
   4% {
     transform: translate(2px, 0) rotate(5deg);
   }
+
   6% {
     transform: translate(-2px, 0) rotate(-5deg);
   }
+
   8% {
     transform: translate(2px, 0) rotate(5deg);
   }
+
   10% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -356,23 +401,29 @@
 }
 
 @keyframes vibrar_wa {
+
   /* --- Fase de vibración (0 s–0.4 s aprox) --- */
   0%,
   1% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   2% {
     transform: translate(-2px, 0) rotate(-5deg);
   }
+
   4% {
     transform: translate(2px, 0) rotate(5deg);
   }
+
   6% {
     transform: translate(-2px, 0) rotate(-5deg);
   }
+
   8% {
     transform: translate(2px, 0) rotate(5deg);
   }
+
   10% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -389,18 +440,22 @@
     background-image: none;
     background-color: #fff;
     padding-top: 90px;
+
     .txt {
       padding-top: 30px;
     }
   }
+
   .header-title {
     padding-bottom: 50px;
     margin-top: 30px;
   }
+
   .btns-contact-xs {
     display: block;
     position: relative;
     display: contents;
+
     // .c-content {
     //   position: fixed;
     //   bottom: 0px;
@@ -450,8 +505,10 @@
         box-shadow: 4px 3px 9px -1px rgba(0, 0, 0, 0.39);
         -webkit-box-shadow: 4px 3px 9px -1px rgba(0, 0, 0, 0.39);
         -moz-box-shadow: 4px 3px 9px -1px rgba(0, 0, 0, 0.39);
+
         a {
           text-decoration: none;
+
           span {
             color: #fff;
 
@@ -460,12 +517,15 @@
             }
           }
         }
+
         &.btn-wsp {
           background-color: #01bf00;
         }
+
         &.btn-tel {
           bottom: 75px;
           background-color: $color_1;
+
           span {
             i {
               font-size: 1rem;
@@ -478,15 +538,12 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
-@media only screen and (max-width: 820px) and (orientation: landscape) {
-}
+@media only screen and (max-width: 820px) and (orientation: landscape) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -496,9 +553,31 @@
         max-height: 65px;
       }
     }
+
+    .menu {
+      ul {
+        li {
+          a {
+                font-size: 0.6rem;
+          }
+        }
+      }
+    }
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .c-head {
+
+    .menu {
+      ul {
+        li {
+          a {
+                font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
 }
