@@ -60,6 +60,8 @@ add_action('customize_register', 'mi_tema_customizer');
 
 add_theme_support( 'title-tag' );
 
+add_theme_support( 'post-thumbnails' );
+
 
 function mp_enqueue_contador_assets() {
     // No hacer nada en el admin ni si no existe ACF

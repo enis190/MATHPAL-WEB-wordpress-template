@@ -90,7 +90,26 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 
 
 
+<style>
+  .notas_de_blog article figure{
+    height: 180px;
+    overflow: hidden;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #000;
+    margin-bottom: 5px;
+  }
 
+  .notas_de_blog article figure a img{
+    width: 100%;
+    height: auto;
+  }
+
+  .notas_de_blog article h3{
+    font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+  }
+  </style>
 
 
 
