@@ -21,8 +21,8 @@
             <div class="item ">
                 
                 <div class="c-block">
-                    <div class="tag"style="margin-top: -120px;margin-left: 50px;">
-                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back.png" alt="">
+                    <div class="tag"style="margin-top: -70px;">
+                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back.png" alt="" style="display: inline-block;">
                     </div>
                     <h4>Strengthen Skills Subscription</h4>
                     <h4 class="precio">130</h4>
@@ -41,8 +41,8 @@
             </div>
             <div class="item active">
                 <div class="c-block">
-                    <div class="tag"style="margin-top: -120px;margin-left: 50px;">
-                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group-1638.png" alt="">
+                    <div class="tag"style="margin-top: -70px;">
+                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group-1638.png" alt=""style="display: inline-block;">
                     </div>
                     <h4>Guided Success Subscription</h4>
                     <h4 class="precio">200</h4>
@@ -61,8 +61,8 @@
             </div>
             <div class="item">
                 <div class="c-block">
-                    <div class="tag"style="margin-top: -120px;margin-left: 50px;">
-                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group163.png" alt="">
+                    <div class="tag"style="margin-top: -70px;">
+                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group163.png" alt=""style="display: inline-block;">
                         
                     </div>
                     <h4>Exceed Expectations Subscription</h4>

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
              <div class="col-md-5 legal ">
-               <p>*Offer valid only on new monthly subscriptions purchased in August 2026. Bonus 1-on-1 tutoring hours vary by plan (Strengthen: 2 hrs / Homework Helper: 3 hrs / Exceed: 4 hrs) and must be used within the first two months of the subscription. Bonus hours have no cash value and are non-transferable. Minimum subscription length of 3 months applies. Cannot be combined with other offers. Terms and conditions apply.</p><br>
+               <p>Offer valid on new monthly subscriptions of 4 hours or more purchased in August 2026. Free bonus 1-on-1 tutoring hours vary by plan (Strengthen Skills: 2 hrs / Homework Helper: 3 hrs / Exceed Expectations: 4 hrs) and are added to the account in the first and third months of the subscription. Bonus hours have no cash value and are non-transferable. Minimum subscription length of 3 months applies. Cannot be combined with other offers. Terms and conditions apply.</p><br>
             </div> 
         </div>
         <div class="row">
@@ -35,7 +35,7 @@
                         <p class="title">Contact</p>
                         <p><a href="mailto:info@mathpal.us"><i class="fa-regular fa-envelope"></i> info@mathpal.us</a></p>
                         <p><a href="tel:15618473516"><i class="fa-solid fa-mobile-screen"></i> +1 (561) 847 3516</a></p>
-                        <p><a href="https://wa.link/6cogzw" target="_blank"><i class="fa-brands fa-whatsapp"></i> +51 980 248 962</a></p>
+                        <p><a href="https://wa.link/e0yi3z" target="_blank"><i class="fa-brands fa-whatsapp"></i> +1 (954) 850 9496</a></p>
 
                     </div>
                     <div class="col-md-3 c-group-3 mt-4 mt-sm-0">

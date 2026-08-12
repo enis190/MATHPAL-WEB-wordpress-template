@@ -161,11 +161,11 @@ include(TEMPLATEPATH . '/template-parts/submenu-programas.php');
                 <div class="new-badge">NEW!</div>
 
 <h3>
-	<span>Choose your plan:</span>
+	<span>Diagnostic test</span>
 	<span class="small"></span>
 </h3>
 
- <h3>4, 8, or 12 tutoring hours</h3>
+ <!-- <h3>4, 8, or 12 tutoring hours</h3> -->
 
 <div class="precio1">
     <div class="row justify-content-center">
