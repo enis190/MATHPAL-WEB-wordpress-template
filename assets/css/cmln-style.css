@@ -570,7 +570,8 @@ ul li {
   background-color: #000; }
   .c-footer p {
     margin-bottom: 5px;
-    color: #fff; }
+    color: #fff;
+    font-size: 13px; }
     .c-footer p.title {
       color: #a4ff48;
       font-family: "Poppins-Bold";
