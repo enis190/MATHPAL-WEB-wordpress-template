@@ -10,7 +10,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
             <?php
             //do_action( 'woocommerce_before_main_content' );
-            //do_action( 'woocommerce_shop_loop_header' );
+            do_action( 'woocommerce_shop_loop_header' );
 
             if ( woocommerce_product_loop() ) {
 
