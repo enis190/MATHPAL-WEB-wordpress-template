@@ -34,7 +34,7 @@ include get_template_directory() . '/template-parts/header-default.php';
             }
 
             //do_action( 'woocommerce_after_main_content' );
-            //do_action( 'woocommerce_sidebar' );
+            do_action( 'woocommerce_sidebar' );
             ?>
 
         </div>
