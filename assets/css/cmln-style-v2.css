@@ -1,5 +1,16 @@
-.enis {
-  background-color: red;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .c-head .menu ul li a {
+    font-size: 0.6rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .c-head .menu ul li a {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=cmln-style-v2.css.map */
