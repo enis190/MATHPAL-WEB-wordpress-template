@@ -17,7 +17,9 @@
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+//get_header( 'shop' );
+get_header();
+include get_template_directory() . '/template-parts/header-default.php';
 
 /**
  * Hook: woocommerce_before_main_content.
