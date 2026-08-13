@@ -33,6 +33,15 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
+.notas_de_blog article .btn-cta {
+  text-decoration: none;
+  background: #9301ff;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 7px 10px;
+  border: 1px solid #9301ff;
+  transition: 0.3s;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

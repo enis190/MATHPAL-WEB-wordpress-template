@@ -6,6 +6,7 @@
             border-radius: 7px 7px 7px 7px;
             background-color: #000;
             margin-bottom: 5px;
+
             a {
                 img {
                     width: 100%;
@@ -13,10 +14,22 @@
                 }
             }
         }
+
         h3 {
             font-size: 1.2rem;
             margin-top: 10px;
             margin-bottom: 15px;
+        }
+
+        .btn-cta {
+            text-decoration: none;
+            background: #9301ff;
+            color: #FFF;
+            border-radius: 5px;
+            padding: 7px 10px;
+            border: 1px solid #9301ff;
+            transition: .3s;
+            
         }
     }
 }
