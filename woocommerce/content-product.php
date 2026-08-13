@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-include(TEMPLATEPATH . '/template-parts/header-default.php');
+//include(TEMPLATEPATH . '/template-parts/header-default.php');
 ?>
 
 <div class="container c-div-padding shop">
@@ -47,4 +47,4 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 </div>
 
 <?php
-include(TEMPLATEPATH . '/template-parts/footer-default.php');
+//include(TEMPLATEPATH . '/template-parts/footer-default.php');
