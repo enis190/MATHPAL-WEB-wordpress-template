@@ -33,12 +33,19 @@ if (have_posts()) :
                         $titulo_post  = urlencode( get_the_title() );
                         ?>
                         <div class="compartir-redes">
-                            <span>Compartir:</span>
+                            <span>Share:</span>
                             <!-- Facebook -->
                             <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url_actual; ?>"
                             target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo $url_actual; ?>"
+                            target="_blank" rel="noopener noreferrer" aria-label="Compartir en LinkedIn">
+                                <i class="fa-brands fa-linkedin" ></i>
+                            </a>
+
                         </div>
                         
                     </div>
