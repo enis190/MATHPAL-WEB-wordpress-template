@@ -17,5 +17,16 @@
     font-size: 0.75rem;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mp-prep-announce__badge-copy strong {
+    display: contents;
+  }
+  .mp-prep-announce__badge-copy span {
+    line-height: 32px;
+  }
+}
 
 /*# sourceMappingURL=cmln-style-v2.css.map */
