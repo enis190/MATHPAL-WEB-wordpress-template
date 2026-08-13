@@ -24,6 +24,7 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
+Elvissssssssssssssssssssssssssssssssssssssssssssss
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
