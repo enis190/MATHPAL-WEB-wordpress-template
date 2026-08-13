@@ -17,6 +17,26 @@
     font-size: 0.75rem;
   }
 }
+.notas_de_blog article figure {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 7px 7px 7px 7px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+.notas_de_blog article figure a img {
+  width: 100%;
+  height: auto;
+}
+.notas_de_blog article h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */

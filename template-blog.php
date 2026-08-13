@@ -75,6 +75,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
               <p>
                 <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
               </p>
+              <a href="<?php the_permalink(); ?>" class="btn-cta">Read more</a>
 
             </article>
           </div>
@@ -91,24 +92,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 
 
 <style>
-  .notas_de_blog article figure{
-    height: 180px;
-    overflow: hidden;
-    border-radius: 7px 7px 7px 7px;
-    background-color: #000;
-    margin-bottom: 5px;
-  }
-
-  .notas_de_blog article figure a img{
-    width: 100%;
-    height: auto;
-  }
-
-  .notas_de_blog article h3{
-    font-size: 1.2rem;
-        margin-top: 10px;
-        margin-bottom: 15px;
-  }
+  
   </style>
 
 
