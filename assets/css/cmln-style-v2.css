@@ -43,6 +43,19 @@
   transition: 0.3s;
 }
 
+.single_blog .compartir-redes {
+  text-align: center;
+}
+.single_blog .compartir-redes span {
+  font-size: 1.3rem;
+  display: block;
+}
+.single_blog .compartir-redes a {
+  text-decoration: none;
+  color: #9301ff;
+  font-size: 2rem;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */

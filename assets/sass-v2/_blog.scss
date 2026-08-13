@@ -29,7 +29,24 @@
             padding: 7px 10px;
             border: 1px solid #9301ff;
             transition: .3s;
-            
+
+        }
+    }
+}
+
+.single_blog {
+    .compartir-redes {
+        text-align: center;
+
+        span {
+            font-size: 1.3rem;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9301ff;
+            font-size: 2rem;
         }
     }
 }
