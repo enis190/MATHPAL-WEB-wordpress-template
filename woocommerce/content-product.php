@@ -1,3 +1,4 @@
+--------------------------nico----------------------------------
 <?php
 
 global $product;
@@ -7,10 +8,7 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<?php
-//get_header();
-include(TEMPLATEPATH . '/template-parts/header-default.php');
-?>
+
 ---------------------------- elvis 2 ------------
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
