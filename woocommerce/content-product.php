@@ -1,4 +1,4 @@
---------------------------nico----------------------------------
+
 <?php
 
 global $product;
@@ -9,7 +9,6 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 }
 ?>
 
----------------------------- elvis 2 ------------
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
