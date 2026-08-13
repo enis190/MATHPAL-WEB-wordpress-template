@@ -9,8 +9,8 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="col-12">
 
             <?php
-            do_action( 'woocommerce_before_main_content' );
-            do_action( 'woocommerce_shop_loop_header' );
+            //do_action( 'woocommerce_before_main_content' );
+            //do_action( 'woocommerce_shop_loop_header' );
 
             if ( woocommerce_product_loop() ) {
 
@@ -33,8 +33,8 @@ include get_template_directory() . '/template-parts/header-default.php';
                 do_action( 'woocommerce_no_products_found' );
             }
 
-            do_action( 'woocommerce_after_main_content' );
-            do_action( 'woocommerce_sidebar' );
+            //do_action( 'woocommerce_after_main_content' );
+            //do_action( 'woocommerce_sidebar' );
             ?>
 
         </div>
