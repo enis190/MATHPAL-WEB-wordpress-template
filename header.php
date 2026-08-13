@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php echo bloginfo('template_url') . '/' ?>assets/css/revolution/navigation.min.css">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url') . '/' ?>assets/css/revolution/settings.min.css">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url') . '/' ?>assets/css/cmln-style.css?v=2.8">
+    <link rel="stylesheet" href="<?php echo bloginfo('template_url') . '/' ?>assets/css/cmln-style-v2.css?v=2.8">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url') . '/' ?>assets/css/mp-mobile.css?v=1.6">
 
     <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"> -->
