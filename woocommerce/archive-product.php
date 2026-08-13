@@ -1,6 +1,6 @@
 <?php
 defined( 'ABSPATH' ) || exit;
-
+get_header();
 include get_template_directory() . '/template-parts/header-default.php';
 ?>
 
@@ -43,3 +43,4 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 <?php
 include get_template_directory() . '/template-parts/footer-default.php';
+get_footer();
