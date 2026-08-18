@@ -52,7 +52,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 		 *
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
-		do_action( 'woocommerce_after_main_content' );
+		//do_action( 'woocommerce_after_main_content' );
 	?>
 
 	<?php
@@ -61,7 +61,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+		//do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php
