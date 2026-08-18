@@ -5,7 +5,7 @@ get_header();
 include get_template_directory() . '/template-parts/header-default.php';
 ?>
 
-<div class="container single-product enis-single-product">
+<div class="container single-product c-woocommerce c-single-product">
     <div class="row">
         <div class="col-12">
 
