@@ -14,7 +14,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
             while ( have_posts() ) :
                 the_post();
-                //wc_get_template_part( 'content', 'single-product' );
+                wc_get_template_part( 'content', 'single-product' );
             endwhile;
             ?>
 
