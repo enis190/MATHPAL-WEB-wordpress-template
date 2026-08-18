@@ -4,7 +4,7 @@ get_header();
 include get_template_directory() . '/template-parts/header-default.php';
 ?>
 
-<div class="container c-div-padding shop c-woocommerce">
+<div class="container c-div-padding shop c-woocommerce c-archive-product">
     <div class="row">
         <div class="col-12">
 
