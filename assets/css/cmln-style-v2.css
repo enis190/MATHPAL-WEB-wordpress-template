@@ -164,7 +164,8 @@
   display: contents;
 }
 .c-woocommerce.c-single-product .entry-summary .cart .quantity .input-text {
-  padding: 10px;
+  padding: 8px;
+  max-width: 70px;
 }
 .c-woocommerce.c-single-product .entry-summary .cart .single_add_to_cart_button {
   display: inline-block;
