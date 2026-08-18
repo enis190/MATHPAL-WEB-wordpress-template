@@ -1,4 +1,3 @@
-
 .shop ul.products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,18 +40,22 @@
 }
 
 
-.c-woocommerce{
-    &.c-archive-product{
+.c-woocommerce {
+    &.c-archive-product {
         padding-top: 180px;
-        ul{
-            &.products{
-                .product{
-                    .woocommerce-loop-product__link{
-                        .woocommerce-loop-product__title{
-                                color: #000000;
+
+        ul {
+            &.products {
+                .product {
+                    .woocommerce-loop-product__link {
+                        text-decoration: none;
+                        .woocommerce-loop-product__title {
+                            color: #000000;
                         }
-                        .price{
+
+                        .price {
                             color: #9501fe;
+                            display: block;
                         }
                     }
                 }
@@ -72,16 +75,10 @@
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  
-}
+@media only screen and (min-width: 1200px) {}
 
 
-@media only screen and (min-width: 1600px) {
-    
-}
+@media only screen and (min-width: 1600px) {}

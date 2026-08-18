@@ -114,11 +114,15 @@
 .c-woocommerce.c-archive-product {
   padding-top: 180px;
 }
+.c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link {
+  text-decoration: none;
+}
 .c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link .woocommerce-loop-product__title {
   color: #000000;
 }
 .c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link .price {
   color: #9501fe;
+  display: block;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
