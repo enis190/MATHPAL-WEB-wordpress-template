@@ -92,7 +92,11 @@
         }
     }
     &.c-single-product{
-        padding-top: 150px;
+        padding-top: 180px;
+        padding-bottom: 70px;
+        .woocommerce-Reviews,.related products, .wc-tabs-wrapper{
+            display: none;
+        }
     }
 }
 
