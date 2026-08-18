@@ -160,6 +160,9 @@
 .c-woocommerce.c-single-product .c-product-gallery .woocommerce-product-gallery__trigger {
   display: none;
 }
+.c-woocommerce.c-single-product .entry-summary {
+  padding-top: 30px;
+}
 .c-woocommerce.c-single-product .entry-summary .cart .quantity {
   display: contents;
 }
@@ -176,6 +179,9 @@
   border-radius: 4px;
   text-decoration: none;
   border: 0px;
+}
+.c-woocommerce.c-single-product .entry-summary .product_meta {
+  margin-top: 20px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
