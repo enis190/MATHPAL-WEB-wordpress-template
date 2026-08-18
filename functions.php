@@ -135,7 +135,8 @@ function mathpal_woocommerce_support() {
 add_action( 'after_setup_theme', 'mathpal_woocommerce_support' );
 
 
-add_action( 'wp', 'mathpal_remove_product_reviews' );
+add_action( 'wp', 'mathpal_remove_product_reviews', 20 );
 function mathpal_remove_product_reviews() {
     remove_action( 'woocommerce_after_single_product_summary', 'comments_template', 10 );
+    remove_action( 'woocommerce_output_related_products', 'woocommerce_output_related_products', 20 ); // esto quita related products también, si quieres
 }
