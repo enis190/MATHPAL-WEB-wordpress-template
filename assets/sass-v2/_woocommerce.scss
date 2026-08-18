@@ -91,10 +91,16 @@
             }
         }
     }
-    &.c-single-product{
+
+    &.c-single-product {
         padding-top: 180px;
         padding-bottom: 70px;
-        .woocommerce-Reviews,.related products, .wc-tabs-wrapper{
+
+        .woocommerce-Reviews,
+        .related products,
+        .wc-tabs-wrapper,
+        .related products
+         {
             display: none;
         }
     }

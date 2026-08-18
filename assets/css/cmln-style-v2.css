@@ -151,7 +151,10 @@
   padding-top: 180px;
   padding-bottom: 70px;
 }
-.c-woocommerce.c-single-product .woocommerce-Reviews, .c-woocommerce.c-single-product .related products, .c-woocommerce.c-single-product .wc-tabs-wrapper {
+.c-woocommerce.c-single-product .woocommerce-Reviews,
+.c-woocommerce.c-single-product .related products,
+.c-woocommerce.c-single-product .wc-tabs-wrapper,
+.c-woocommerce.c-single-product .related products {
   display: none;
 }
 
