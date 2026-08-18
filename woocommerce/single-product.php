@@ -1,4 +1,10 @@
-------------single------------------
+
+<?php
+defined( 'ABSPATH' ) || exit;
+get_header();
+include get_template_directory() . '/template-parts/header-default.php';
+?>
+
 <?php
 /**
  * The Template for displaying all single products
@@ -16,11 +22,12 @@
  * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+// if ( ! defined( 'ABSPATH' ) ) {
+// 	exit; // Exit if accessed directly
+// }
 
-get_header( 'shop' ); ?>
+//get_header( 'shop' ); 
+?>
 
 	<?php
 		/**
@@ -58,6 +65,9 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php
-get_footer( 'shop' );
+//get_footer( 'shop' );
+
+include get_template_directory() . '/template-parts/footer-default.php';
+get_footer();
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
