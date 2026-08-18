@@ -1,3 +1,4 @@
+------------single------------------
 <?php
 /**
  * The Template for displaying all single products
