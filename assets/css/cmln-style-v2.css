@@ -154,7 +154,7 @@
 .c-woocommerce.c-single-product .woocommerce-Reviews,
 .c-woocommerce.c-single-product .related products,
 .c-woocommerce.c-single-product .wc-tabs-wrapper,
-.c-woocommerce.c-single-product .related products {
+.c-woocommerce.c-single-product .related {
   display: none;
 }
 
