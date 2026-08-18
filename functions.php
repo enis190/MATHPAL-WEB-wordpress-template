@@ -133,3 +133,9 @@ function mathpal_woocommerce_support() {
     add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', 'mathpal_woocommerce_support' );
+
+
+add_action( 'wp', 'mathpal_remove_product_reviews' );
+function mathpal_remove_product_reviews() {
+    remove_action( 'woocommerce_after_single_product_summary', 'comments_template', 10 );
+}
