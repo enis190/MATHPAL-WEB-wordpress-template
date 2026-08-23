@@ -18,7 +18,7 @@ $link = get_permalink($product->get_id());
 
 ?>
 
-<div <?php wc_product_class('item col-md-4', $product); ?>>
+<div <?php wc_product_class('item col-md-12', $product); ?>>
     <div class="c-block fade-in-top" data-delay="100" data-duration="500">
         <div class="tag"><span><?php //echo esc_html($tag_categoria); ?></span></div>
         <div class="img">
