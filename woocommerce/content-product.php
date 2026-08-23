@@ -35,7 +35,7 @@ $link = get_permalink($product->get_id());
 		</div>
 		<div class="body">
 			<h3><?php echo esc_html($titulo); ?></h3>
-			<p><?php echo esc_html($descripcion); ?></p>
+			<?php echo wp_kses_post($descripcion); ?>
 
 			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
                 Book now <i class="fa-solid fa-circle-arrow-right"></i>
