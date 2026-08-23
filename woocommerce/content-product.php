@@ -7,46 +7,38 @@ global $product;
 if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 	return;
 }
+
+
+$tag_categoria = wc_get_product_category_list($product->get_id(), ', '); // o cualquier taxonomía tuya
+//$edad = get_post_meta($product->get_id(), 'edad', true); // campo personalizado (ACF o meta simple)
+$titulo = $product->get_name();
+$descripcion = $product->get_short_description();
+$imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
+$link = get_permalink($product->get_id());
+
 ?>
 
-<li <?php wc_product_class( '', $product ); ?>>
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
+<div <?php wc_product_class('item col-md-4', $product); ?>>
+    <div class="c-block fade-in-top" data-delay="100" data-duration="500">
+        <div class="tag"><span><?php echo esc_html($tag_categoria); ?></span></div>
+        <div class="img">
+            <img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
+        </div>
+        <div class="edad">
+            <div class="row">
+                <div class="col-9"><?php //echo esc_html($edad); ?></div>
+                <div class="col-3">
+                    <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <h3><?php echo esc_html($titulo); ?></h3>
+            <p><?php echo esc_html($descripcion); ?></p>
 
-	/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_rating - 5
-	 * @hooked woocommerce_template_loop_price - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_close - 5
-	 * @hooked woocommerce_template_loop_add_to_cart - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item' );
-	?>
-</li>
+            <a class="btn-1" href="<?php echo esc_url($link); ?>">
+                Book now <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
