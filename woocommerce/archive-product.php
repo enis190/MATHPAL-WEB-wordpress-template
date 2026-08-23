@@ -179,45 +179,6 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid home-ruta">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="titulo-h2 fade-in">Choose your learning path:</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <section class="slider responsive3_shop">
-                    <div class="row">
-                        <div class="item col-md-4">
-                            <div class="c-block fade-in-top" data-delay="100" data-duration="500">
-                                <div class="tag"><span>... variable personalizada ...</span></div>
-                                <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png" alt="" /></div>
-                                <div class="edad">
-                                    <div class="row">
-                                        <div class="col-9">... variable personalizada ...</div>
-                                        <div class="col-3">
-                                            <div class="icon"><i class="fa-solid fa-brain"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <h3>... titulo...</h3>
-                                    <p>... variable personalizada</p>
-
-                                    <a class="btn-1" href="##">Book now <i class="fa-solid fa-circle-arrow-right"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 
 
