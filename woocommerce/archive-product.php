@@ -178,7 +178,7 @@ include get_template_directory() . '/template-parts/header-default.php';
         </div>
         <div class="row">
             <div class="col-12">
-                <section class="slider responsive3_old">
+                <section class="slider responsive3">
                     <div class="item">
                         <div class="c-block fade-in-top" data-delay="100" data-duration="500">
                             <div class="tag"><span>Knowledge is Powerspan</span></div>
