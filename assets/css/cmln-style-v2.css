@@ -184,7 +184,7 @@
   margin-top: 20px;
 }
 
-.checkout .wp-block-woocommerce-checkout {
+.checkout .wp-block-woocommerce-checkout iframe {
   min-height: inherit;
 }
 
