@@ -179,92 +179,94 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-12">
                 <section class="slider responsive3_shop">
-                    <div class="item col-md-3">
-                        <div class="c-block fade-in-top" data-delay="100" data-duration="500">
-                            <div class="tag"><span>Knowledge is Powerspan</span></div>
-                            <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png" alt="" /></div>
-                            <div class="edad">
-                                <div class="row">
-                                    <div class="col-9">Ages 8 to 18 | 4th grade - 12th grade.</div>
-                                    <div class="col-3">
-                                        <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="row">
+                        <div class="item col-md-3">
+                            <div class="c-block fade-in-top" data-delay="100" data-duration="500">
+                                <div class="tag"><span>Knowledge is Powerspan</span></div>
+                                <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png" alt="" /></div>
+                                <div class="edad">
+                                    <div class="row">
+                                        <div class="col-9">Ages 8 to 18 | 4th grade - 12th grade.</div>
+                                        <div class="col-3">
+                                            <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="body">
-                                <h3>Diagnostic Class</h3>
-                                <p>Discover strengths and areas to improve with a personalized assessment.</p>
+                                <div class="body">
+                                    <h3>Diagnostic Class</h3>
+                                    <p>Discover strengths and areas to improve with a personalized assessment.</p>
 
-                                <a class="btn-1" href="https://www.mathpal.us/diagnostic-class/">Book now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                    <a class="btn-1" href="https://www.mathpal.us/diagnostic-class/">Book now <i class="fa-solid fa-circle-arrow-right"></i></a>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item col-md-3">
-                        <div class="c-block fade-in-top" data-delay="300" data-duration="500">
-                            <div class="tag">
+                        <div class="item col-md-3">
+                            <div class="c-block fade-in-top" data-delay="300" data-duration="500">
+                                <div class="tag">
 
-                                <span>Your Plan, Your Pace</span>
+                                    <span>Your Plan, Your Pace</span>
 
-                            </div>
-                            <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass_2.png" alt="" /></div>
-                            <div class="edad">
-                                <div class="row">
-                                    <div class="col-9">Ages 8 to 18 | 3th grade - 12th grade.</div>
-                                    <div class="col-3">
-                                        <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+                                </div>
+                                <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass_2.png" alt="" /></div>
+                                <div class="edad">
+                                    <div class="row">
+                                        <div class="col-9">Ages 8 to 18 | 3th grade - 12th grade.</div>
+                                        <div class="col-3">
+                                            <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <img class="img-fluid" style="background: #8b00ff;padding: 0 40px;" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back_to_scholl.png" alt="" />
-                            <div class="body">
-                                <h3>Monthly Subscriptions (2, 4, 6, 8 hrs/month)</h3>
-                                <p>Flexible tutoring hours that adapt to your schedule and goals.</p>
+                                <img class="img-fluid" style="background: #8b00ff;padding: 0 40px;" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back_to_scholl.png" alt="" />
+                                <div class="body">
+                                    <h3>Monthly Subscriptions (2, 4, 6, 8 hrs/month)</h3>
+                                    <p>Flexible tutoring hours that adapt to your schedule and goals.</p>
 
-                                <a class="btn-1" href="https://www.mathpal.us/subscriptions/">See plans <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                    <a class="btn-1" href="https://www.mathpal.us/subscriptions/">See plans <i class="fa-solid fa-circle-arrow-right"></i></a>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item col-md-3">
-                        <div class="c-block fade-in-top" data-delay="500" data-duration="500">
-                            <div class="tag"><span>Own the SAT</span></div>
-                            <div class="img img--has-badge">
-                                <span class="c-block__badge-new" aria-hidden="true">NEW</span>
-                                <img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_SAT-PREP.png" alt="SAT Prep for high school students" />
-                            </div>
-                            <div class="edad">
-                                <div class="row">
-                                    <div class="col-9">Ages 15 to 18 | 10th–12th grade</div>
-                                    <div class="col-3">
-                                        <div class="icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <div class="item col-md-3">
+                            <div class="c-block fade-in-top" data-delay="500" data-duration="500">
+                                <div class="tag"><span>Own the SAT</span></div>
+                                <div class="img img--has-badge">
+                                    <span class="c-block__badge-new" aria-hidden="true">NEW</span>
+                                    <img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_SAT-PREP.png" alt="SAT Prep for high school students" />
+                                </div>
+                                <div class="edad">
+                                    <div class="row">
+                                        <div class="col-9">Ages 15 to 18 | 10th–12th grade</div>
+                                        <div class="col-3">
+                                            <div class="icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="body">
-                                <h3>SAT PREP</h3>
-                                <p class="c-block__subtitle">Math + Reading &amp; Writing</p>
-                                <p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher.</p>
-                                <a class="btn-1" href="https://www.mathpal.us/sat-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                <div class="body">
+                                    <h3>SAT PREP</h3>
+                                    <p class="c-block__subtitle">Math + Reading &amp; Writing</p>
+                                    <p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher.</p>
+                                    <a class="btn-1" href="https://www.mathpal.us/sat-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item col-md-3">
-                        <div class="c-block fade-in-top" data-delay="600" data-duration="500">
-                            <div class="tag"><span>Train &amp; Lead</span></div>
-                            <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img-SAT-GIRL-11.png" alt="ACT Prep for high school students" /></div>
-                            <div class="edad">
-                                <div class="row">
-                                    <div class="col-9">Ages 15 to 18 | 10th–12th grade</div>
-                                    <div class="col-3">
-                                        <div class="icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <div class="item col-md-3">
+                            <div class="c-block fade-in-top" data-delay="600" data-duration="500">
+                                <div class="tag"><span>Train &amp; Lead</span></div>
+                                <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img-SAT-GIRL-11.png" alt="ACT Prep for high school students" /></div>
+                                <div class="edad">
+                                    <div class="row">
+                                        <div class="col-9">Ages 15 to 18 | 10th–12th grade</div>
+                                        <div class="col-3">
+                                            <div class="icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="body">
-                                <h3>ACT PREP</h3>
-                                <p>Personalized strategies to hit your target score and stand out in college admissions.</p>
-                                <a class="btn-1" href="https://www.mathpal.us/act-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                <div class="body">
+                                    <h3>ACT PREP</h3>
+                                    <p>Personalized strategies to hit your target score and stand out in college admissions.</p>
+                                    <a class="btn-1" href="https://www.mathpal.us/act-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
