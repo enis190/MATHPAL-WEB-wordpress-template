@@ -9,7 +9,7 @@ if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
 
 
 $tag_categoria = wc_get_product_category_list($product->get_id(), ', '); // o cualquier taxonomía tuya
-//$edad = get_post_meta($product->get_id(), 'edad', true); // campo personalizado (ACF o meta simple)
+$edad = get_post_meta($product->get_id(), 'woo_edad', true); // campo personalizado (ACF o meta simple)
 $titulo = $product->get_name();
 $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
@@ -26,8 +26,7 @@ $link = get_permalink($product->get_id());
 		</div>
 		<div class="edad">
 			<div class="row">
-				<div class="col-9"><?php //echo esc_html($edad); 
-									?></div>
+				<div class="col-9"><?php echo $edad; ?></div>
 				<div class="col-3">
 					<div class="icon"><i class="fa-solid fa-brain"></i></div>
 				</div>
@@ -35,7 +34,9 @@ $link = get_permalink($product->get_id());
 		</div>
 		<div class="body">
 			<h3><?php echo esc_html($titulo); ?></h3>
-			<?php echo wp_kses_post($descripcion); ?>
+			<div class="woo-description">
+				<?php echo wp_kses_post($descripcion); ?>
+			</div>
 
 			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
                 Book now <i class="fa-solid fa-circle-arrow-right"></i>
