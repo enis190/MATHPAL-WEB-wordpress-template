@@ -97,6 +97,68 @@ include get_template_directory() . '/template-parts/header-default.php';
     </div>
 </div>
 
+
+
+<div class="container-fluid header-title">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="container-fluid banner-precio banner-precio2">
+                <div class="container">
+                    <div class="row">
+
+                    </div>
+                    <div class="row mt-4 fade-in">
+                        <div class="col-md-6 img">
+                            <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/group-1039.png" alt="" class="img-fluid">
+                            <p>Pinpoint your child's math strengths and gaps with a personalized diagnostic session.</p>
+
+                        </div>
+                        <div class="col-md-5 txt">
+                            <div class="c-block">
+
+
+                                <div class="new-badge">NEW!</div>
+
+                                <h3>
+                                    <span>Diagnostic test</span>
+                                    <span class="small"></span>
+                                </h3>
+
+
+                                <div class="precio1">
+                                    <div class="row justify-content-center">
+
+                                    </div>
+                                    <div class="col-12 text-center px-0">
+                                        <div class="price-stack text-center">
+                                            <h4 class="precio" style="color:black">15 <span>/class</span> </h4>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="fa-ul mb-4">
+                                        <li><span class="fa-li"><i class="fa-solid fa-clock color-verde"></i></span>45 minutes of 1-on-1 Expert Math Tutoring </li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-chart-line color-verde"></i></span>Diagnostic Assessment Efficiently Assessing Math Knowledge</li>
+                                        <li><span class="fa-li"><i class="fa-regular fa-chalkboard-user color-verde"></i></span>Get Paired with an Expert Tutor Personally Chosen for you!</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-calendar color-verde"></i></span>Valid for 1 month </li>
+                                    </ul>
+
+
+
+                                    <a href="<?php echo get_permalink(69) ?>" class="btn-1 bg-verde color-negro c-hover-2">
+                                        Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <?php
 include get_template_directory() . '/template-parts/footer-default.php';
 get_footer();
