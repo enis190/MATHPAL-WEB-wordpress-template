@@ -47,6 +47,10 @@
         display: none;
     }
 
+    .woocommerce-ordering, .woocommerce-result-count{
+        text-align: center;
+    }
+
     ul {
       &.products {
         .product {

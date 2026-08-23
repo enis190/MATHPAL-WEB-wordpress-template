@@ -117,6 +117,9 @@
 .c-woocommerce.c-archive-product .woocommerce-products-header {
   display: none;
 }
+.c-woocommerce.c-archive-product .woocommerce-ordering, .c-woocommerce.c-archive-product .woocommerce-result-count {
+  text-align: center;
+}
 .c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link {
   text-decoration: none;
 }
