@@ -179,7 +179,7 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-12">
                 <section class="slider responsive3_shop">
-                    <div class="item">
+                    <div class="item col-md-3">
                         <div class="c-block fade-in-top" data-delay="100" data-duration="500">
                             <div class="tag"><span>Knowledge is Powerspan</span></div>
                             <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png" alt="" /></div>
@@ -200,7 +200,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-3">
                         <div class="c-block fade-in-top" data-delay="300" data-duration="500">
                             <div class="tag">
 
@@ -226,7 +226,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-3">
                         <div class="c-block fade-in-top" data-delay="500" data-duration="500">
                             <div class="tag"><span>Own the SAT</span></div>
                             <div class="img img--has-badge">
@@ -249,7 +249,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-3">
                         <div class="c-block fade-in-top" data-delay="600" data-duration="500">
                             <div class="tag"><span>Train &amp; Lead</span></div>
                             <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img-SAT-GIRL-11.png" alt="ACT Prep for high school students" /></div>
@@ -268,7 +268,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md-3">
                         <div class="c-block fade-in-top" data-delay="700" data-duration="500">
                             <div class="tag"><span>Reach your full potential</span></div>
                             <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass_4.png" alt="" /></div>
