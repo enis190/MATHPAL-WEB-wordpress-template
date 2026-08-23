@@ -1,10 +1,9 @@
-
 <?php
 
 global $product;
 
 // Check if the product is a valid WooCommerce product and ensure its visibility before proceeding.
-if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
+if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
 	return;
 }
 
@@ -19,26 +18,34 @@ $link = get_permalink($product->get_id());
 ?>
 
 <div <?php wc_product_class('item col-md-12', $product); ?>>
-    <div class="c-block fade-in-top" data-delay="100" data-duration="500">
-        <div class="tag"><span><?php //echo esc_html($tag_categoria); ?></span></div>
-        <div class="img">
-            <img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
-        </div>
-        <div class="edad">
-            <div class="row">
-                <div class="col-9"><?php //echo esc_html($edad); ?></div>
-                <div class="col-3">
-                    <div class="icon"><i class="fa-solid fa-brain"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="body">
-            <h3><?php echo esc_html($titulo); ?></h3>
-            <p><?php echo esc_html($descripcion); ?></p>
+	<div class="c-block fade-in-top" data-delay="100" data-duration="500">
+		<div class="tag"><span><?php //echo esc_html($tag_categoria); 
+								?></span></div>
+		<div class="img">
+			<img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
+		</div>
+		<div class="edad">
+			<div class="row">
+				<div class="col-9"><?php //echo esc_html($edad); 
+									?></div>
+				<div class="col-3">
+					<div class="icon"><i class="fa-solid fa-brain"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<h3><?php echo esc_html($titulo); ?></h3>
+			<p><?php echo esc_html($descripcion); ?></p>
 
-            <a class="btn-1" href="<?php echo esc_url($link); ?>">
+			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
                 Book now <i class="fa-solid fa-circle-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+            </a> -->
+
+			<?php
+			woocommerce_template_loop_add_to_cart(array(
+				'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
+			));
+			?>
+		</div>
+	</div>
 </div>
