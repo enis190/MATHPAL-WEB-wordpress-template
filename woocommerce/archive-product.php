@@ -169,7 +169,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid home-ruta">
+<div class="container home-ruta">
     <div class="">
         <div class="row">
             <div class="col-12 text-center">
@@ -250,6 +250,8 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="item col-md-3">
                             <div class="c-block fade-in-top" data-delay="600" data-duration="500">
                                 <div class="tag"><span>Train &amp; Lead</span></div>
@@ -269,28 +271,29 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item col-md-3">
-                        <div class="c-block fade-in-top" data-delay="700" data-duration="500">
-                            <div class="tag"><span>Reach your full potential</span></div>
-                            <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass_4.png" alt="" /></div>
-                            <div class="edad">
-                                <div class="row">
-                                    <div class="col-9">Ages 8 to 18 | 4th grade - 12th grade.</div>
-                                    <div class="col-3">
-                                        <div class="icon"><i class="fa-solid fa-file"></i></div>
+                        <div class="item col-md-3">
+                            <div class="c-block fade-in-top" data-delay="700" data-duration="500">
+                                <div class="tag"><span>Reach your full potential</span></div>
+                                <div class="img"><img class="img-fluid" src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass_4.png" alt="" /></div>
+                                <div class="edad">
+                                    <div class="row">
+                                        <div class="col-9">Ages 8 to 18 | 4th grade - 12th grade.</div>
+                                        <div class="col-3">
+                                            <div class="icon"><i class="fa-solid fa-file"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="body">
-                                <h3>State Exam Prep</h3>
-                                <p>Train your skills, organize your studies, and gain the confidence to excel.</p>
+                                <div class="body">
+                                    <h3>State Exam Prep</h3>
+                                    <p>Train your skills, organize your studies, and gain the confidence to excel.</p>
 
-                                <a class="btn-1" href="https://www.mathpal.us/state-exam-prep/">Go for it! <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                    <a class="btn-1" href="https://www.mathpal.us/state-exam-prep/">Go for it! <i class="fa-solid fa-circle-arrow-right"></i></a>
 
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
             </div>
         </div>
