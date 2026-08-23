@@ -20,7 +20,7 @@ $link = get_permalink($product->get_id());
 
 <div <?php wc_product_class('item col-md-4', $product); ?>>
     <div class="c-block fade-in-top" data-delay="100" data-duration="500">
-        <div class="tag"><span><?php echo esc_html($tag_categoria); ?></span></div>
+        <div class="tag"><span><?php //echo esc_html($tag_categoria); ?></span></div>
         <div class="img">
             <img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
         </div>
