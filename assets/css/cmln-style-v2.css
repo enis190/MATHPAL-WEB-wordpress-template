@@ -112,7 +112,7 @@
 }
 
 .c-woocommerce.c-archive-product {
-  padding-top: 180px;
+  padding-top: 50px;
 }
 .c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link {
   text-decoration: none;
@@ -148,7 +148,7 @@
   margin-right: 7px;
 }
 .c-woocommerce.c-single-product {
-  padding-top: 50px;
+  padding-top: 180px;
   padding-bottom: 70px;
 }
 .c-woocommerce.c-single-product .woocommerce-Reviews,
