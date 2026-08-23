@@ -9,7 +9,8 @@ if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
 
 
 $tag_categoria = wc_get_product_category_list($product->get_id(), ', '); // o cualquier taxonomía tuya
-$edad = get_post_meta($product->get_id(), 'woo_edad', true); // campo personalizado (ACF o meta simple)
+$edad = get_post_meta($product->get_id(), 'woo_edad', true);
+$etiqueta = get_post_meta($product->get_id(), 'woo_etiqueta', true);
 $titulo = $product->get_name();
 $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
@@ -19,8 +20,7 @@ $link = get_permalink($product->get_id());
 
 <div <?php wc_product_class('item col-md-12', $product); ?>>
 	<div class="c-block fade-in-top" data-delay="100" data-duration="500">
-		<div class="tag"><span><?php //echo esc_html($tag_categoria); 
-								?></span></div>
+		<div class="tag"><span><?php echo $etiqueta;?></span></div>
 		<div class="img">
 			<img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
 		</div>
