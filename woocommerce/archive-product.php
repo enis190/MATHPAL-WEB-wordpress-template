@@ -162,6 +162,219 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
+<style>
+
+  /* NEW badge arriba */
+.new-badge{
+	position: absolute;
+	top: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #a4ff48;
+	color: #000;
+	font-weight: 900;
+	font-size: 12px;
+	letter-spacing: .6px;
+	padding: 6px 14px;
+	border-radius: 12px;
+	text-transform: uppercase;
+	z-index: 30;
+}
+ .new-badge{
+    border-radius: 7px;
+    min-width: 150px;
+   }
+   .pr
+
+/* Contenedor del precio + launch special */
+.precio1{
+	display: flex;
+	align-items: center;     /* centra Launch Special con el bloque del precio */
+	justify-content: center; /* centra todo el conjunto */
+	gap: 14px;               /* separación entre Launch Special y el precio */
+}
+
+/* Tu CSS (igual) */
+.launch-special{
+	color: #777a72;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.05;
+	text-align: left;
+	opacity: .95;
+	flex: 0 0 auto;          /* evita que se estire */
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* Contenedor del $536 + $670 */
+.price-stack{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1;
+	gap: 10px;
+	flex: 0 0 auto;
+}
+
+
+.precio-anterior{
+	position: relative;
+	color: #000;
+	font-size: 26px;
+	font-weight: 800;
+	text-decoration: none; /* usamos línea custom */
+}
+
+/* línea morada inclinada sobre el 670 */
+.precio-anterior::after{
+	content: "";
+	position: absolute;
+	left: -10px;
+	right: -10px;
+	top: 55%;
+	height: 3px;
+	background: #7a2cff;
+	transform: rotate(-8deg);
+}
+
+.video2.ventajas{
+
+/* background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/01-2.png'); */
+min-height: 450px;
+width:320px;
+margin-left: 100px;
+
+}
+.ventajas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+ /*  background-color: #ffffff; */
+  /* background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/img_MYBERLITZ_TUTOR.png'); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.ventajas .c-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.precio span {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left:-30px;
+}
+
+
+.ventajas .c-pulse-1,
+.ventajas .c-pulse-2,
+.ventajas .c-pulse-3 {
+  background-color: #FFF;
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  -webkit-animation: ripple 3s infinite;
+  -moz-animation: ripple 3s infinite;
+  -ms-animation: ripple 3s infinite;
+  -o-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ventajas .c-pulse-1 .c-fa,
+.ventajas .c-pulse-2 .c-fa,
+.ventajas .c-pulse-3 .c-fa {
+  font-size: 1.3rem;
+}
+
+.ventajas .c-pulse-2 {
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  -ms-animation-delay: .9s;
+  -o-animation-delay: .9s;
+  animation-delay: .9s;
+}
+
+.ventajas .c-pulse-3 {
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -ms-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px rgba(253, 167, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px rgba(253, 167, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.video2.ventajas {
+     margin-left: 0 !important; 
+     margin-right: 0 !important; 
+     width: 100% !important; }
+}
+
+.header-title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+.tag-1 {
+		font-size: 11px;
+	}
+
+</style>
+
+
+
 
 <?php
 include get_template_directory() . '/template-parts/footer-default.php';
