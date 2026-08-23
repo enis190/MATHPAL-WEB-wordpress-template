@@ -114,6 +114,9 @@
 .c-woocommerce.c-archive-product {
   padding-top: 50px;
 }
+.c-woocommerce.c-archive-product .woocommerce-products-header {
+  display: none;
+}
 .c-woocommerce.c-archive-product ul.products .product .woocommerce-loop-product__link {
   text-decoration: none;
 }
