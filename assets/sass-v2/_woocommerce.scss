@@ -43,11 +43,18 @@
   &.c-archive-product {
     padding-top: 50px;
 
-    .woocommerce-products-header{
-        display: none;
+    .woocommerce-products-header {
+      display: none;
     }
 
-    .woocommerce-ordering, .woocommerce-result-count{
+    .woocommerce-ordering {
+      text-align: center;
+      select {
+        padding: 5px 15px;
+        border-radius: 10px;
+      }
+    }
+    .woocommerce-result-count{
         text-align: center;
     }
 
@@ -113,7 +120,6 @@
             line-height: 1;
             transition: 0.3s;
             margin-top: 5px;
-
           }
         }
       }
