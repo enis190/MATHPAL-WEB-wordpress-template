@@ -37,7 +37,7 @@ $link = get_permalink($product->get_id());
 			<div class="woo-description">
 				<?php echo wp_kses_post($descripcion); ?>
 			</div>
-			<h4 class="precio"><?php echo $product->get_price_html();?></h4>
+			<h4 class="w-precio"><?php echo $product->get_price_html();?></h4>
 
 			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
                 Book now <i class="fa-solid fa-circle-arrow-right"></i>
