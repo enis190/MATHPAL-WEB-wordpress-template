@@ -209,7 +209,7 @@
 }
 
 .checkout {
-  .wp-block-woocommerce-checkout {
+  .wp-block-woocommerce-checkout, wc-block-components-express-payment__content {
     iframe {
       min-height: inherit;
     }
