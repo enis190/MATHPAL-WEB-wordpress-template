@@ -220,7 +220,7 @@
   margin-top: 20px;
 }
 
-.checkout .wp-block-woocommerce-checkout iframe, .checkout wc-block-components-express-payment__content iframe {
+.checkout .wp-block-woocommerce-checkout iframe, .checkout .wc-block-components-express-payment__event-buttons iframe {
   min-height: inherit;
 }
 
