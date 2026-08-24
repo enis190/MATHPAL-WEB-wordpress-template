@@ -114,6 +114,11 @@
 .c-woocommerce.c-archive-product {
   padding-top: 50px;
 }
+.c-woocommerce.c-archive-product .precio {
+  font-family: "Poppins-SemiBold";
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
 .c-woocommerce.c-archive-product .woocommerce-products-header {
   display: none;
 }
