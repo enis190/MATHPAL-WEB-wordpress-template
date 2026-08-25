@@ -16,7 +16,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
             </div>
             <div class="col-md-6 offset-md-1 txt pt-4 fade-in-right">
                 
-                <h1 class="titulo-h2 h1about mt-4" style="color:#9300ff">Bilingual Math Tutoring Experts</h1>
+                <h1 class="titulo-h2 h1about mt-4" style="color:#9300ff;margin-bottom: 30px;">Bilingual Math Tutoring Experts</h1>
                 <span class="tag-1-lg mb-4">Meet Our Bilingual Math Tutor Team</span> 
                 <p style="margin-top:10px">Personalized online tutoring designed to strengthen core skills, build confidence, and help every student succeed.</p>
                 <!-- <a href="#block_precios" class="btn-1 c-hover-2">Start training &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a> -->
