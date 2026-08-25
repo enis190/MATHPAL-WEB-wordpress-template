@@ -175,9 +175,9 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/TOMAS.png" alt="" class="img-fluid">
             </div>
 
-        <div class="col-md-5 img fade-in">
+        <!-- <div class="col-md-5 img fade-in">
                 <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/ALDANA.png" alt="" class="img-fluid">
-            </div>
+            </div> -->
 
     </div>
     </div>
