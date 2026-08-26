@@ -15,12 +15,13 @@ $titulo = $product->get_name();
 $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
 $link = get_permalink($product->get_id());
+$sku = $product->get_sku();
 
 ?>
 
 <div <?php wc_product_class('item col-md-12', $product); ?>>
 	<div class="c-block fade-in-top" data-delay="100" data-duration="500">
-		<div class="tag"><span><?php echo $etiqueta;?></span></div>
+		<div class="tag"><span><?php echo $etiqueta; ?></span></div>
 		<div class="img">
 			<img class="img-fluid" src="<?php echo esc_url($imagen); ?>" alt="<?php echo esc_attr($titulo); ?>" />
 		</div>
@@ -33,12 +34,15 @@ $link = get_permalink($product->get_id());
 			</div>
 		</div>
 		<div class="body">
-			<h4 class="w-precio"><?php echo $product->get_price_html();?></h4>
+			<h4 class="w-precio"><?php echo $product->get_price_html(); ?></h4>
 			<h3><?php echo esc_html($titulo); ?></h3>
+			<?php if ($sku) : ?>
+				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
+			<?php endif; ?>
 			<div class="woo-description">
 				<?php echo wp_kses_post($descripcion); ?>
 			</div>
-			
+
 
 			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
                 Book now <i class="fa-solid fa-circle-arrow-right"></i>
