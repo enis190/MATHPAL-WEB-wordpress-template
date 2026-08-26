@@ -228,6 +228,17 @@
 .checkout .wc-block-components-express-payment__event-buttons iframe {
   min-height: inherit;
 }
+.checkout .woocommerce-order {
+  margin-top: 70px;
+}
+.checkout .woocommerce-order p.woocommerce-notice {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.7rem;
+}
+.checkout .woocommerce-order p.woocommerce-notice.woocommerce-thankyou-order-received {
+  color: #9200ff;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

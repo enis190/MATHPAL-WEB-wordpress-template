@@ -220,6 +220,19 @@
       min-height: inherit;
     }
   }
+  .woocommerce-order {
+    margin-top: 70px;
+    p {
+      &.woocommerce-notice {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 1.7rem;
+        &.woocommerce-thankyou-order-received{
+          color: #9200ff;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
