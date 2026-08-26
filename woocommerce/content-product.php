@@ -11,6 +11,7 @@ if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
 $tag_categoria = wc_get_product_category_list($product->get_id(), ', '); // o cualquier taxonomía tuya
 $edad = get_post_meta($product->get_id(), 'woo_edad', true);
 $etiqueta = get_post_meta($product->get_id(), 'woo_etiqueta', true);
+$resumen = get_post_meta($product->get_id(), 'woo_resumen', true);
 $titulo = $product->get_name();
 $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
@@ -39,10 +40,13 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 			<?php if ($sku) : ?>
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
-			<h3><?php echo esc_html($titulo); ?></h3>
+			<a href="<?php echo $link; ?>" class="titulo_url">
+				<h3><?php echo esc_html($titulo); ?></h3>
+			</a>
+
 
 			<div class="woo-description">
-				<?php echo wp_kses_post($descripcion); ?>
+				<?php echo wp_kses_post($resumen); ?>
 			</div>
 
 			<?php
@@ -51,7 +55,7 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 			// 	'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
 			// ));
 			?>
-			
+
 			<!-- btn directo agregar y ver carrito -->
 			<a href="<?php echo $buy_now_url; ?>" class="btn-1">
 				Buy now <i class="fa-solid fa-circle-arrow-right"></i>
