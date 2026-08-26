@@ -43,12 +43,17 @@
   &.c-archive-product {
     padding-top: 50px;
 
+    .sku {
+      flex: none;
+      font-size: 0.8rem;
+    }
+
     .w-precio {
       font-family: "Poppins-SemiBold";
       //margin-top: 15px;
       font-size: 1.2rem;
     }
-    .woo-description{
+    .woo-description {
       margin-bottom: 20px;
     }
 
@@ -209,7 +214,8 @@
 }
 
 .checkout {
-  .wp-block-woocommerce-checkout, .wc-block-components-express-payment__event-buttons {
+  .wp-block-woocommerce-checkout,
+  .wc-block-components-express-payment__event-buttons {
     iframe {
       min-height: inherit;
     }
