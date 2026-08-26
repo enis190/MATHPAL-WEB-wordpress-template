@@ -239,6 +239,12 @@
 .checkout .woocommerce-order p.woocommerce-notice.woocommerce-thankyou-order-received {
   color: #9200ff;
 }
+.checkout .woo-alert-1 {
+  padding: 20px;
+  border: 1px solid #bcbec2;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

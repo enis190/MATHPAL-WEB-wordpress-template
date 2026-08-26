@@ -227,11 +227,17 @@
         text-align: center;
         margin-bottom: 50px;
         font-size: 1.7rem;
-        &.woocommerce-thankyou-order-received{
+        &.woocommerce-thankyou-order-received {
           color: #9200ff;
         }
       }
     }
+  }
+  .woo-alert-1 {
+    padding: 20px;
+    border: 1px solid #bcbec2;
+    margin-bottom: 30px;
+    font-size: .9rem;
   }
 }
 
