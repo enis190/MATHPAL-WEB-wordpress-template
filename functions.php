@@ -143,8 +143,8 @@ function mathpal_remove_product_reviews() {
 
 
 /**
- * SHOP: mostrar solo 3 productos por página (con paginación automática)
+ * SHOP: mostrar solo 6 productos por página (con paginación automática)
  */
 add_filter('loop_shop_per_page', function ($per_page) {
-    return 3;
+    return 6;
 }, 20);
