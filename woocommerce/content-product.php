@@ -35,10 +35,11 @@ $sku = $product->get_sku();
 		</div>
 		<div class="body">
 			<h4 class="w-precio"><?php echo $product->get_price_html(); ?></h4>
-			<h3><?php echo esc_html($titulo); ?></h3>
 			<?php if ($sku) : ?>
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
+			<h3><?php echo esc_html($titulo); ?></h3>
+			
 			<div class="woo-description">
 				<?php echo wp_kses_post($descripcion); ?>
 			</div>
