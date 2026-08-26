@@ -40,9 +40,7 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 			<?php if ($sku) : ?>
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
-			<a href="<?php echo $link; ?>" class="titulo_url">
-				<h3><?php echo esc_html($titulo); ?></h3>
-			</a>
+			<h3><?php echo esc_html($titulo); ?></h3>
 
 
 			<div class="woo-description">
