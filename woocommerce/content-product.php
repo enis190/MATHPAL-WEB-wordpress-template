@@ -16,6 +16,7 @@ $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
 $link = get_permalink($product->get_id());
 $sku = $product->get_sku();
+$buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id());
 
 ?>
 
@@ -39,21 +40,22 @@ $sku = $product->get_sku();
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
 			<h3><?php echo esc_html($titulo); ?></h3>
-			
+
 			<div class="woo-description">
 				<?php echo wp_kses_post($descripcion); ?>
 			</div>
 
-
-			<!-- <a class="btn-1" href="<?php echo esc_url($link); ?>">
-                Book now <i class="fa-solid fa-circle-arrow-right"></i>
-            </a> -->
-
 			<?php
-			woocommerce_template_loop_add_to_cart(array(
-				'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
-			));
+			// ** btn agregar a carrito + ajax ver carrito **
+			// woocommerce_template_loop_add_to_cart(array(
+			// 	'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
+			// ));
 			?>
+			
+			<!-- btn directo agregar y ver carrito -->
+			<a href="<?php echo $buy_now_url; ?>" class="btn-1">
+				Buy now <i class="fa-solid fa-circle-arrow-right"></i>
+			</a>
 		</div>
 	</div>
 </div>
