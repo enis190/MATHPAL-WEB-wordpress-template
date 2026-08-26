@@ -140,3 +140,11 @@ function mathpal_remove_product_reviews() {
     remove_action( 'woocommerce_after_single_product_summary', 'comments_template', 10 );
     remove_action( 'woocommerce_output_related_products', 'woocommerce_output_related_products', 20 ); // esto quita related products también, si quieres
 }
+
+
+/**
+ * SHOP: mostrar solo 3 productos por página (con paginación automática)
+ */
+add_filter('loop_shop_per_page', function ($per_page) {
+    return 3;
+}, 20);
