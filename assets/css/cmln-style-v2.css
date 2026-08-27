@@ -118,6 +118,11 @@
   flex: none !important;
   font-size: 0.8rem;
 }
+.c-woocommerce.c-archive-product .duracion span {
+  background: #f1e9f6;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+}
 .c-woocommerce.c-archive-product .w-precio {
   font-family: "Poppins-SemiBold";
   font-size: 1.2rem;

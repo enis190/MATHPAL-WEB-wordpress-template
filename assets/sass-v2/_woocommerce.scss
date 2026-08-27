@@ -47,8 +47,12 @@
       flex: none !important;
       font-size: 0.8rem;
     }
-    .duracion{
-      
+    .duracion {
+      span {
+        background: #f1e9f6;
+        font-size: 0.8rem;
+        padding: 2px 5px;
+      }
     }
 
     .w-precio {
@@ -240,7 +244,7 @@
     padding: 20px;
     border: 1px solid #bcbec2;
     margin-bottom: 30px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
