@@ -42,9 +42,7 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
 			<h3><?php echo esc_html($titulo); ?></h3>
-			<?php if ($duracion) : ?>
-				<p class="duracion"><?php echo esc_html($duracion); ?></p>
-			<?php endif; ?>
+			<p class="duracion"><?php echo esc_html($duracion); ?></p>
 
 
 			<div class="woo-description">
