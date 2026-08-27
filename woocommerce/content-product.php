@@ -12,6 +12,7 @@ $tag_categoria = wc_get_product_category_list($product->get_id(), ', '); // o cu
 $edad = get_post_meta($product->get_id(), 'woo_edad', true);
 $etiqueta = get_post_meta($product->get_id(), 'woo_etiqueta', true);
 $resumen = get_post_meta($product->get_id(), 'woo_resumen', true);
+$duracion = get_post_meta($product->get_id(), 'woo_duracion', true);
 $titulo = $product->get_name();
 $descripcion = $product->get_description();
 $imagen = get_the_post_thumbnail_url($product->get_id(), 'medium') ?: 'https://www.mathpal.us/wp-content/themes/mathpal/assets/img/img_DiagnosticClass.png';
@@ -41,6 +42,9 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 				<p class="sku">SKU: <?php echo esc_html($sku); ?></p>
 			<?php endif; ?>
 			<h3><?php echo esc_html($titulo); ?></h3>
+			<?php if ($duracion) : ?>
+				<p class="duracion"><?php echo esc_html($duracion); ?></p>
+			<?php endif; ?>
 
 
 			<div class="woo-description">
