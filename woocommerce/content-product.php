@@ -43,7 +43,7 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 			<?php endif; ?>
 			<h3><?php echo esc_html($titulo); ?></h3>
 			<?php if ($duracion) : ?>
-				<p class="duracion"><?php echo esc_html($duracion); ?></p>
+				<p class="duracion"><span><?php echo esc_html($duracion); ?></span></p>
 			<?php endif; ?>
 
 
