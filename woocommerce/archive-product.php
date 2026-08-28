@@ -177,7 +177,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 array(
                                     'taxonomy' => 'product_cat',
                                     'field'    => 'slug',
-                                    'terms'    => array('diagnostic-class'),
+                                    'terms'    => array('act-sat-prep'),
                                 ),
                             ),
                         ));
