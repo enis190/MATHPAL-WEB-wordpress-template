@@ -206,7 +206,52 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="titulo-h2 fade-in">Monthly Subscriptions:</h2>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-12">
+                <section class="slider responsive3_shop responsive7">
+                    
+
+                        <?php
+                        $bloque1 = new WP_Query(array(
+                            'post_type'      => 'product',
+                            'post_status'    => 'publish',
+                            'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                            'tax_query'      => array(
+                                array(
+                                    'taxonomy' => 'product_cat',
+                                    'field'    => 'slug',
+                                    'terms'    => array('monthly-subscriptions'),
+                                ),
+                            ),
+                        ));
+
+                        if ($bloque1->have_posts()) :
+                        ?>
+
+                            <?php
+                            while ($bloque1->have_posts()) :
+                                $bloque1->the_post();
+                                global $product;
+                                wc_get_template_part('content', 'product');
+                            endwhile;
+                            wp_reset_postdata();
+                            ?>
+                        <?php endif; ?>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 
 
