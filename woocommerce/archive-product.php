@@ -207,7 +207,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 <div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta">
-    <div class="container">
+    <div class="">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="titulo-h2 fade-in">Monthly Subscriptions:</h2>
