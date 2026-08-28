@@ -126,7 +126,7 @@ include get_template_directory() . '/template-parts/header-default.php';
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="titulo-h2 fade-in">Choose your learning path:</h2>
+                <h2 class="titulo-h2 fade-in">ACT/SAT Prep:</h2>
             </div>
         </div>
 
@@ -185,18 +185,18 @@ include get_template_directory() . '/template-parts/header-default.php';
                         if ($bloque1->have_posts()) :
                         ?>
 
-                                <?php
-                                woocommerce_product_loop_start();
+                            <?php
+                            woocommerce_product_loop_start();
 
-                                while ($bloque1->have_posts()) :
-                                    $bloque1->the_post();
-                                    global $product;
-                                    wc_get_template_part('content', 'product');
-                                endwhile;
+                            while ($bloque1->have_posts()) :
+                                $bloque1->the_post();
+                                global $product;
+                                wc_get_template_part('content', 'product');
+                            endwhile;
 
-                                woocommerce_product_loop_end();
-                                wp_reset_postdata();
-                                ?>
+                            woocommerce_product_loop_end();
+                            wp_reset_postdata();
+                            ?>
                         <?php endif; ?>
                     </div>
                 </section>
