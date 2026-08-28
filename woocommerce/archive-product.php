@@ -186,15 +186,11 @@ include get_template_directory() . '/template-parts/header-default.php';
                         ?>
 
                             <?php
-                            woocommerce_product_loop_start();
-
                             while ($bloque1->have_posts()) :
                                 $bloque1->the_post();
                                 global $product;
                                 wc_get_template_part('content', 'product');
                             endwhile;
-
-                            woocommerce_product_loop_end();
                             wp_reset_postdata();
                             ?>
                         <?php endif; ?>
