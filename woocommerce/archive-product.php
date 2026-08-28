@@ -268,7 +268,7 @@ include get_template_directory() . '/template-parts/header-default.php';
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-10 offset-md-1">
                 <section class="slider responsive3_shop responsive8">
                     
 
