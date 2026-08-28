@@ -122,7 +122,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-3">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
