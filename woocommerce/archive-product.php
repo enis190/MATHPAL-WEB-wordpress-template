@@ -132,8 +132,8 @@ include get_template_directory() . '/template-parts/header-default.php';
 
         <div class="row">
             <div class="col-12">
-                <section class="slider responsive3_shop">
-                    <div class="row">
+                <section class="slider responsive3_shop responsive9">
+                    
 
 
                         <?php
@@ -194,7 +194,6 @@ include get_template_directory() . '/template-parts/header-default.php';
                             wp_reset_postdata();
                             ?>
                         <?php endif; ?>
-                    </div>
                 </section>
             </div>
         </div>
