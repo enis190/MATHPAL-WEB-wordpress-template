@@ -22,7 +22,7 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 
 ?>
 
-<div <?php wc_product_class('item col-md-12', $product); ?>>
+<div <?php wc_product_class('item col-md-4', $product); ?>>
 	<div class="c-block fade-in-top" data-delay="100" data-duration="500">
 		<div class="tag"><span><?php echo $etiqueta; ?></span></div>
 		<div class="img">
