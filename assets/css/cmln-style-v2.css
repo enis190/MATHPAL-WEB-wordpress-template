@@ -254,6 +254,8 @@
 .cart-icon-wrapper {
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  color: #000;
 }
 .cart-icon-wrapper .cart-count {
   position: absolute;

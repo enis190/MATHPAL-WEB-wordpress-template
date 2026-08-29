@@ -251,6 +251,8 @@
 .cart-icon-wrapper {
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  color: #000;
   .cart-count {
     position: absolute;
     top: -8px;

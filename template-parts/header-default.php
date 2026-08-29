@@ -79,7 +79,7 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                             ?>
                         </div>
                     </div>
-                    <div class="col-md-4 img-age">
+                    <div class="col-md-1 img-age">
                         <center>
                             <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/cta-ages.png" alt="" class="img-fluid">
                         </center>
