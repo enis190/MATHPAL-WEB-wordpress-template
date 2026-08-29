@@ -86,7 +86,7 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                     </div>
                 </div>
             </div>
-            <div class="col-md-1 icon-wc enis5151151">
+            <div class="col-1 col-md-1 icon-wc enis5151151">
                 <?php if (function_exists('WC')) : ?>
                     <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -94,7 +94,7 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                     </a>
                 <?php endif; ?>
             </div>
-            <div class="col-4 col-md-auto d-flex d-md-none align-items-center justify-content-end">
+            <div class="col-3 col-md-auto d-flex d-md-none align-items-center justify-content-end">
                 <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none" href="#" aria-label="Open menu"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
