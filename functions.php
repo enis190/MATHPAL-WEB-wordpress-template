@@ -161,3 +161,15 @@ add_filter('woocommerce_add_to_cart_fragments', function ($fragments) {
  
     return $fragments;
 });
+
+
+function mathpal_enqueue_cart_btn_script() {
+    wp_enqueue_script(
+        'mathpal-btn-view-cart',
+        get_template_directory_uri() . '/assets/js/woocommerce-btn-view-cart.js',
+        array('jquery', 'wc-cart-fragments'), // <- importante agregar wc-cart-fragments
+        '1.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'mathpal_enqueue_cart_btn_script');

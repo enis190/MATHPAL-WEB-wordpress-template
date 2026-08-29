@@ -463,3 +463,19 @@ $(document).ready(function () {
     PlayVideo2();
   });
 });
+
+
+
+jQuery(function ($) {
+    // WooCommerce dispara este evento en el body cuando el AJAX add-to-cart termina
+    $(document.body).on('added_to_cart', function (event, fragments, cart_hash, $button) {
+        // El link "View cart" se inserta justo después del botón que se clickeó
+        $button.next('a.added_to_cart').addClass('btn-1');
+    });
+
+    // Forzar refresco de fragments (contador del carrito incluido) cuando se
+    // elimina un producto o se actualiza la cantidad en la página /cart/
+    $(document.body).on('removed_from_cart updated_cart_totals updated_wc_div', function () {
+        $(document.body).trigger('wc_fragment_refresh');
+    });
+});
