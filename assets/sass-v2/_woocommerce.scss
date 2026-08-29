@@ -227,6 +227,12 @@
             opacity: 1;
           }
         }
+        &.slick-active{
+          button {
+          &::before {
+            color: #a7fc50;
+         
+        }
       }
     }
   }
