@@ -148,3 +148,16 @@ function mathpal_remove_product_reviews() {
 add_filter('loop_shop_per_page', function ($per_page) {
     return 6;
 }, 20);
+
+/**
+ * Actualizar el contador del ícono de carrito vía AJAX (sin recargar la página)
+ */
+add_filter('woocommerce_add_to_cart_fragments', function ($fragments) {
+    ob_start();
+    ?>
+    <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+    <?php
+    $fragments['.cart-icon-wrapper .cart-count'] = ob_get_clean();
+ 
+    return $fragments;
+});

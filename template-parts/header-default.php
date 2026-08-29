@@ -13,11 +13,11 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                 alt="Back to school"
                 width="1924"
                 height="70"
-                decoding="async"
-            >
+                decoding="async">
             <!-- <img
                 class="cintillo_2026__img cintillo_2026__img--mobile"
-                src="<?php //echo esc_url( content_url( 'uploads/2026/06/CINTILLO-WEB-MOB.png' ) ); ?>"
+                src="<?php //echo esc_url( content_url( 'uploads/2026/06/CINTILLO-WEB-MOB.png' ) ); 
+                        ?>"
                 alt="Summer at MathPal"
                 width="430"
                 height="202"
@@ -41,7 +41,7 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                 ?>
                 <!--  -->
             </div>
-            <div class="col-md-5 ctas d-none d-md-block">
+            <div class="col-md-4 ctas d-none d-md-block">
                 <div class="row">
                     <div class="col-md-4 cta-tel d-none d-sm-block">
                         <div class="d-block">
@@ -52,7 +52,7 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                                     <span>
                                         <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/mobile-screen.png" alt="" class="img-fluid">
                                         <!--<?php echo esc_html($telefono); ?>-->
-                                         Call us
+                                        Call us
                                     </span>
                                 </a>
                             <?php
@@ -85,6 +85,14 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                         </center>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-4 icon-wc">
+                <?php if (function_exists('WC')) : ?>
+                    <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="cart-icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                    </a>
+                <?php endif; ?>
             </div>
             <div class="col-4 col-md-auto d-flex d-md-none align-items-center justify-content-end">
                 <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none" href="#" aria-label="Open menu"><i class="fa-solid fa-bars"></i></a>
@@ -132,39 +140,39 @@ include(TEMPLATEPATH . '/template-parts/menu-xs.php');
 ?>
 
 <script>
-(function () {
-    function mpSyncSiteHeader() {
-        var cintillo = document.querySelector('.cintillo_2026');
-        var head = document.querySelector('.c-head');
+    (function() {
+        function mpSyncSiteHeader() {
+            var cintillo = document.querySelector('.cintillo_2026');
+            var head = document.querySelector('.c-head');
 
-        if (!cintillo) {
-            document.documentElement.style.setProperty('--mp-cintillo-height', '0px');
-        } else {
-            document.documentElement.style.setProperty('--mp-cintillo-height', cintillo.offsetHeight + 'px');
-            cintillo.querySelectorAll('.cintillo_2026__img').forEach(function (img) {
-                if (!img.complete) {
-                    img.addEventListener('load', mpSyncSiteHeader);
-                }
-            });
+            if (!cintillo) {
+                document.documentElement.style.setProperty('--mp-cintillo-height', '0px');
+            } else {
+                document.documentElement.style.setProperty('--mp-cintillo-height', cintillo.offsetHeight + 'px');
+                cintillo.querySelectorAll('.cintillo_2026__img').forEach(function(img) {
+                    if (!img.complete) {
+                        img.addEventListener('load', mpSyncSiteHeader);
+                    }
+                });
+            }
+
+            if (head) {
+                document.documentElement.style.setProperty('--mp-header-height', head.offsetHeight + 'px');
+            }
+
+            var adminBar = document.getElementById('wpadminbar');
+            document.documentElement.style.setProperty(
+                '--mp-admin-bar-height',
+                adminBar ? adminBar.offsetHeight + 'px' : '0px'
+            );
         }
 
-        if (head) {
-            document.documentElement.style.setProperty('--mp-header-height', head.offsetHeight + 'px');
+        mpSyncSiteHeader();
+        window.addEventListener('load', mpSyncSiteHeader);
+        window.addEventListener('resize', mpSyncSiteHeader);
+
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(mpSyncSiteHeader);
         }
-
-        var adminBar = document.getElementById('wpadminbar');
-        document.documentElement.style.setProperty(
-            '--mp-admin-bar-height',
-            adminBar ? adminBar.offsetHeight + 'px' : '0px'
-        );
-    }
-
-    mpSyncSiteHeader();
-    window.addEventListener('load', mpSyncSiteHeader);
-    window.addEventListener('resize', mpSyncSiteHeader);
-
-    if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(mpSyncSiteHeader);
-    }
-})();
+    })();
 </script>
