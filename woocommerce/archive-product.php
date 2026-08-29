@@ -122,7 +122,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-3">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-3 slider-act-sat">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -206,7 +206,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta" id="monthly">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta slider-monthly" id="monthly">
     <div class="">
         <div class="row">
             <div class="col-12 text-center">
@@ -259,7 +259,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-2">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-2 slider-state-eam">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">

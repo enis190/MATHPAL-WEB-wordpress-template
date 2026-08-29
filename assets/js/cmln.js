@@ -712,7 +712,7 @@ $(document).on("ready", function () {
 
   $(".responsive9").slick({
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     autoplay: true,
