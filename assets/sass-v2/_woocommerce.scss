@@ -248,6 +248,26 @@
   }
 }
 
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #6b1fd6; /* tu morado de marca */
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 600px) {
 }
 
