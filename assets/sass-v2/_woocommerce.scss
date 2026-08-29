@@ -218,6 +218,18 @@
       }
     }
   }
+  &.slider-act-sat {
+    .slick-dots {
+      li {
+        button {
+          &::before {
+            color: #FFF;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
 
 .checkout {
@@ -267,7 +279,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
 }
 

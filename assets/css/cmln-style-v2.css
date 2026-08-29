@@ -228,6 +228,10 @@
 .c-woocommerce.c-single-product .entry-summary .product_meta {
   margin-top: 20px;
 }
+.c-woocommerce.slider-act-sat .slick-dots li button::before {
+  color: #FFF;
+  opacity: 1;
+}
 
 .checkout .wp-block-woocommerce-checkout iframe,
 .checkout .wc-block-components-express-payment__event-buttons iframe {
