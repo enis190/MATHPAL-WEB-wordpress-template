@@ -223,15 +223,16 @@
       li {
         button {
           &::before {
-            color: #FFF;
+            color: #fff;
             opacity: 1;
           }
         }
-        &.slick-active{
+        &.slick-active {
           button {
-          &::before {
-            color: #a7fc50;
-         
+            &::before {
+              color: #a7fc50;
+            }
+          }
         }
       }
     }
