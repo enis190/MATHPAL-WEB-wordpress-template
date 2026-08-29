@@ -49,7 +49,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                         <li><span class="fa-li"><i class="fa-regular fa-chalkboard-user color-verde"></i></span>Free IXL access</li>
 
                     </ul>
-                    <a href="https://www.mathpal.us/subscriptions/" class="btn-1 bg-verde color-negro c-hover-2">
+                    <a href="#monthly" class="btn-1 bg-verde color-negro c-hover-2">
                         Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
                     </a>
                 </div>
@@ -106,7 +106,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-                                    <a href="<?php echo get_permalink(69) ?>" class="btn-1 bg-verde color-negro c-hover-2">
+                                    <a href="<?php echo bloginfo()?>/cart/?add-to-cart=2031" class="btn-1 bg-verde color-negro c-hover-2">
                                         Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
                                     </a>
                                 </div>
@@ -206,7 +206,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta" id="monthly">
     <div class="">
         <div class="row">
             <div class="col-12 text-center">
