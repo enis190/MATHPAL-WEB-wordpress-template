@@ -339,7 +339,7 @@ include(TEMPLATEPATH . '/template-parts/submenu-programas.php');
                         <li><span class="fa-li"><i class="fa-solid fa-circle-check color-verde"></i></span>No subscription required</li>
                         <li><span class="fa-li"><i class="fa-solid fa-calendar color-verde"></i></span>Valid for 2 months</li>
                     </ul>
-                    <a href="<?php echo get_permalink(102) ?>" class="btn-1 mt-4" tabindex="0">Book 1 hour now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a href="<?php echo get_permalink(102) ?>" class="btn-1 mt-4" tabindex="0" style="white-space: nowrap;">Book 1 hour now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
         </div>
