@@ -16,7 +16,7 @@ if (have_posts()) :
                 <div class="row">
                     <div class="col-12">
                         <h2 class="titulo-h3 fade-in text-center"><?php the_title(); ?></h2>
-                        <p class="fecha-publicacion fade-in text-center"><?php echo get_the_date('F j, Y'); ?></p>
+                        <p class="fecha-publicacion fade-in text-center mb-5"><?php echo get_the_date('F j, Y'); ?></p>
                     </div>
                 </div>
 

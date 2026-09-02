@@ -71,6 +71,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                   <?php the_title(); ?>
                 </a>
               </h3>
+              <p class="fecha-publicacion "><?php echo get_the_date('F j, Y'); ?></p>
 
               <p>
                 <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
