@@ -74,7 +74,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
               <p class="fecha-publicacion "><?php echo get_the_date('F j, Y'); ?></p>
 
               <p>
-                <?php $ echo get_post_meta(get_the_ID(), 'blog_resumen', true); ?>
+                <?php echo get_post_meta(get_the_ID(), 'blog_resumen', true); ?>
               </p>
               <a href="<?php the_permalink(); ?>" class="btn-cta">Read more</a>
 
