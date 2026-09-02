@@ -33,6 +33,9 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
+.notas_de_blog article h3 a {
+  color: #9301ff !important;
+}
 .notas_de_blog article .btn-cta {
   text-decoration: none;
   background: #9301ff;
