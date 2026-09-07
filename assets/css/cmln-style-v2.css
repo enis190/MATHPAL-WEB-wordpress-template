@@ -121,6 +121,9 @@
 .c-woocommerce.c-archive-product {
   padding-top: 50px;
 }
+.c-woocommerce.c-archive-product .item .c-block .img {
+  height: 250px;
+}
 .c-woocommerce.c-archive-product .sku {
   flex: none !important;
   font-size: 0.8rem;
