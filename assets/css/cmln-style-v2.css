@@ -121,6 +121,14 @@
 .c-woocommerce.c-archive-product {
   padding-top: 50px;
 }
+.c-woocommerce.c-archive-product .precios-2-woo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #000;
+  background-image: url(../img/bg-precio-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .c-woocommerce.c-archive-product .item .c-block .img {
   height: 250px;
 }

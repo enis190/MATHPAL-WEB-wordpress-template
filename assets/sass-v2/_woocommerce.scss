@@ -43,6 +43,15 @@
   &.c-archive-product {
     padding-top: 50px;
 
+    .precios-2-woo {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background-color: #000;
+      background-image: url(../img/bg-precio-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
     .item .c-block .img {
       height: 250px;
     }
@@ -241,8 +250,8 @@
       }
     }
   }
-  &.slider-additional{
-    .tag{
+  &.slider-additional {
+    .tag {
       display: none;
     }
   }

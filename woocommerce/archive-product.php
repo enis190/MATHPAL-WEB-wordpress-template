@@ -384,7 +384,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta precios-2-old">
+<div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta precios-2-woo">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
