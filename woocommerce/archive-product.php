@@ -395,6 +395,7 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row block fade-in">
             <div class="col-md-5 mx-auto item">
                 <div class="d-block c-block">
+                    <section class="slider responsive5">
                       <?php
                     /**
                      * BLOQUE 1 — Categoría: Diagnostic Class
@@ -424,6 +425,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                         wp_reset_postdata();
                         ?>
                     <?php endif; ?>
+                    </section>
                 </div>
             </div>
         </div>
