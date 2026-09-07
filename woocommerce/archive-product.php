@@ -314,14 +314,14 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 <div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta precios-old">
-    <div class="container">
+    <div class="container0">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="titulo-h3 fade-in">Additional tutoring hours for subscribers</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-10 offset-md-1 fade-in-top">
+            <div class="col-md-8 offset-md-2 fade-in-top">
 
                 <section class="slider responsive5">
                     <!-- <div class="item active">
