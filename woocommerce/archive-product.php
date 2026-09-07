@@ -488,7 +488,7 @@ include get_template_directory() . '/template-parts/header-default.php';
         </div>
         <div class="row mt-4">
             <div class="col-md-12 text-center fade-in-top">
-                <a href="#block_precios" class="btn-1 mt-4 bg-morado c-hover-1" tabindex="0">Get starterd today! &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
+                <a href="#monthly" class="btn-1 mt-4 bg-morado c-hover-1" tabindex="0">Get starterd today! &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
             </div>
         </div>
     </div>
