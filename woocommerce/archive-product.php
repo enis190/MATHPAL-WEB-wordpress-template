@@ -106,7 +106,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-                                    <a href="<?php echo bloginfo()?>/cart/?add-to-cart=2031" class="btn-1 bg-verde color-negro c-hover-2">
+                                    <a href="<?php echo bloginfo() ?>/cart/?add-to-cart=2031" class="btn-1 bg-verde color-negro c-hover-2">
                                         Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
                                     </a>
                                 </div>
@@ -133,67 +133,67 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-12">
                 <section class="slider responsive3_shop responsive9">
-                    
 
 
-                        <?php
-                        // //do_action( 'woocommerce_before_main_content' );
-                        // do_action('woocommerce_shop_loop_header');
 
-                        // if (woocommerce_product_loop()) {
+                    <?php
+                    // //do_action( 'woocommerce_before_main_content' );
+                    // do_action('woocommerce_shop_loop_header');
 
-                        //     do_action('woocommerce_before_shop_loop');
+                    // if (woocommerce_product_loop()) {
 
-                        //     woocommerce_product_loop_start();
+                    //     do_action('woocommerce_before_shop_loop');
 
-                        //     if (wc_get_loop_prop('total')) {
-                        //         while (have_posts()) {
-                        //             the_post();
-                        //             do_action('woocommerce_shop_loop');
-                        //             wc_get_template_part('content', 'product');
-                        //         }
-                        //     }
+                    //     woocommerce_product_loop_start();
 
-                        //     woocommerce_product_loop_end();
+                    //     if (wc_get_loop_prop('total')) {
+                    //         while (have_posts()) {
+                    //             the_post();
+                    //             do_action('woocommerce_shop_loop');
+                    //             wc_get_template_part('content', 'product');
+                    //         }
+                    //     }
 
-                        //     do_action('woocommerce_after_shop_loop');
-                        // } else {
-                        //     do_action('woocommerce_no_products_found');
-                        // }
+                    //     woocommerce_product_loop_end();
 
-                        // //do_action( 'woocommerce_after_main_content' );
-                        // //do_action( 'woocommerce_sidebar' );
-                        ?>
+                    //     do_action('woocommerce_after_shop_loop');
+                    // } else {
+                    //     do_action('woocommerce_no_products_found');
+                    // }
 
-                        <?php
-                        /**
-                         * BLOQUE 1 — Categoría: Diagnostic Class
-                         */
-                        $bloque1 = new WP_Query(array(
-                            'post_type'      => 'product',
-                            'post_status'    => 'publish',
-                            'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
-                            'tax_query'      => array(
-                                array(
-                                    'taxonomy' => 'product_cat',
-                                    'field'    => 'slug',
-                                    'terms'    => array('act-sat-prep'),
-                                ),
+                    // //do_action( 'woocommerce_after_main_content' );
+                    // //do_action( 'woocommerce_sidebar' );
+                    ?>
+
+                    <?php
+                    /**
+                     * BLOQUE 1 — Categoría: Diagnostic Class
+                     */
+                    $bloque1 = new WP_Query(array(
+                        'post_type'      => 'product',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'slug',
+                                'terms'    => array('act-sat-prep'),
                             ),
-                        ));
+                        ),
+                    ));
 
-                        if ($bloque1->have_posts()) :
+                    if ($bloque1->have_posts()) :
+                    ?>
+
+                        <?php
+                        while ($bloque1->have_posts()) :
+                            $bloque1->the_post();
+                            global $product;
+                            wc_get_template_part('content', 'product');
+                        endwhile;
+                        wp_reset_postdata();
                         ?>
-
-                            <?php
-                            while ($bloque1->have_posts()) :
-                                $bloque1->the_post();
-                                global $product;
-                                wc_get_template_part('content', 'product');
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </section>
             </div>
         </div>
@@ -217,34 +217,34 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-12">
                 <section class="slider responsive3_shop responsive7">
-                    
+
+
+                    <?php
+                    $bloque1 = new WP_Query(array(
+                        'post_type'      => 'product',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'slug',
+                                'terms'    => array('monthly-subscriptions'),
+                            ),
+                        ),
+                    ));
+
+                    if ($bloque1->have_posts()) :
+                    ?>
 
                         <?php
-                        $bloque1 = new WP_Query(array(
-                            'post_type'      => 'product',
-                            'post_status'    => 'publish',
-                            'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
-                            'tax_query'      => array(
-                                array(
-                                    'taxonomy' => 'product_cat',
-                                    'field'    => 'slug',
-                                    'terms'    => array('monthly-subscriptions'),
-                                ),
-                            ),
-                        ));
-
-                        if ($bloque1->have_posts()) :
+                        while ($bloque1->have_posts()) :
+                            $bloque1->the_post();
+                            global $product;
+                            wc_get_template_part('content', 'product');
+                        endwhile;
+                        wp_reset_postdata();
                         ?>
-
-                            <?php
-                            while ($bloque1->have_posts()) :
-                                $bloque1->the_post();
-                                global $product;
-                                wc_get_template_part('content', 'product');
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </section>
             </div>
         </div>
@@ -270,43 +270,113 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <section class="slider responsive3_shop responsive8">
-                    
+
+
+                    <?php
+                    /**
+                     * BLOQUE 1 — Categoría: Diagnostic Class
+                     */
+                    $bloque1 = new WP_Query(array(
+                        'post_type'      => 'product',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'slug',
+                                'terms'    => array('state-exam-prep'),
+                            ),
+                        ),
+                    ));
+
+                    if ($bloque1->have_posts()) :
+                    ?>
 
                         <?php
-                        /**
-                         * BLOQUE 1 — Categoría: Diagnostic Class
-                         */
-                        $bloque1 = new WP_Query(array(
-                            'post_type'      => 'product',
-                            'post_status'    => 'publish',
-                            'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
-                            'tax_query'      => array(
-                                array(
-                                    'taxonomy' => 'product_cat',
-                                    'field'    => 'slug',
-                                    'terms'    => array('state-exam-prep'),
-                                ),
-                            ),
-                        ));
-
-                        if ($bloque1->have_posts()) :
+                        while ($bloque1->have_posts()) :
+                            $bloque1->the_post();
+                            global $product;
+                            wc_get_template_part('content', 'product');
+                        endwhile;
+                        wp_reset_postdata();
                         ?>
-
-                            <?php
-                            while ($bloque1->have_posts()) :
-                                $bloque1->the_post();
-                                global $product;
-                                wc_get_template_part('content', 'product');
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </section>
             </div>
         </div>
 
     </div>
 
+</div>
+
+
+
+
+
+<div class="container-fluid precios">
+    <div class="container0">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="titulo-h3 fade-in">Additional tutoring hours for subscribers</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 fade-in-top">
+
+                <section class="slider responsive5">
+                    <!-- <div class="item active">
+                        <div class="c-block">
+                            <h4>1 Additional hour</h4>
+                            <h4 class="precio">35</h4>
+                            <p class="mt-4 mb-4">Exclusive pricing for subscribers - unlock expert tutoring at a special hourly rate!</p>
+
+
+                            <ul class="fa-ul mb-4">
+                                <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span><strong>1 × 60-minute session</strong></li>
+                                <li><span class="fa-li"></span>$35/hr</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-calendar "></i></span><strong>Valid for 2 months</strong></li>
+                            </ul>
+                            <a href="<?php echo get_permalink(81) ?>" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div> -->
+
+
+
+                    <?php
+                    /**
+                     * BLOQUE 1 — Categoría: Diagnostic Class
+                     */
+                    $bloque1 = new WP_Query(array(
+                        'post_type'      => 'product',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'slug',
+                                'terms'    => array('additional-tutoring'),
+                            ),
+                        ),
+                    ));
+
+                    if ($bloque1->have_posts()) :
+                    ?>
+
+                        <?php
+                        while ($bloque1->have_posts()) :
+                            $bloque1->the_post();
+                            global $product;
+                            wc_get_template_part('content', 'product');
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
+                    <?php endif; ?>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
