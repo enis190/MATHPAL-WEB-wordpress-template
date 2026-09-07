@@ -180,6 +180,9 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('act-sat-prep'),
                             ),
                         ),
+                        'meta_key'       => '_price',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
@@ -231,6 +234,9 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('monthly-subscriptions'),
                             ),
                         ),
+                        'meta_key'       => '_price',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
@@ -287,6 +293,9 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('state-exam-prep'),
                             ),
                         ),
+                        'meta_key'       => '_price',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
