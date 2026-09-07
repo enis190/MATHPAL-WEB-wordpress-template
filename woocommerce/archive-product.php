@@ -357,6 +357,9 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('additional-tutoring'),
                             ),
                         ),
+                        'meta_key'       => '_price',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
@@ -396,35 +399,35 @@ include get_template_directory() . '/template-parts/header-default.php';
             <div class="col-md-12 mx-auto item">
                 <div class="d-block c-block">
                     <section class="slider responsive5">
-                      <?php
-                    /**
-                     * BLOQUE 1 — Categoría: Diagnostic Class
-                     */
-                    $bloque1 = new WP_Query(array(
-                        'post_type'      => 'product',
-                        'post_status'    => 'publish',
-                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
-                        'tax_query'      => array(
-                            array(
-                                'taxonomy' => 'product_cat',
-                                'field'    => 'slug',
-                                'terms'    => array('pay-as-you-go'),
-                            ),
-                        ),
-                    ));
-
-                    if ($bloque1->have_posts()) :
-                    ?>
-
                         <?php
-                        while ($bloque1->have_posts()) :
-                            $bloque1->the_post();
-                            global $product;
-                            wc_get_template_part('content', 'product');
-                        endwhile;
-                        wp_reset_postdata();
+                        /**
+                         * BLOQUE 1 — Categoría: Diagnostic Class
+                         */
+                        $bloque1 = new WP_Query(array(
+                            'post_type'      => 'product',
+                            'post_status'    => 'publish',
+                            'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                            'tax_query'      => array(
+                                array(
+                                    'taxonomy' => 'product_cat',
+                                    'field'    => 'slug',
+                                    'terms'    => array('pay-as-you-go'),
+                                ),
+                            ),
+                        ));
+
+                        if ($bloque1->have_posts()) :
                         ?>
-                    <?php endif; ?>
+
+                            <?php
+                            while ($bloque1->have_posts()) :
+                                $bloque1->the_post();
+                                global $product;
+                                wc_get_template_part('content', 'product');
+                            endwhile;
+                            wp_reset_postdata();
+                            ?>
+                        <?php endif; ?>
                     </section>
                 </div>
             </div>
@@ -478,7 +481,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
         <div class="row mt-3 mb-3">
