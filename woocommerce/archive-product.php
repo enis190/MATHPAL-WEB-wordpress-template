@@ -314,7 +314,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 <div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta precios-old">
-    <div class="container0">
+    <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="titulo-h3 fade-in">Additional tutoring hours for subscribers</h2>
