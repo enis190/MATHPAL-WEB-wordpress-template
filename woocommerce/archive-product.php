@@ -393,7 +393,7 @@ include get_template_directory() . '/template-parts/header-default.php';
             </div>
         </div>
         <div class="row block fade-in">
-            <div class="col-md-10 mx-auto item">
+            <div class="col-md-12 mx-auto item">
                 <div class="d-block c-block">
                     <section class="slider responsive5">
                       <?php
