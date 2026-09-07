@@ -384,6 +384,115 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
+<div class="container-fluid precios-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="titulo-h3 fade-in">Pay-as-you-go math tutoring</h3>
+                <p><span class="tag-1 fade-in-top">Flexible 1-hour sessions — no subscription required.</span></p>
+            </div>
+        </div>
+        <div class="row block fade-in">
+            <div class="col-md-5 mx-auto item">
+                <div class="d-block c-block">
+                      <?php
+                    /**
+                     * BLOQUE 1 — Categoría: Diagnostic Class
+                     */
+                    $bloque1 = new WP_Query(array(
+                        'post_type'      => 'product',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field'    => 'slug',
+                                'terms'    => array('pay-as-you-go'),
+                            ),
+                        ),
+                    ));
+
+                    if ($bloque1->have_posts()) :
+                    ?>
+
+                        <?php
+                        while ($bloque1->have_posts()) :
+                            $bloque1->the_post();
+                            global $product;
+                            wc_get_template_part('content', 'product');
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid c-footer resultados">
+    <div class="container">
+        <div class="row fade-in">
+            <div class="col-md-6">
+                <div class="img">
+                    <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/no_risk.png" alt="" class="img-fluid">
+                </div>
+                <p class="mt-4">Try MathPal for 8 weeks. If you don’t see progress, get a new tutor or a full refund — no questions asked.</p>
+            </div>
+            <div class="col-md-6 txt">
+                <div class="item">
+                    <div class="det">
+                        <span class="nro">
+                            1
+                        </span>
+                        <h4>Sign up</h4>
+                        <p>Choose a subscription or hourly class</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det">
+                        <span class="Learn">
+                            2
+                        </span>
+                        <h4>Sign up</h4>
+                        <p>Work with your personal math tutor</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det">
+                        <span class="nro">
+                            3
+                        </span>
+                        <h4>Guaranteed</h4>
+                        <p>Not happy? Switch tutor or get a full refund</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col-12 text-center">
+                <p class="fade-in-bottom"><strong>Your satisfaction is our priority. No hidden fees, just effective tutoring.</strong></p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center fade-in-top">
+                <a href="#block_precios" class="btn-1 mt-4 bg-morado c-hover-1" tabindex="0">Get starterd today! &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <style>
