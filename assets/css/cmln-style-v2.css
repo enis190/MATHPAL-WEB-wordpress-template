@@ -245,6 +245,9 @@
 .c-woocommerce.slider-act-sat .slick-dots li.slick-active button::before {
   color: #a7fc50;
 }
+.c-woocommerce.slider-additional .tag {
+  display: none;
+}
 
 .checkout .wp-block-woocommerce-checkout iframe,
 .checkout .wc-block-components-express-payment__event-buttons iframe {

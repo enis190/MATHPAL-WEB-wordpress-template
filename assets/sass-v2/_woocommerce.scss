@@ -241,6 +241,11 @@
       }
     }
   }
+  &.slider-additional{
+    .tag{
+      display: none;
+    }
+  }
 }
 
 .checkout {
