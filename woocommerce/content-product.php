@@ -53,9 +53,9 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 
 			<?php
 			// ** btn agregar a carrito + ajax ver carrito **
-			// woocommerce_template_loop_add_to_cart(array(
-			// 	'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
-			// ));
+			woocommerce_template_loop_add_to_cart(array(
+				'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
+			));
 			?>
 
 			<!-- btn directo agregar y ver carrito -->
