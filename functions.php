@@ -176,8 +176,8 @@ add_action('wp_enqueue_scripts', 'mathpal_enqueue_cart_btn_script');
 
 
 
-add_action('wp_enqueue_scripts', function() {
-    if (function_exists('WC') && !wp_script_is('wc-cart-fragments', 'enqueued')) {
-        wp_enqueue_script('wc-cart-fragments');
-    }
-}, 99);
+// add_action('wp_enqueue_scripts', function() {
+//     if (function_exists('WC') && !wp_script_is('wc-cart-fragments', 'enqueued')) {
+//         wp_enqueue_script('wc-cart-fragments');
+//     }
+// }, 99);
