@@ -731,31 +731,6 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<script>
-    jQuery(function($) {
-        console.log('-> init Add to cart');
-    $(document.body).on('added_to_cart', function(event, fragments, cart_hash, $button) {
-        console.log('-> Add to cart');
-        const $cartCount = $('.cart-count');
-        const $cartWrapper = $('.cart-icon-wrapper');
-
-        // reinicia la animación por si se agrega varias veces seguidas
-        $cartCount.add($cartWrapper).removeClass('pulse');
-
-        // forzar reflow para que el navegador "note" la remoción de la clase
-        void $cartCount[0].offsetWidth;
-
-        $cartCount.add($cartWrapper).addClass('pulse');
-
-        
-    });
-
-    // limpiar la clase al terminar la animación (buena práctica)
-    $(document).on('animationend', '.pulse', function() {
-        $(this).removeClass('pulse');
-    });
-});
-</script>
 
 
 
