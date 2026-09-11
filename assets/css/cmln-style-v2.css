@@ -343,7 +343,7 @@
 }
 
 /* opcional: también animar el ícono del carrito */
-.cart-icon-wrapper.pulse i {
+.cart-icon-wrapper.pulse span {
   animation: cart-pulse 0.6s ease-in-out;
 }
 
