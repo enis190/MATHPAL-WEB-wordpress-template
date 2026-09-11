@@ -130,6 +130,12 @@
           }
 
           .add_to_cart_button {
+            margin-bottom: 10px;
+          }
+
+          /*Ocultar view cart*/
+          .added_to_cart{
+            display: none;
           }
 
           .added_to_cart {
