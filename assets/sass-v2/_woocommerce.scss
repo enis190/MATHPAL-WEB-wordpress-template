@@ -43,6 +43,15 @@
   &.c-archive-product {
     padding-top: 50px;
 
+    .add_to_cart_button {
+      margin-bottom: 10px;
+    }
+
+    /*Ocultar view cart*/
+    .added_to_cart {
+      display: none;
+    }
+
     &.precios-2-woo {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -54,7 +63,7 @@
         color: #fff;
         line-height: 60px;
       }
-      .tag{
+      .tag {
         display: none;
       }
     }
@@ -127,15 +136,6 @@
                 text-decoration: none;
               }
             }
-          }
-
-          .add_to_cart_button {
-            margin-bottom: 10px;
-          }
-
-          /*Ocultar view cart*/
-          .added_to_cart{
-            display: none;
           }
 
           .added_to_cart {
