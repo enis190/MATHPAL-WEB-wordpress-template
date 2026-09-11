@@ -733,7 +733,9 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 <script>
     jQuery(function($) {
+        console.log('-> init Add to cart');
     $(document.body).on('added_to_cart', function(event, fragments, cart_hash, $button) {
+        console.log('-> Add to cart');
         const $cartCount = $('.cart-count');
         const $cartWrapper = $('.cart-icon-wrapper');
 
@@ -745,7 +747,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
         $cartCount.add($cartWrapper).addClass('pulse');
 
-        console.log('-> Add to cart');
+        
     });
 
     // limpiar la clase al terminar la animación (buena práctica)
