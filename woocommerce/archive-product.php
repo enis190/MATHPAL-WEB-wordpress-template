@@ -731,6 +731,66 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
+<script>
+jQuery(function ($) {
+  $(document.body).on(
+    'added_to_cart',
+    function (event, fragments, cartHash, $button) {
+      if (
+        !$button ||
+        !$button.hasClass('mathpal-custom-add-to-cart')
+      ) {
+        return;
+      }
+
+      var productId = String(
+        $button.attr('data-product_id') || ''
+      );
+
+      var productName = String(
+        $button.attr('data-product_name') || ''
+      );
+
+      var productPrice = Number(
+        $button.attr('data-product_price') || 0
+      );
+
+      var quantity = Number(
+        $button.attr('data-quantity') || 1
+      );
+
+      var currency = String(
+        $button.attr('data-currency') || 'PEN'
+      );
+
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        ecommerce: null
+      });
+
+      window.dataLayer.push({
+        event: 'add_to_cart',
+        ecommerce: {
+          currency: currency,
+          value: Number(
+            (productPrice * quantity).toFixed(2)
+          ),
+          items: [
+            {
+              item_id: productId,
+              item_name: productName,
+              price: productPrice,
+              quantity: quantity
+            }
+          ]
+        }
+      });
+    }
+  );
+});
+</script>
+
 
 
 
