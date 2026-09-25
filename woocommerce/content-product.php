@@ -59,21 +59,25 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 			?>
 
 			<?php
-			global $product;
-
-			if (
-				$product instanceof WC_Product &&
-				$product->is_purchasable() &&
-				$product->is_in_stock()
-			) {
-				woocommerce_template_loop_add_to_cart(
-					array(
-						'quantity' => 1,
-						'class'    => 'button btn-1 add_to_cart_button ajax_add_to_cart product_type_' . $product->get_type(),
-					)
-				);
-			}
+			$product_id = $product->get_id();
+			$product_price = (float) wc_get_price_to_display($product);
+			$product_currency = get_woocommerce_currency();
 			?>
+
+			<a
+				href="<?php echo esc_url($product->add_to_cart_url()); ?>"
+				class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart"
+				data-product_id="<?php echo esc_attr($product_id); ?>"
+				data-product_sku="<?php echo esc_attr($product->get_sku()); ?>"
+				data-product_name="<?php echo esc_attr($product->get_name()); ?>"
+				data-product_price="<?php echo esc_attr(wc_format_decimal($product_price, 2)); ?>"
+				data-currency="<?php echo esc_attr($product_currency); ?>"
+				data-quantity="1"
+				aria-label="<?php echo esc_attr($product->add_to_cart_description()); ?>"
+				rel="nofollow"
+			>
+				<?php echo esc_html($product->add_to_cart_text()); ?>
+			</a>
 
 			<!-- btn directo agregar y ver carrito -->
 			<a href="<?php echo $buy_now_url; ?>" class="btn-1">
@@ -82,3 +86,67 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 		</div>
 	</div>
 </div>
+
+
+
+
+
+<script>
+jQuery(function ($) {
+  $(document.body).on(
+    'added_to_cart',
+    function (event, fragments, cartHash, $button) {
+      if (
+        !$button ||
+        !$button.hasClass('mathpal-custom-add-to-cart')
+      ) {
+        return;
+      }
+
+      var productId = String(
+        $button.attr('data-product_id') || ''
+      );
+
+      var productName = String(
+        $button.attr('data-product_name') || ''
+      );
+
+      var productPrice = Number(
+        $button.attr('data-product_price') || 0
+      );
+
+      var quantity = Number(
+        $button.attr('data-quantity') || 1
+      );
+
+      var currency = String(
+        $button.attr('data-currency') || 'PEN'
+      );
+
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        ecommerce: null
+      });
+
+      window.dataLayer.push({
+        event: 'add_to_cart',
+        ecommerce: {
+          currency: currency,
+          value: Number(
+            (productPrice * quantity).toFixed(2)
+          ),
+          items: [
+            {
+              item_id: productId,
+              item_name: productName,
+              price: productPrice,
+              quantity: quantity
+            }
+          ]
+        }
+      });
+    }
+  );
+});
+</script>
