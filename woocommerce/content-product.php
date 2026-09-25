@@ -53,9 +53,26 @@ $buy_now_url   = esc_url(wc_get_cart_url() . '?add-to-cart=' . $product->get_id(
 
 			<?php
 			// ** btn agregar a carrito + ajax ver carrito **
-			woocommerce_template_loop_add_to_cart(array(
-				'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
-			));
+			// woocommerce_template_loop_add_to_cart(array(
+			// 	'class' => 'btn-1 add_to_cart_button ajax_add_to_cart',
+			// ));
+			?>
+
+			<?php
+			global $product;
+
+			if (
+				$product instanceof WC_Product &&
+				$product->is_purchasable() &&
+				$product->is_in_stock()
+			) {
+				woocommerce_template_loop_add_to_cart(
+					array(
+						'quantity' => 1,
+						'class'    => 'button btn-1 add_to_cart_button ajax_add_to_cart product_type_' . $product->get_type(),
+					)
+				);
+			}
 			?>
 
 			<!-- btn directo agregar y ver carrito -->
