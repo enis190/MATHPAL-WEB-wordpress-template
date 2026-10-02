@@ -662,7 +662,7 @@ Decide between a subscription or hourly rates, either way we are here to help!
 </div>
 </div>
 </div>
-<img class="img-fluid" style="background: #8b00ff;padding: 0 40px;" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back_to_scholl.png" alt="" />
+<img class="img-fluid d-none" style="background: #8b00ff;padding: 0 40px;" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back_to_scholl.png" alt="" />
 <div class="body">
 <h3>Monthly Subscriptions (2, 4, 6, 8 hrs/month)</h3>
 <p>Flexible tutoring hours that adapt to your schedule and goals.</p>
