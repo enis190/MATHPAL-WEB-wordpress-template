@@ -350,5 +350,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.c-slider-3 .slider .item {
+  padding: 50px 25px 25px 25px;
+}
 
 /*# sourceMappingURL=cmln-style-v2.css.map */
