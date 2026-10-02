@@ -4,7 +4,7 @@ $whatsapp = get_theme_mod('whatsapp_opcion');
 $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
 ?>
 
-<div class="cintillo_2026" role="region" aria-label="Promoción">
+<!-- <div class="cintillo_2026" role="region" aria-label="Promoción">
     <a href="https://www.mathpal.us/subscriptions/" class="cintillo_2026__link">
         <div class="cintillo_2026__inner">
             <img
@@ -14,18 +14,9 @@ $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
                 width="1924"
                 height="70"
                 decoding="async">
-            <!-- <img
-                class="cintillo_2026__img cintillo_2026__img--mobile"
-                src="<?php //echo esc_url( content_url( 'uploads/2026/06/CINTILLO-WEB-MOB.png' ) ); 
-                        ?>"
-                alt="Summer at MathPal"
-                width="430"
-                height="202"
-                decoding="async"
-            > -->
         </div>
     </a>
-</div>
+</div> -->
 <div class="container-fluid c-head ">
     <div class="container0">
         <div class="row align-items-center">
