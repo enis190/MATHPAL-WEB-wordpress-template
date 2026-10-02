@@ -59,12 +59,12 @@ include(TEMPLATEPATH . '/template-parts/submenu-programas.php');
 <div class="container-fluid banner-precio" >
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center fade-in">
+            <div class="col-12 text-center fade-in mb-4">
                 <h2 class="titulo-h2">MathPal’s Monthly Promos <font>&</font> Programs</h2>
-                <p><b>Back to School at MathPal — extended for a limited time*: </b>now is your window to give your child a head start in math, with free bonus hours* on monthly plans of 4 hours or more, before the school year gets harder.</p>
+                <!-- <p><b>Back to School at MathPal — extended for a limited time*: </b>now is your window to give your child a head start in math, with free bonus hours* on monthly plans of 4 hours or more, before the school year gets harder.</p> -->
             </div>
         </div>
-        <div class="row mt-4 fade-in">
+        <div class="row mt-4 fade-in d-none">
             <div class="col-md-6 img">
                 <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/joven.png" alt="" class="img-fluid" style="margin-top:-50px">
             </div>
