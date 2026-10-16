@@ -285,7 +285,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 <div class="item ">
 <div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
 <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
-<p>Expert bilingual tutors</p>
+<p>Expert bilingual tutors..</p>
 
 </div>
 </div>
