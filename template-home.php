@@ -274,6 +274,82 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
     </div>
 </div> -->
 
+<!-- CARRUSEL VIDEOS  -->
+
+<div class="container-fluid home-videos">
+    <div class="row">
+        <div class="col-12 text-center" style="
+    margin: 20px;">
+            <h2 class="titulo-h2 fade-in" style="font-size: 45px;">REAL STUDENTS. REAL STORIES. REAL PROGRESS.</h2>
+            <h2 class="titulo-h3 fade-in">Get to know our tutoring through the voices of our students.</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <section class="slider responsive-videos">
+ 
+                <!-- VIDEO 1 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="100" data-duration="500">
+                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/Camila-testimonial-Mathpal.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Camila.png" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 1</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 2 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/Lenin-testimonial-Mathpal.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 3 (ejemplo con YouTube: usa data-embed en vez de data-video) -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/reel-MATEO.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Mateo.png" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 4 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/video/video_2.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.png" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- CARRUSEL VIDEOS FIN -->
 
 
 <?php //echo the_field('bloque_html_1', get_the_ID(), false) ?> 
@@ -285,7 +361,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 <div class="item ">
 <div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
 <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
-<p>Expert bilingual tutors..</p>
+<p>Expert bilingual tutors.</p>
 
 </div>
 </div>
@@ -1398,3 +1474,48 @@ width:320px;
     });
   </script>
 
+<!-- CARRUSEL VIDEOS  -->
+<script>
+jQuery(function ($) {
+  var $slider = $('.responsive-videos');
+ 
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev video-arrow" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next video-arrow" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>',
+    responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 576, settings: { slidesToShow: 1 } }
+    ]
+  });
+ 
+  // Vuelve a mostrar la portada de cualquier video que esté reproduciéndose
+  function resetAll() {
+    $slider.find('.video-wrap.playing').each(function () {
+      var $w = $(this);
+      $w.html($w.data('orig')).removeClass('playing');
+    });
+  }
+ 
+  // Clic en la portada -> reproduce
+  $slider.on('click', '.video-wrap:not(.playing)', function () {
+    var $w = $(this);
+    resetAll();
+    $w.data('orig', $w.html()).addClass('playing');
+ 
+    if ($w.data('embed')) {
+      var sep = $w.data('embed').indexOf('?') > -1 ? '&' : '?';
+      $w.html('<iframe src="' + $w.data('embed') + sep + 'autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+    } else {
+      $w.html('<video src="' + $w.data('video') + '" controls autoplay playsinline></video>');
+    }
+  });
+ 
+  // Al mover el carrusel, detiene el video y regresa a la portada
+  $slider.on('beforeChange', resetAll);
+});
+</script>
+<!-- CARRUSEL VIDEOS END -->
