@@ -355,33 +355,50 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 <?php //echo the_field('bloque_html_1', get_the_ID(), false) ?> 
 
 <div class="container-fluid c-slider caracteristicas">
-<div class="container">
-<div class="row">
-<div class="col-md-10 offset-md-1"><section class="slider responsive-caracteristicas">
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
-<p>Expert bilingual tutors.</p>
+  <div class="container">
+    <div class="row align-items-center">
 
-</div>
-</div>
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="100" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-libro.png" alt="" /></div>
-<p>Personalized plans</p>
+      <!-- IZQUIERDA: tarjetas apiladas -->
+      <div class="col-12 col-md-4">
+        <div class="slider responsive-caracteristicas caract-list">
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
+              <p>Expert bilingual tutors.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="100" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-libro.png" alt="" /></div>
+              <p>Personalized plans</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="200" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-foco.png" alt="" /></div>
+              <p>Exam preparation ACT/SAT/States</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</div>
-</div>
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="200" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-foco.png" alt="" /></div>
-<p>Exam preparation ACT/SAT/States</p>
+      <!-- CENTRO: texto -->
+      <div class="col-12 col-md-4 text-center caract-texto">
+        <h3 class="fade-in">Real Tutoring: MathPal in Action</h3>
+      </div>
 
-</div>
-</div>
-</section></div>
-</div>
-</div>
+      <!-- DERECHA: video -->
+      <div class="col-12 col-md-4">
+        <div class="video-block single-video">
+          <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/video/video_lenin.mp4">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
+            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- <div class="container-fluid cintillo-1">
@@ -1517,5 +1534,16 @@ jQuery(function ($) {
   // Al mover el carrusel, detiene el video y regresa a la portada
   $slider.on('beforeChange', resetAll);
 });
+
+jQuery(function ($) {
+  $(document).on('click', '.single-video .video-wrap:not(.playing)', function () {
+    var $w = $(this);
+    $w.data('orig', $w.html()).addClass('playing');
+    $w.html('<video src="' + $w.data('video') + '" controls autoplay playsinline></video>');
+  });
+});
+
+
 </script>
 <!-- CARRUSEL VIDEOS END -->
+
