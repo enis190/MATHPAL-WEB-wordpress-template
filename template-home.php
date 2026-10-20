@@ -783,7 +783,7 @@ Decide between a subscription or hourly rates, either way we are here to help!
 <div class="body">
 <h3>SAT PREP</h3>
 <p class="c-block__subtitle">Math + Reading &amp; Writing</p>
-<p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher.</p>
+<p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher</p>
 <a class="btn-1" href="https://www.mathpal.us/sat-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
 </div>
 </div>
