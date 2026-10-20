@@ -16,7 +16,7 @@
 				<li>10 Full Length Practice Exams</li>
 				<li>Strategic Test- Taking Techniques</li>
 			</ul>
-			<a href="<?php echo get_permalink(71) ?>" class="btn-1 mt-4">
+			<a href="https://www.mathpal.us/cart/?add-to-cart=2086" class="btn-1 mt-4">
 				Buy Now <i class="fa-solid fa-circle-arrow-right"></i>
 			</a>
 		</div>
@@ -39,7 +39,7 @@
 				<li>10 Full Length Practice Exams</li>
 				<li>Strategic Test- Taking Techniques</li>
 			</ul>
-			<a href="<?php echo get_permalink(73) ?>" class="btn-1 mt-4">
+			<a href="https://www.mathpal.us/cart/?add-to-cart=2087" class="btn-1 mt-4">
 				Buy Now <i class="fa-solid fa-circle-arrow-right"></i>
 			</a>
 		</div>
@@ -76,7 +76,7 @@
 					<li>Strategic Test- Taking Techniques</li>
 				</ul>
 
-				<a href="<?php echo esc_url( get_permalink( 1951 ) ); ?>" class="btn-1 mt-4">
+				<a href="https://www.mathpal.us/cart/?add-to-cart=2084" class="btn-1 mt-4">
 					Buy Now <i class="fa-solid fa-circle-arrow-right"></i>
 				</a>
 			</div>

@@ -15,7 +15,7 @@
                         <li>Add an Additional Class for just $35 per hour</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
-                    <a href="<?php echo get_permalink(75) ?>" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a href="https://www.mathpal.us/cart/?add-to-cart=2073" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
             <div class="item ">
@@ -36,7 +36,7 @@
                         <li>IXL: Unlimited access to a premium educational platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
-                    <a href="<?php echo get_permalink(77) ?>" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a href="https://www.mathpal.us/cart/?add-to-cart=2091" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
             <div class="item active">
@@ -56,7 +56,7 @@
                         <li>IXL: Unlimited Access to a Premium Educational Platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
-                    <a href="<?php echo get_permalink(109) ?>" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a href="https://www.mathpal.us/cart/?add-to-cart=2092" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
             <div class="item">
@@ -77,7 +77,7 @@
                         <li>IXL: Unlimited access to a premium educational platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
-                    <a href="<?php echo get_permalink(79) ?>" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    <a href="https://www.mathpal.us/cart/?add-to-cart=2093" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
         </section>

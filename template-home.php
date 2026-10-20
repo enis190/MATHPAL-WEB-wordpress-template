@@ -333,7 +333,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <!-- VIDEO 4 -->
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
-                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/video/video_2.mp4">
+                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/valentina.mp4">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.png" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
@@ -389,8 +389,8 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
 
       <!-- DERECHA: video -->
       <div class="col-12 col-md-4">
-        <div class="video-block single-video">
-          <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/video/video_lenin.mp4">
+        <div class="video-block single-video fade-in-top">
+          <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>//assets/img/lenin-clases.mp4">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
           </div>
@@ -783,7 +783,7 @@ Decide between a subscription or hourly rates, either way we are here to help!
 <div class="body">
 <h3>SAT PREP</h3>
 <p class="c-block__subtitle">Math + Reading &amp; Writing</p>
-<p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher</p>
+<p>Math, Reading &amp; Writing prep to build the skills your teen needs to score higher.</p>
 <a class="btn-1" href="https://www.mathpal.us/sat-prep-courses/">Start training <i class="fa-solid fa-circle-arrow-right"></i></a>
 </div>
 </div>

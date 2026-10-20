@@ -12,7 +12,7 @@
                 <li><span class="fa-li"></span>$35/hr</li>
                 <li><span class="fa-li"><i class="fa-solid fa-calendar "></i></span><strong>Valid for 2 months</strong></li>
             </ul>
-            <a href="<?php echo get_permalink(81) ?>" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
+            <a href="https://www.mathpal.us/cart/?add-to-cart=2101" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
     </div>
     <div class="item">
@@ -31,7 +31,7 @@
             </ul>
 
 
-            <a href="<?php echo get_permalink(83) ?>" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
+            <a href="https://www.mathpal.us/cart/?add-to-cart=2103" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
     </div>
     <div class="item">
@@ -52,7 +52,7 @@
                 <li><span class="fa-li"></span>30/hr (Save 10%)</li>
                 <li><span class="fa-li"><i class="fa-solid fa-calendar "></i></span><strong>Valid for 3 months</strong></li>
             </ul>
-            <a href="<?php echo get_permalink(85) ?>" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
+            <a href="https://www.mathpal.us/cart/?add-to-cart=2105" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
     </div>
 </section>
