@@ -15,6 +15,9 @@
                         <li>Add an Additional Class for just $35 per hour</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
+                    <a href="/shop/?add-to-cart=2073" class="mb-2 button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2073" data-product_sku="2073" data-product_name="Build Knowledge Subscription" data-product_price="69.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Build Knowledge Subscription”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
+
                     <a href="https://www.mathpal.us/cart/?add-to-cart=2073" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
