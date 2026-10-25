@@ -309,7 +309,8 @@
   position: absolute;
   top: -8px;
   right: -10px;
-  background: #6b1fd6; /* tu morado de marca */
+  background: #6b1fd6;
+  /* tu morado de marca */
   color: #fff;
   font-size: 11px;
   font-weight: bold;
@@ -345,6 +346,10 @@
 /* opcional: también animar el ícono del carrito */
 .cart-icon-wrapper.pulse span {
   animation: cart-pulse 0.6s ease-in-out;
+}
+
+.c_add_to_cart_button {
+  display: -webkit-inline-box;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

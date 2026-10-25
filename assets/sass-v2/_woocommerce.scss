@@ -52,8 +52,8 @@
       display: none !important;
     }
 
-    .cart-icon-wrapper{
-      i{
+    .cart-icon-wrapper {
+      i {
         font-size: 1.3rem;
       }
     }
@@ -65,10 +65,12 @@
       background-image: url(../img/bg-precio-2.png);
       background-size: cover;
       background-repeat: no-repeat;
+
       h3 {
         color: #fff;
         line-height: 60px;
       }
+
       .tag {
         display: none;
       }
@@ -82,6 +84,7 @@
       flex: none !important;
       font-size: 0.8rem;
     }
+
     .duracion {
       span {
         background: #f1e9f6;
@@ -95,6 +98,7 @@
       //margin-top: 15px;
       font-size: 1.2rem;
     }
+
     .woo-description {
       margin-bottom: 20px;
     }
@@ -105,11 +109,13 @@
 
     .woocommerce-ordering {
       text-align: center;
+
       select {
         padding: 5px 15px;
         border-radius: 10px;
       }
     }
+
     .woocommerce-result-count {
       text-align: center;
     }
@@ -250,6 +256,7 @@
       }
     }
   }
+
   &.slider-act-sat {
     .slick-dots {
       li {
@@ -259,6 +266,7 @@
             opacity: 1;
           }
         }
+
         &.slick-active {
           button {
             &::before {
@@ -269,6 +277,7 @@
       }
     }
   }
+
   &.slider-additional {
     .tag {
       display: none;
@@ -277,25 +286,30 @@
 }
 
 .checkout {
+
   .wp-block-woocommerce-checkout,
   .wc-block-components-express-payment__event-buttons {
     iframe {
       min-height: inherit;
     }
   }
+
   .woocommerce-order {
     margin-top: 70px;
+
     p {
       &.woocommerce-notice {
         text-align: center;
         margin-bottom: 50px;
         font-size: 1.7rem;
+
         &.woocommerce-thankyou-order-received {
           color: #9200ff;
         }
       }
     }
   }
+
   .woo-alert-1 {
     padding: 20px;
     border: 1px solid #bcbec2;
@@ -309,11 +323,13 @@
   display: inline-block;
   text-decoration: none;
   color: #000;
+
   .cart-count {
     position: absolute;
     top: -8px;
     right: -10px;
-    background: #6b1fd6; /* tu morado de marca */
+    background: #6b1fd6;
+    /* tu morado de marca */
     color: #fff;
     font-size: 11px;
     font-weight: bold;
@@ -332,15 +348,19 @@
   0% {
     transform: scale(1);
   }
+
   30% {
     transform: scale(2.5);
   }
+
   50% {
     transform: scale(0.9);
   }
+
   70% {
     transform: scale(2.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -355,23 +375,23 @@
   animation: cart-pulse 0.6s ease-in-out;
 }
 
-@media only screen and (min-width: 600px) {
+
+
+.c_add_to_cart_button {
+  display: -webkit-inline-box;
 }
 
-@media only screen and (max-width: 820px) and (orientation: landscape) {
-}
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 1600px) {
-}
+@media only screen and (min-width: 1600px) {}
