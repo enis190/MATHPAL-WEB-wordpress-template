@@ -30,16 +30,16 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                 ?>
                 <article class="<?php echo esc_attr( $card_class ); ?>">
                     <?php if ( $show_new_badge ) : ?>
-                        <div class="mp-prep-pricing__new-badge">
-                            <!-- <span class="mp-prep-pricing__new-badge-head">
+                        <!-- <div class="mp-prep-pricing__new-badge">
+                            <span class="mp-prep-pricing__new-badge-head">
                                 <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
                                 <strong><?php echo esc_html( $new_label ); ?></strong>
-                            </span> -->
+                            </span>
                             <span class="mp-prep-pricing__new-badge-sub"><?php echo esc_html( $new_sub ); ?></span>
                             <?php if ( $new_highlight ) : ?>
                                 <span class="mp-prep-pricing__new-badge-tag"><?php echo esc_html( $new_highlight ); ?></span>
                             <?php endif; ?>
-                        </div>
+                        </div> -->
                     <?php endif; ?>
 
                     <div class="mp-prep-pricing__card-inner">
