@@ -69,15 +69,17 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                             </ul>
                         <?php endif; ?>
                         
-                        <!-- boton Woocommerce Add to cart -->
-                        <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
-                            <?php echo wp_kses_post( $plan['plan_premium_exp'] ); ?>
-                        <?php endif; ?>
+                        <div class="d-block">
+                            <!-- boton Woocommerce Add to cart -->
+                            <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
+                                <?php echo wp_kses_post( $plan['plan_premium_exp'] ); ?>
+                            <?php endif; ?>
 
-                        <a href="<?php echo esc_url( $checkout_url ); ?>" class="mp-prep-pricing__btn btn-1">
-                            <?php echo esc_html( 'Buy now' ); ?>
-                            <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
-                        </a>
+                            <a href="<?php echo esc_url( $checkout_url ); ?>" class="mp-prep-pricing__btn btn-1">
+                                <?php echo esc_html( 'Buy now' ); ?>
+                                <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
             <?php endforeach; ?>
