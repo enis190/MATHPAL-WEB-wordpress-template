@@ -348,8 +348,8 @@
   animation: cart-pulse 0.6s ease-in-out;
 }
 
-.c_add_to_cart_button {
-  display: -webkit-inline-box;
+.added_to_cart {
+  display: none;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
