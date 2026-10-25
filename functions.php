@@ -197,7 +197,7 @@ add_filter( 'render_block', 'mathpal_checkout_badge_block', 10, 2 );
 function mathpal_checkout_badge_block( $content, $block ) {
     if ( 'woocommerce/checkout-actions-block' === $block['blockName'] ) {
         $badge = '<div class="mp-secure-badge">
-            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/OIP.webp" alt="Secure payment" loading="lazy">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/OIP.webp" alt="Secure payment" loading="lazy" style="    max-height: 80px;margin-bottom: 20px;">
         </div>';
         return $badge . $content;
     }
