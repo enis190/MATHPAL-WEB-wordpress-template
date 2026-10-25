@@ -189,3 +189,16 @@ add_action( 'woocommerce_single_product_summary', function () {
     global $post;
     echo '<div class="product-desc">' . apply_filters( 'the_content', $post->post_content ) . '</div>';
 }, 25 );
+
+
+// logo pago seguro
+add_action( 'woocommerce_review_order_before_submit', 'mathpal_secure_payment_badge' );
+function mathpal_secure_payment_badge() {
+    ?>
+    <div class="mp-secure-badge">
+        <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/OIP.webp"
+             alt="<?php esc_attr_e( 'Secure payment', 'mathpal' ); ?>"
+             loading="lazy">
+    </div>
+    <?php
+}
