@@ -56,6 +56,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                         <li><span class="fa-li"><i class="fa-solid fa-calendar color-verde"></i></span>Valid for 1 month</li>
                     </ul>
 
+                    <a href="<?php echo get_permalink( 69 )?>" class="btn-1 mt-4" tabindex="0">Add to cart &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
                     <a href="<?php echo get_permalink( 69 )?>" class="btn-1 mt-4" tabindex="0">Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
                 </div>
             </div>

@@ -181,3 +181,11 @@ add_action('wp_enqueue_scripts', 'mathpal_enqueue_cart_btn_script');
 //         wp_enqueue_script('wc-cart-fragments');
 //     }
 // }, 99);
+
+
+
+// Agregar descripcion a producto woocomerce debajo del precio
+add_action( 'woocommerce_single_product_summary', function () {
+    global $post;
+    echo '<div class="product-desc">' . apply_filters( 'the_content', $post->post_content ) . '</div>';
+}, 25 );
