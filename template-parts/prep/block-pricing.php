@@ -71,7 +71,7 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                         
                         <!-- boton Woocommerce Add to cart -->
                         <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
-                            <?php echo esc_html( $plan['plan_premium_exp'] ); ?>
+                            <?php echo wp_kses_post( $plan['plan_premium_exp'] ); ?>
                         <?php endif; ?>
 
                         <a href="<?php echo esc_url( $checkout_url ); ?>" class="mp-prep-pricing__btn btn-1">
