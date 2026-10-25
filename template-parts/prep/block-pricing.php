@@ -59,9 +59,7 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                             <p class="mp-prep-pricing__validity"><?php echo esc_html( $plan['plan_validity'] ); ?></p>
                         <?php endif; ?>
 
-                        <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
-                            <p class="mp-prep-pricing__validity mp-prep-pricing__validity--accent"><?php echo esc_html( $plan['plan_premium_exp'] ); ?></p>
-                        <?php endif; ?>
+                        
 
                         <?php if ( ! empty( $plan['plan_features'] ) ) : ?>
                             <ul class="mp-prep-pricing__features fa-bullets">
@@ -69,6 +67,11 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                                     <li><?php echo esc_html( mp_prep_text( $feature['feature_text'] ?? '', '' ) ); ?></li>
                                 <?php endforeach; ?>
                             </ul>
+                        <?php endif; ?>
+                        
+                        <!-- boton Woocommerce Add to cart -->
+                        <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
+                            <?php echo esc_html( $plan['plan_premium_exp'] ); ?>
                         <?php endif; ?>
 
                         <a href="<?php echo esc_url( $checkout_url ); ?>" class="mp-prep-pricing__btn btn-1">
