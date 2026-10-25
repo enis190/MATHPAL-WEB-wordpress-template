@@ -18,6 +18,8 @@
                 <li>Full Length Practice Exams</li>
                 <li>Strategic Test-Taking Techniquess</li>
             </ul>
+            <a href="/shop/?w3tc_note=flush_all&amp;add-to-cart=2033" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2033" data-product_sku="2033" data-product_name="Emergency State Exam Preparation Course" data-product_price="250.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Emergency State Exam Preparation Course”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
             <a href="https://www.mathpal.us/cart/?add-to-cart=2033" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
     </div>
@@ -36,6 +38,8 @@
                 <li>Full Length Practice Exams</li>
                 <li>Strategic Test-Taking Techniques</li>
             </ul>
+            <a href="/shop/?w3tc_note=flush_all&amp;add-to-cart=2058" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2058" data-product_sku="2058" data-product_name="Intensive State Exam Preparation Course" data-product_price="420.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Intensive State Exam Preparation Course”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
             <a href="https://www.mathpal.us/cart/?add-to-cart=2058" class="btn-1 mt-4">Buy Now <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
     </div>
