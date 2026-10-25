@@ -291,7 +291,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <!-- VIDEO 1 -->
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="100" data-duration="500">
-                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/Camila-testimonial-Mathpal.mp4">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Camila-testimonial-Mathpal.mp4">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Camila.png" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
@@ -305,7 +305,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <!-- VIDEO 2 -->
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
-                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/Lenin-testimonial-Mathpal.mp4">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Lenin-testimonial-Mathpal.mp4">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
@@ -319,7 +319,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <!-- VIDEO 3 (ejemplo con YouTube: usa data-embed en vez de data-video) -->
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
-                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/reel-MATEO.mp4">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/reel-MATEO.mp4">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Mateo.png" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
@@ -333,7 +333,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <!-- VIDEO 4 -->
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
-                        <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>/assets/img/valentina.mp4">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/valentina.mp4">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.png" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
@@ -390,8 +390,8 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
       <!-- DERECHA: video -->
       <div class="col-12 col-md-4">
         <div class="video-block single-video fade-in-top">
-          <div class="video-wrap" data-video="<?php bloginfo('template_url'); ?>//assets/img/lenin-clases.mp4">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
+          <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/lenin-clases.mp4">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/tutoria.png" alt="" class="img-fluid">
             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
           </div>
         </div>
