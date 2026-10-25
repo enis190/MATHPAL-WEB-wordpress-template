@@ -69,7 +69,7 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                             </ul>
                         <?php endif; ?>
                         
-                        <div class="d-block">
+                        <div class="d-block" style="    margin-top: auto;">
                             <!-- boton Woocommerce Add to cart -->
                             <?php if ( $is_premium && ! empty( $plan['plan_premium_exp'] ) ) : ?>
                                 <?php echo wp_kses_post( $plan['plan_premium_exp'] ); ?>
