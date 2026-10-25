@@ -56,7 +56,8 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                         <li><span class="fa-li"><i class="fa-solid fa-calendar color-verde"></i></span>Valid for 1 month</li>
                     </ul>
 
-                    <a href="<?php echo get_permalink( 69 )?>" class="btn-1 mt-4" tabindex="0">Add to cart &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
+                    <a href="?add-to-cart=2031" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2087" data-product_sku="2087" data-product_name="Intensive ACT/SAT Course" data-product_price="420.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Intensive ACT/SAT Course”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
                     <a href="<?php echo get_permalink( 69 )?>" class="btn-1 mt-4" tabindex="0">Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i></a>
                 </div>
             </div>
