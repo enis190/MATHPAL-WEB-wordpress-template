@@ -15,7 +15,7 @@
                         <li>Add an Additional Class for just $35 per hour</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
-                    <a href="/shop/?add-to-cart=2073" class="mb-2 button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2073" data-product_sku="2073" data-product_name="Build Knowledge Subscription" data-product_price="69.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Build Knowledge Subscription”" rel="nofollow" tabindex="0">
+                    <a href="/shop/?add-to-cart=2073" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2073" data-product_sku="2073" data-product_name="Build Knowledge Subscription" data-product_price="69.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Build Knowledge Subscription”" rel="nofollow" tabindex="0">
 				Add to cart			</a>
 
                     <a href="https://www.mathpal.us/cart/?add-to-cart=2073" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
@@ -39,6 +39,10 @@
                         <li>IXL: Unlimited access to a premium educational platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
+
+                    <a href="/shop/?add-to-cart=2091" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2091" data-product_sku="2091" data-product_name="Strengthen Skills Subscription" data-product_price="130.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Strengthen Skills Subscription”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
+
                     <a href="https://www.mathpal.us/cart/?add-to-cart=2091" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
@@ -80,6 +84,8 @@
                         <li>IXL: Unlimited access to a premium educational platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
+                    <a href="/shop/?add-to-cart=2093" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2093" data-product_sku="2093" data-product_name="Exceed Expectations Subscription" data-product_price="250.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Exceed Expectations Subscription”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
                     <a href="https://www.mathpal.us/cart/?add-to-cart=2093" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
