@@ -63,6 +63,10 @@
                         <li>IXL: Unlimited Access to a Premium Educational Platform</li>
                         <li>Minimum subscription length is 3 months</li>
                     </ul>
+                    
+                    <a href="/shop/?add-to-cart=2092" class="button btn-1 add_to_cart_button ajax_add_to_cart product_type_simple mathpal-custom-add-to-cart" data-product_id="2092" data-product_sku="2092" data-product_name="Homework Helper Subscription" data-product_price="200.00" data-currency="USD" data-quantity="1" aria-label="Add to cart: “Homework Helper Subscription”" rel="nofollow" tabindex="0">
+				Add to cart			</a>
+
                     <a href="https://www.mathpal.us/cart/?add-to-cart=2092" class="btn-1 mt-4">Buy now <i class="fa-solid fa-circle-arrow-right"></i></a>
                 </div>
             </div>
