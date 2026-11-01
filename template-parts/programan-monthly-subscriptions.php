@@ -5,7 +5,7 @@
             <div class="item">
                 <div class="c-block">
                     <h4>Build Knowledge Subscription</h4>
-                    <h4 class="precio">69</h4>
+                    <h4 class="precio">79</h4>
                     <h4 class="det">Every month</h4>
                     <p class="mt-4 mb-4">Experience personalized excellence with MathPal's Best Value tutoring plan, uniquely designed to improve your math comprehension</p>
 
@@ -28,7 +28,7 @@
                         <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back.png" alt="" style="display: inline-block;">
                     </div> -->
                     <h4>Strengthen Skills Subscription</h4>
-                    <h4 class="precio">130</h4>
+                    <h4 class="precio">150</h4>
                     <h4 class="det">Every month</h4>
                     <p class="mt-4 mb-4">Enhance your child's abilities with 4 monthly tutoring hours tailored to their unique learning needs</p>
 
@@ -52,7 +52,7 @@
                         <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group-1638.png" alt=""style="display: inline-block;">
                     </div> -->
                     <h4>Guided Success Subscription</h4>
-                    <h4 class="precio">200</h4>
+                    <h4 class="precio">230</h4>
                     <h4 class="det">Homework Helper</h4>
                     <p class="mt-4 mb-4">Empower your child with 6 monthly tutoring hours designed to match their individual learning style. The guidance they need to succeed.</p>
 
@@ -77,7 +77,7 @@
                         
                     </div> -->
                     <h4>Exceed Expectations Subscription</h4>
-                    <h4 class="precio">250</h4>
+                    <h4 class="precio">290</h4>
                     <h4 class="det">Every month</h4>
                     <p class="mt-4 mb-4">Achieve math excellence with 8 focused tutoring hours each month to surpass academic goals</p>
 
