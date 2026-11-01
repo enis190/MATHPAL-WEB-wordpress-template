@@ -126,7 +126,7 @@ include get_template_directory() . '/template-parts/header-default.php';
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="titulo-h2 fade-in">ACT/SAT Prep:</h2>
+                <h2 class="titulo-h2 fade-in">ACT/SAT Prep.:</h2>
             </div>
         </div>
 
@@ -180,9 +180,14 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('act-sat-prep'),
                             ),
                         ),
-                        'meta_key'       => '_price',
-                        'orderby'        => 'meta_value_num',
-                        'order'          => 'ASC',
+                        'meta_query'     => array(
+                            'precio' => array(
+                                'key'  => '_price',
+                                'type' => 'DECIMAL(10,2)',
+                            ),
+                        ),
+                        'orderby'          => array('precio' => 'ASC'),
+                        'suppress_filters' => true,
                     ));
 
                     if ($bloque1->have_posts()) :
