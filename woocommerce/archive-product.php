@@ -165,14 +165,11 @@ include get_template_directory() . '/template-parts/header-default.php';
                     // //do_action( 'woocommerce_sidebar' );
                     ?>
 
-                    <?php
-                    /**
-                     * BLOQUE 1 — Categoría: Diagnostic Class
-                     */
+                   <?php
                     $bloque1 = new WP_Query(array(
                         'post_type'      => 'product',
                         'post_status'    => 'publish',
-                        'posts_per_page' => -1, // trae todos los de esa categoría; pon un número si quieres limitar
+                        'posts_per_page' => -1,
                         'tax_query'      => array(
                             array(
                                 'taxonomy' => 'product_cat',
@@ -180,28 +177,27 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('act-sat-prep'),
                             ),
                         ),
-                        'meta_query'     => array(
-                            'precio' => array(
-                                'key'  => '_price',
-                                'type' => 'DECIMAL(10,2)',
-                            ),
-                        ),
-                        'orderby'          => array('precio' => 'ASC'),
-                        'suppress_filters' => true,
                     ));
 
                     if ($bloque1->have_posts()) :
-                    ?>
+                        $items = $bloque1->posts;
 
-                        <?php
-                        while ($bloque1->have_posts()) :
-                            $bloque1->the_post();
-                            global $product;
+                        // Ordena por el precio real (menor a mayor)
+                        usort($items, function ($a, $b) {
+                            $pa = (float) wc_get_product($a->ID)->get_price();
+                            $pb = (float) wc_get_product($b->ID)->get_price();
+                            return $pa <=> $pb;
+                        });
+
+                        global $post, $product;
+                        foreach ($items as $post) :
+                            setup_postdata($post);
+                            $product = wc_get_product($post->ID);
                             wc_get_template_part('content', 'product');
-                        endwhile;
+                        endforeach;
                         wp_reset_postdata();
-                        ?>
-                    <?php endif; ?>
+                    endif;
+                    ?>
                 </section>
             </div>
         </div>
