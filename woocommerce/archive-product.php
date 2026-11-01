@@ -126,7 +126,7 @@ include get_template_directory() . '/template-parts/header-default.php';
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="titulo-h2 fade-in">ACT/SAT Prep.:</h2>
+                <h2 class="titulo-h2 fade-in">ACT/SAT Prep:</h2>
             </div>
         </div>
 
@@ -235,23 +235,27 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('monthly-subscriptions'),
                             ),
                         ),
-                        'meta_key'       => '_price',
-                        'orderby'        => 'meta_value_num',
-                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
-                    ?>
+                        $items = $bloque1->posts;
 
-                        <?php
-                        while ($bloque1->have_posts()) :
-                            $bloque1->the_post();
-                            global $product;
+                        // Ordena por el precio real (menor a mayor)
+                        usort($items, function ($a, $b) {
+                            $pa = (float) wc_get_product($a->ID)->get_price();
+                            $pb = (float) wc_get_product($b->ID)->get_price();
+                            return $pa <=> $pb;
+                        });
+
+                        global $post, $product;
+                        foreach ($items as $post) :
+                            setup_postdata($post);
+                            $product = wc_get_product($post->ID);
                             wc_get_template_part('content', 'product');
-                        endwhile;
+                        endforeach;
                         wp_reset_postdata();
-                        ?>
-                    <?php endif; ?>
+                    endif;
+                    ?>
                 </section>
             </div>
         </div>
@@ -294,23 +298,27 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('state-exam-prep'),
                             ),
                         ),
-                        'meta_key'       => '_price',
-                        'orderby'        => 'meta_value_num',
-                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
-                    ?>
+                        $items = $bloque1->posts;
 
-                        <?php
-                        while ($bloque1->have_posts()) :
-                            $bloque1->the_post();
-                            global $product;
+                        // Ordena por el precio real (menor a mayor)
+                        usort($items, function ($a, $b) {
+                            $pa = (float) wc_get_product($a->ID)->get_price();
+                            $pb = (float) wc_get_product($b->ID)->get_price();
+                            return $pa <=> $pb;
+                        });
+
+                        global $post, $product;
+                        foreach ($items as $post) :
+                            setup_postdata($post);
+                            $product = wc_get_product($post->ID);
                             wc_get_template_part('content', 'product');
-                        endwhile;
+                        endforeach;
                         wp_reset_postdata();
-                        ?>
-                    <?php endif; ?>
+                    endif;
+                    ?>
                 </section>
             </div>
         </div>
@@ -367,23 +375,27 @@ include get_template_directory() . '/template-parts/header-default.php';
                                 'terms'    => array('additional-tutoring'),
                             ),
                         ),
-                        'meta_key'       => '_price',
-                        'orderby'        => 'meta_value_num',
-                        'order'          => 'ASC',
                     ));
 
                     if ($bloque1->have_posts()) :
-                    ?>
+                        $items = $bloque1->posts;
 
-                        <?php
-                        while ($bloque1->have_posts()) :
-                            $bloque1->the_post();
-                            global $product;
+                        // Ordena por el precio real (menor a mayor)
+                        usort($items, function ($a, $b) {
+                            $pa = (float) wc_get_product($a->ID)->get_price();
+                            $pb = (float) wc_get_product($b->ID)->get_price();
+                            return $pa <=> $pb;
+                        });
+
+                        global $post, $product;
+                        foreach ($items as $post) :
+                            setup_postdata($post);
+                            $product = wc_get_product($post->ID);
                             wc_get_template_part('content', 'product');
-                        endwhile;
+                        endforeach;
                         wp_reset_postdata();
-                        ?>
-                    <?php endif; ?>
+                    endif;
+                    ?>
                 </section>
 
             </div>
