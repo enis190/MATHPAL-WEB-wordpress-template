@@ -2194,7 +2194,7 @@ body:has(.cintillo_2026):has(.submenu.margin-menu-principal) .header-title-img {
     margin: 0 0 1.5rem; }
 
 .home_form .img {
-  background-image: url("../img/bg-form.png");
+  background-image: url("../img/bg-form.webp");
   background-size: cover;
   background-repeat: no-repeat; }
 .home_form .form {

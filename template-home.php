@@ -292,7 +292,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="100" data-duration="500">
                         <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Camila-testimonial-Mathpal.mp4">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Camila.png" alt="" class="img-fluid">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Camila.webp" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
                         <!-- <div class="body">
@@ -306,7 +306,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
                         <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Lenin-testimonial-Mathpal.mp4">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.png" alt="" class="img-fluid">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.webp" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
                         <!-- <div class="body">
@@ -320,7 +320,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
                         <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/reel-MATEO.mp4">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Mateo.png" alt="" class="img-fluid">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Mateo.webp" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
                         <!-- <div class="body">
@@ -334,7 +334,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                 <div class="item">
                     <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
                         <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/valentina.mp4">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.png" alt="" class="img-fluid">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.webp" alt="" class="img-fluid">
                             <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
                         </div>
                         <!-- <div class="body">
@@ -1360,12 +1360,35 @@ width:320px;
 </style>
 
 <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement("script");
+   // 2. Carga la API de YouTube solo cuando los videos estén cerca de la pantalla
+(function () {
+  var loaded = false;
 
+  function loadYT() {
+    if (loaded) return;
+    loaded = true;
+    var tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    document.head.appendChild(tag);
+  }
+
+  var ids = ["player_camila", "player_otg_2"];
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { loadYT(); io.disconnect(); }
+      });
+    }, { rootMargin: "300px" });
+
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  } else {
+    window.addEventListener("scroll", loadYT, { once: true, passive: true });
+  }
+})();
 
     // 3. This function creates an <iframe> (and YouTube player)
     //    after the API code downloads.
