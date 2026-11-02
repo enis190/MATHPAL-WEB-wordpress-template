@@ -11,14 +11,14 @@ include get_template_directory() . '/template-parts/header-default.php';
         <div class="row">
             <div class="col-12 text-center fade-in">
                 <h2 class="titulo-h2">MathPal’s Monthly Promos <font>&</font> Programs</h2>
-                <p><b>New! Back to School at MathPal: </b>August is your window to give your child a head start in math — <b>with free bonus hours on every monthly plan*</b>, before the school year gets harder.</p>
+                <p class="d-none"><b>New! Back to School at MathPal: </b>August is your window to give your child a head start in math — <b>with free bonus hours on every monthly plan*</b>, before the school year gets harder.</p>
             </div>
         </div>
         <div class="row mt-4 fade-in">
-            <div class="col-md-6 img">
+            <div class="col-md-6 img d-none">
                 <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/joven.png" alt="" class="img-fluid" style="margin-top:-50px">
             </div>
-            <div class="col-md-5 txt">
+            <div class="col-md-5 txt d-none">
                 <div class="c-block">
 
 
