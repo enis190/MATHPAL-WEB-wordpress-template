@@ -2,7 +2,7 @@
     <div class="item active">
         <div class="c-block">
             <h4>1 Additional hour</h4>
-            <h4 class="precio">35</h4>
+            <h4 class="precio">40</h4>
             <!-- <h4 class="det">Every month</h4> -->
             <p class="mt-4 mb-4">Exclusive pricing for subscribers - unlock expert tutoring at a special hourly rate!</p>
 
@@ -18,7 +18,7 @@
     <div class="item">
         <div class="c-block">
             <h4>5 Additional hours</h4>
-            <h4 class="precio">160</h4>
+            <h4 class="precio">175</h4>
             <!-- <h4 class="det">Every month</h4> -->
             <p class="mt-4 mb-4">Exclusive pricing for subscribers - unlock expert tutoring at a special hourly rate!</p>
 
@@ -37,7 +37,7 @@
     <div class="item">
         <div class="c-block">
             <h4>10 Additional hours</h4>
-            <h4 class="precio">300</h4>
+            <h4 class="precio">350</h4>
             <!-- <h4 class="det">Every month</h4> -->
             <p class="mt-4 mb-4">Exclusive pricing for subscribers - unlock expert tutoring at a special hourly rate!</p>
 

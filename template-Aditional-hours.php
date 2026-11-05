@@ -60,7 +60,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                     <!-- <div class="img">
                         <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/foto-precio.png" alt="">
                     </div> -->
-                    <h4 class="precio">45</h4>
+                    <h4 class="precio">50</h4>
 
                     <ul class="fa-ul mb-4">
                         <li><span class="fa-li"><i class="fa-solid fa-clock color-verde"></i></span>60 minute session with a Math tutoring expert </li>
