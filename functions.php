@@ -203,3 +203,51 @@ function mathpal_checkout_badge_block( $content, $block ) {
     }
     return $content;
 }
+
+
+
+/**
+ * Normaliza el teléfono de facturación a formato internacional (+código + número)
+ * usando el país seleccionado en el checkout.
+ */
+function mathpal_format_phone( $phone, $country ) {
+    $phone  = trim( (string) $phone );
+    $digits = preg_replace( '/\D+/', '', $phone );
+    if ( $digits === '' || ! $country ) {
+        return $phone;
+    }
+
+    // Si el cliente ya puso "+", respetamos lo que escribió
+    if ( strpos( $phone, '+' ) === 0 ) {
+        return '+' . $digits;
+    }
+
+    $code = ltrim( WC()->countries->get_country_calling_code( $country ), '+' );
+    if ( ! $code ) {
+        return $phone;
+    }
+
+    // Ya viene con el código (ej. 51987654321)
+    if ( strpos( $digits, $code ) === 0 && strlen( $digits ) > 9 ) {
+        return '+' . $digits;
+    }
+
+    // Quitar el 0 inicial de marcación nacional (ej. 01..., 0...)
+    $digits = ltrim( $digits, '0' );
+
+    return '+' . $code . $digits;
+}
+
+// Checkout de bloques (el que usa tu sitio)
+add_action( 'woocommerce_store_api_checkout_update_order_from_request', function ( $order, $request ) {
+    $order->set_billing_phone(
+        mathpal_format_phone( $order->get_billing_phone(), $order->get_billing_country() )
+    );
+}, 10, 2 );
+
+// Checkout clásico (por si algún día cambias)
+add_action( 'woocommerce_checkout_create_order', function ( $order ) {
+    $order->set_billing_phone(
+        mathpal_format_phone( $order->get_billing_phone(), $order->get_billing_country() )
+    );
+} );
