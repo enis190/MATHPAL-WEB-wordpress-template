@@ -121,6 +121,52 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
+<style>
+.bf-card-tag{background:#8b00ff;text-align:center;padding:10px 12px 14px}
+.bf-card-tag__title{display:block;color:#fff;font-weight:800;font-size:1.15rem;line-height:1.2;margin-bottom:6px}
+.bf-card-tag__pill{display:inline-block;background:#a6f43c;color:#000;font-weight:800;font-size:1.05rem;line-height:1.2;padding:4px 12px}
+</style>
+<?php
+/**
+ * Etiqueta Black Friday en las tarjetas de producto.
+ * Captura el HTML de content-product.php e inserta la etiqueta antes de <div class="body">.
+ * $textos: array precio => texto de la etiqueta. Si el precio no está en la lista, la tarjeta no lleva etiqueta.
+ */
+if (!function_exists('mp_bf_render_card')) {
+    function mp_bf_render_card($product, $textos = array())
+    {
+        ob_start();
+        wc_get_template_part('content', 'product');
+        $html = ob_get_clean();
+
+        $precio = (string) round((float) $product->get_price());
+        if (isset($textos[$precio])) {
+            $badge = '<div class="bf-card-tag">'
+                . '<span class="bf-card-tag__title">Black Friday:</span>'
+                . '<span class="bf-card-tag__pill">' . esc_html($textos[$precio]) . '</span>'
+                . '</div>';
+            $pos = strpos($html, '<div class="body">');
+            if ($pos !== false) {
+                $html = substr_replace($html, $badge, $pos, 0);
+            }
+        }
+        echo $html;
+    }
+}
+
+// Textos de la etiqueta por precio (precio => texto)
+$mp_bf_textos_act = array(
+    '250' => '+1 Free hour $50 VALUE*',
+    '420' => '+2 Free hours $100 VALUE*',
+    '670' => '+3 Free hours $150 VALUE*',
+);
+$mp_bf_textos_monthly = array(
+    '150' => '+2 Free hours $80 VALUE*',
+    '230' => '+3 Free hours $120 VALUE*',
+    '290' => '+4 Free hours $160 VALUE*',
+);
+?>
+
 <div class="container-fluid c-div-padding shop c-woocommerce c-archive-product home-ruta suscripcion-1 g-0 bg-3 slider-act-sat">
     <div class="container">
         <div class="row">
@@ -192,7 +238,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                         foreach ($items as $post) :
                             setup_postdata($post);
                             $product = wc_get_product($post->ID);
-                            wc_get_template_part('content', 'product');
+                            mp_bf_render_card($product, $mp_bf_textos_act); // etiqueta Black Friday segun precio
                         endforeach;
                         wp_reset_postdata();
                     endif;
@@ -250,7 +296,7 @@ include get_template_directory() . '/template-parts/header-default.php';
                         foreach ($items as $post) :
                             setup_postdata($post);
                             $product = wc_get_product($post->ID);
-                            wc_get_template_part('content', 'product');
+                            mp_bf_render_card($product, $mp_bf_textos_monthly); // etiqueta Black Friday segun precio (el de $79 no lleva)
                         endforeach;
                         wp_reset_postdata();
                     endif;

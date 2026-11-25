@@ -46,7 +46,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                                         data-hoffset="['120','0','15','0']"
                                         data-y="['middle','middle','middle','middle']"
                                         data-voffset="['-130','-100','-150','-150']"
-                                        data-width="['500', '450', '400', '400']" data-height="none"
+                                        data-width="['500', '450', '400', '460']" data-height="none"
                                         data-type="text" data-textAlign="['left','left','left','center']"
                                         data-responsive_offset="on" data-start="800"
                                         data-frames='[{"delay":1200,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'>
@@ -1363,6 +1363,13 @@ width:320px;
         height: auto;
         overflow: visible;
         position: relative;
+    .caption-bf h1,
+    .caption-bf h3 {
+    text-align: center !important;
+    white-space: normal !important;
+}
+.caption-bf h1 { font-size: 44px !important; line-height: 1.1 !important; }
+.caption-bf h3 { font-size: 18px !important; }
     }
 
     #rev_slider_4_1,
