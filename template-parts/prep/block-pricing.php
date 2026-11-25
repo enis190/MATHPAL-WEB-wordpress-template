@@ -2,7 +2,38 @@
 $exam          = is_page( 'act-prep-courses' ) ? 'act' : 'sat';
 $pricing_title = mp_prep_text( $block['pricing_title'] ?? '', ( 'act' === $exam ) ? 'ACT Prep:' : 'SAT Prep:' );
 $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : mp_prep_default_plans( $exam );
+
+// Black Friday (ACT y SAT): una imagen por tarjeta, en el mismo orden en que aparecen en la página.
+// Cambia cada link por la imagen que corresponda.
+// Para quitar la promo de ambas páginas, cambia $show_bf_promo a false.
+$show_bf_promo = true;
+$bf_promo_imgs = array(
+    'https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf-promo50.png', // Tarjeta 1
+    'https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf-promo200.png', // Tarjeta 2
+    'https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf_promo150.png', // Tarjeta 3
+);
+$bf_card_index = 0;
 ?>
+<?php if ( $show_bf_promo ) : ?>
+<style>
+    /* Black Friday: imagen arriba de cada tarjeta (ACT y SAT) */
+    .mp-prep-pricing .mp-prep-pricing__grid { padding-top: 110px; }
+    .mp-prep-pricing .mp-prep-pricing__card .mp-prep-pricing__card-inner { padding-top: 70px; }
+    .mp-bf-promo {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 5;
+        pointer-events: none;
+    }
+    .mp-bf-promo img { width: 55%; height: auto; display: inline-block; }
+    @media (max-width: 991px) {
+        .mp-prep-pricing .mp-prep-pricing__grid { gap: 110px; }
+    }
+</style>
+<?php endif; ?>
 <section class="mp-prep-pricing<?php echo ( 'act' === $exam ) ? ' mp-prep-pricing--act' : ''; ?>" id="block_precios">
     <span class="mp-prep-pricing__deco mp-prep-pricing__deco--ring" aria-hidden="true"></span>
     <span class="mp-prep-pricing__deco mp-prep-pricing__deco--triangle" aria-hidden="true"></span>
@@ -41,6 +72,15 @@ $plans         = ! empty( $block['pricing_plans'] ) ? $block['pricing_plans'] : 
                             <?php endif; ?>
                         </div> -->
                     <?php endif; ?>
+
+                    <?php if ( $show_bf_promo ) :
+                        $bf_img = $bf_promo_imgs[ $bf_card_index ] ?? $bf_promo_imgs[0];
+                        ?>
+                        <div class="mp-bf-promo">
+                            <img src="<?php echo esc_url( $bf_img ); ?>" alt="Black Friday promo">
+                        </div>
+                    <?php endif; ?>
+                    <?php $bf_card_index++; ?>
 
                     <div class="mp-prep-pricing__card-inner">
                         <h3 class="mp-prep-pricing__plan-title"><?php echo esc_html( mp_prep_text( $plan['plan_title'] ?? '', '' ) ); ?></h3>

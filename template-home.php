@@ -38,7 +38,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                                     ?>
                                     <img src="<?php echo wp_get_attachment_image_url(get_field('banner_principal_fondo', get_the_ID()), 'full') ?>" alt=""
                                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                         class="rev-slidebg" data-no-retina>
 
                                     <!-- LAYER NR. 1 -->
                                     <div class="tp-caption tp-resizeme caption-1 "
@@ -52,7 +52,8 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                                         data-frames='[{"delay":1200,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'>
                                         <!-- <img src="assets/img/slider/txt-banner-1.png" alt="" class="img-fluid"> -->
 
-                                        <h1>Online Math <br> Tutoring for<br>Kids <font class="fuente_retroica">&</font> Teens</h1>
+                                        <h1 style="color: #fff;margin-top: 40px;">The best <br>deals of the<br>year are here</h1>
+                                        <h3 style="color: #fff; margin-top: 20px;">save on MATH tutoring plans now</h3>
                                         
                                     </div>
 
@@ -102,9 +103,9 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                                         data-type="text" data-textAlign="['left','left','left','center']"
                                         data-responsive_offset="on" data-start="800"
                                         data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'>
-                                        <h3>
+                                        <!-- <h3>
                                             <span><?php echo the_field('banner_principal_texto_2', get_the_ID()) ?></span>
-                                        </h3>
+                                        </h3> -->
                                     </div>
 
 
@@ -178,14 +179,14 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
          
                                     <div class="main-img tp-caption tp-resizeme caption-3 c-caption-img d-none d-md-block"
                                         data-x="['right','right','right','center']" data-hoffset="['390','0','0','-25']"
-                                        data-y="['bottom','bottom','bottom','bottom']"
+                                        data-y="['middle','middle','middle','middle']"
                                         data-voffset="['0','-60','170','90']"
                                         data-width="['180', '-10', '350', '190']" data-height="none"
                                         data-type="text"
                                         data-textAlign="['left','left','left','left']"
                                         data-responsive_offset="on" data-start="500"
                                         data-frames='[{"delay":700,"speed":300,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'>
-                                         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/IMG-mathpal.png" alt="Online Math Tutoring" title="Online Math Tutoring | Mathpal" class="img-fluid jhon3">
+                                         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/banner_hero_mathpal.png" alt="Online Math Tutoring" title="Online Math Tutoring | Mathpal" class="img-fluid jhon3" style="width:480px; max-width:none; height:auto;">
                                                                                
                                         
                                             
@@ -756,6 +757,10 @@ Decide between a subscription or hourly rates, either way we are here to help!
 </div>
 </div>
 <img class="img-fluid d-none" style="background: #8b00ff;padding: 0 40px;" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back_to_scholl.png" alt="" />
+<div class="bf-promo">
+<span class="bf-promo__title">Black Friday:</span>
+<span class="bf-promo__offer">up to $160 in free hours*</span>
+</div>
 <div class="body">
 <h3>Monthly Subscriptions (2, 4, 6, 8 hrs/month)</h3>
 <p>Flexible tutoring hours that adapt to your schedule and goals.</p>
@@ -780,6 +785,10 @@ Decide between a subscription or hourly rates, either way we are here to help!
 </div>
 </div>
 </div>
+<div class="bf-promo">
+<span class="bf-promo__title">Black Friday:</span>
+<span class="bf-promo__offer">up to $150 in free hours*</span>
+</div>
 <div class="body">
 <h3>SAT PREP</h3>
 <p class="c-block__subtitle">Math + Reading &amp; Writing</p>
@@ -799,6 +808,10 @@ Decide between a subscription or hourly rates, either way we are here to help!
 <div class="icon"><i class="fa-solid fa-book-bookmark"></i></div>
 </div>
 </div>
+</div>
+<div class="bf-promo">
+<span class="bf-promo__title">Black Friday:</span>
+<span class="bf-promo__offer">up to $150 in free hours*</span>
 </div>
 <div class="body">
 <h3>ACT PREP</h3>
@@ -1183,6 +1196,33 @@ get_footer();
 ?>
 
 <style>
+
+/* Black Friday promo banner (learning path cards) */
+.home-ruta .slider .item .c-block .bf-promo{
+background:#8b00ff;
+text-align:center;
+padding:6px 10px 8px;
+line-height:1.15;
+}
+.home-ruta .slider .item .c-block .bf-promo__title{
+display:block;
+color:#fff;
+font-weight:800;
+font-size:18px;
+}
+.home-ruta .slider .item .c-block .bf-promo__offer{
+display:inline-block;
+margin-top:3px;
+background:#b6ff3b;
+color:#000;
+font-weight:800;
+font-size:17px;
+padding:2px 12px;
+}
+@media (max-width:576px){
+.home-ruta .slider .item .c-block .bf-promo__title{font-size:16px;}
+.home-ruta .slider .item .c-block .bf-promo__offer{font-size:15px;}
+}
 
 /* Video animado */
 .video2.ventajas{

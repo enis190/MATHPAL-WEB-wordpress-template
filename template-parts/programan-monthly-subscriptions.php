@@ -1,5 +1,22 @@
 
-
+<style>
+    /* Espacio arriba de las tarjetas para que la imagen Black Friday no se corte */
+    .responsive7 .slick-list { padding-top: 90px !important; }
+    .responsive7 .item .c-block { position: relative; overflow: visible; }
+    /* Imagen Black Friday sobresaliendo por encima de la tarjeta */
+    .responsive7 .item .c-block .bf-promo-tag {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        z-index: 5;
+    }
+    .responsive7 .item .c-block .bf-promo-tag img { width: 55%; }
+    /* Baja el título para que la imagen no lo tape */
+    .responsive7 .item .c-block .bf-promo-tag + h4 { margin-top: 40px; }
+</style>
 
 <section class="slider responsive7 fade-in-top">
             <div class="item">
@@ -24,9 +41,9 @@
             <div class="item ">
                 
                 <div class="c-block">
-                    <!-- <div class="tag"style="margin-top: -70px;">
-                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/back.png" alt="" style="display: inline-block;">
-                    </div> -->
+                    <div class="tag bf-promo-tag">
+                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf-promo.png" alt="Black Friday promo" style="display: inline-block;">
+                    </div>
                     <h4>Strengthen Skills Subscription</h4>
                     <h4 class="precio">150</h4>
                     <h4 class="det">Every month</h4>
@@ -48,9 +65,9 @@
             </div>
             <div class="item active">
                 <div class="c-block">
-                    <!-- <div class="tag"style="margin-top: -70px;">
-                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group-1638.png" alt=""style="display: inline-block;">
-                    </div> -->
+                    <div class="tag bf-promo-tag">
+                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf-promo120.png" alt="Black Friday promo" style="display: inline-block;">
+                    </div>
                     <h4>Guided Success Subscription</h4>
                     <h4 class="precio">230</h4>
                     <h4 class="det">Homework Helper</h4>
@@ -72,10 +89,9 @@
             </div>
             <div class="item">
                 <div class="c-block">
-                    <!-- <div class="tag"style="margin-top: -70px;">
-                        <img class="img-fluid w-50" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Group163.png" alt=""style="display: inline-block;">
-                        
-                    </div> -->
+                    <div class="tag bf-promo-tag">
+                        <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bf-promo160.png" alt="Black Friday promo" style="display: inline-block;">
+                    </div>
                     <h4>Exceed Expectations Subscription</h4>
                     <h4 class="precio">290</h4>
                     <h4 class="det">Every month</h4>

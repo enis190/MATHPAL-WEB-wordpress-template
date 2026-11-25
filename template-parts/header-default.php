@@ -4,19 +4,19 @@ $whatsapp = get_theme_mod('whatsapp_opcion');
 $whatsapp_link  = get_theme_mod('whatsapp_link_opcion');
 ?>
 
-<!-- <div class="cintillo_2026" role="region" aria-label="Promoción">
-    <a href="https://www.mathpal.us/subscriptions/" class="cintillo_2026__link">
+<div class="cintillo_2026" role="region" aria-label="Promoción">
+    <a href="" class="cintillo_2026__link">
         <div class="cintillo_2026__inner">
             <img
                 class="cintillo_2026__img cintillo_2026__img--desktop"
-                src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/BACK-TO-SCHOOL_CINTILLO_DESK.png"
-                alt="Back to school"
+                src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/CINTILLO-WEB-mathpal.gif"
+                alt="BlackFriday"
                 width="1924"
                 height="70"
                 decoding="async">
         </div>
     </a>
-</div> -->
+</div> 
 <div class="container-fluid c-head ">
     <div class="container0">
         <div class="row align-items-center">

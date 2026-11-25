@@ -3,7 +3,8 @@
     <div class="container">
         <div class="row">
              <div class="col-md-5 legal ">
-               <p>*Terms and conditions apply.</p><br>
+               <!-- <p>*Terms and conditions apply.</p><br> -->
+                <p>*Black Friday campaign: Free tutoring hours are valid on new Monthly Subscription Plans and ACT/SAT Prep Courses purchased from November 25 to 30, 2026. Free hours vary by plan: up to 4 free hours ($160 value) on Monthly Subscription Plans and up to 3 free hours ($150 value) on ACT/SAT Prep Courses. Value of free hours is not cash. A minimum subscription length of 3 months applies. Not valid for the diagnostic class or individual hours. Terms and conditions apply.</p>
             </div> 
         </div>
 

@@ -274,45 +274,138 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
     </div>
 </div> -->
 
+<!-- CARRUSEL VIDEOS  -->
+
+<div class="container-fluid home-videos">
+    <div class="row">
+        <div class="col-12 text-center" style="
+    margin: 20px;">
+            <h2 class="titulo-h2 fade-in" style="font-size: 45px;">REAL STUDENTS. REAL STORIES. REAL PROGRESS.</h2>
+            <h2 class="titulo-h3 fade-in">Get to know our tutoring through the voices of our students.</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <section class="slider responsive-videos">
+ 
+                <!-- VIDEO 1 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="100" data-duration="500">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Camila-testimonial-Mathpal.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Camila.webp" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 1</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 2 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Lenin-testimonial-Mathpal.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Lenin.webp" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 3 (ejemplo con YouTube: usa data-embed en vez de data-video) -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/reel-MATEO.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Mateo.webp" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+                <!-- VIDEO 4 -->
+                <div class="item">
+                    <div class="c-block video-block fade-in-top" data-delay="300" data-duration="500">
+                        <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/valentina.mp4">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/Portada_Valentina.webp" alt="" class="img-fluid">
+                            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- <div class="body">
+                            <h3>Título del video 2</h3>
+                            <p>Descripción corta del video.</p>
+                        </div> -->
+                    </div>
+                </div>
+ 
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- CARRUSEL VIDEOS FIN -->
 
 
 <?php //echo the_field('bloque_html_1', get_the_ID(), false) ?> 
 
 <div class="container-fluid c-slider caracteristicas">
-<div class="container">
-<div class="row">
-<div class="col-md-10 offset-md-1"><section class="slider responsive-caracteristicas">
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
-<p>Expert bilingual tutors</p>
+  <div class="container">
+    <div class="row align-items-center">
 
-</div>
-</div>
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="100" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-libro.png" alt="" /></div>
-<p>Personalized plans</p>
+      <!-- IZQUIERDA: tarjetas apiladas -->
+      <div class="col-12 col-md-4">
+        <div class="slider responsive-caracteristicas caract-list">
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="0" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-persona.png" alt="" /></div>
+              <p>Expert bilingual tutors.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="100" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-libro.png" alt="" /></div>
+              <p>Personalized plans</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-block0 c-block fade-in-top" data-delay="200" data-duration="500">
+              <div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-foco.png" alt="" /></div>
+              <p>Exam preparation ACT/SAT/States</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</div>
-</div>
-<div class="item ">
-<div class="d-block0 c-block fade-in-top" data-delay="200" data-duration="500">
-<div class="img"><img src="https://www.mathpal.us/wp-content/themes/mathpal/assets/img/vector-foco.png" alt="" /></div>
-<p>Exam preparation ACT/SAT/States</p>
+      <!-- CENTRO: texto -->
+      <div class="col-12 col-md-4 text-center caract-texto">
+        <h3 class="fade-in">Real Tutoring: MathPal in Action</h3>
+      </div>
 
-</div>
-</div>
-</section></div>
-</div>
-</div>
+      <!-- DERECHA: video -->
+      <div class="col-12 col-md-4">
+        <div class="video-block single-video fade-in-top">
+          <div class="video-wrap" data-video="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/lenin-clases.mp4">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/tutoria.png" alt="" class="img-fluid">
+            <button type="button" class="play-btn" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
-<!-- <div class="container-fluid cintillo-1">
+<!--  <div class="container-fluid cintillo-1">
     <div class="text-center">
         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/CINTILLO%20WEB.png" alt="">
     </div>
-</div>  -->
+</div>   -->
 
 <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -1267,12 +1360,35 @@ width:320px;
 </style>
 
 <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement("script");
+   // 2. Carga la API de YouTube solo cuando los videos estén cerca de la pantalla
+(function () {
+  var loaded = false;
 
+  function loadYT() {
+    if (loaded) return;
+    loaded = true;
+    var tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    document.head.appendChild(tag);
+  }
+
+  var ids = ["player_camila", "player_otg_2"];
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { loadYT(); io.disconnect(); }
+      });
+    }, { rootMargin: "300px" });
+
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  } else {
+    window.addEventListener("scroll", loadYT, { once: true, passive: true });
+  }
+})();
 
     // 3. This function creates an <iframe> (and YouTube player)
     //    after the API code downloads.
@@ -1397,4 +1513,60 @@ width:320px;
       });
     });
   </script>
+
+<!-- CARRUSEL VIDEOS  -->
+<script>
+jQuery(function ($) {
+  var $slider = $('.responsive-videos');
+ 
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev video-arrow" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next video-arrow" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>',
+    responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 576, settings: { slidesToShow: 1 } }
+    ]
+  });
+ 
+  // Vuelve a mostrar la portada de cualquier video que esté reproduciéndose
+  function resetAll() {
+    $slider.find('.video-wrap.playing').each(function () {
+      var $w = $(this);
+      $w.html($w.data('orig')).removeClass('playing');
+    });
+  }
+ 
+  // Clic en la portada -> reproduce
+  $slider.on('click', '.video-wrap:not(.playing)', function () {
+    var $w = $(this);
+    resetAll();
+    $w.data('orig', $w.html()).addClass('playing');
+ 
+    if ($w.data('embed')) {
+      var sep = $w.data('embed').indexOf('?') > -1 ? '&' : '?';
+      $w.html('<iframe src="' + $w.data('embed') + sep + 'autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+    } else {
+      $w.html('<video src="' + $w.data('video') + '" controls autoplay playsinline></video>');
+    }
+  });
+ 
+  // Al mover el carrusel, detiene el video y regresa a la portada
+  $slider.on('beforeChange', resetAll);
+});
+
+jQuery(function ($) {
+  $(document).on('click', '.single-video .video-wrap:not(.playing)', function () {
+    var $w = $(this);
+    $w.data('orig', $w.html()).addClass('playing');
+    $w.html('<video src="' + $w.data('video') + '" controls autoplay playsinline></video>');
+  });
+});
+
+
+</script>
+<!-- CARRUSEL VIDEOS END -->
 
