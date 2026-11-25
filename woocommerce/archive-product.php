@@ -6,51 +6,50 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid banner-precio margin-menu-principal">
+<style>
+.bf-promo{background:#000 url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/BLOCK-1.png') center/cover no-repeat;position:relative;overflow:hidden;padding-bottom:60px}
+.bf-promo .bf-sub{color:#fff}
+.bf-promo .c-block{background:#fff;border:6px solid #a6f43c;border-radius:30px;padding:25px 30px;text-align:center}
+.bf-promo .bf-q{color:#8b00ff;font-weight:700;font-size:1.3rem;margin:0}
+.bf-promo .bf-date{color:#000;font-weight:700;font-size:1.3rem;margin:0 0 5px}
+.bf-promo .bf-upto{font-weight:700;font-size:1.4rem;margin:0;line-height:1}
+.bf-promo .bf-price{font-weight:800;font-size:5rem;line-height:1;margin:0;color:#000}
+.bf-promo .bf-price sup{font-size:1.8rem;top:-2.2rem}
+.bf-promo .bf-price small{font-size:2.5rem;vertical-align:top}
+.bf-promo .bf-free{font-weight:700;font-size:.85rem;margin-bottom:10px}
+.bf-promo .bf-list{list-style:none;padding:0;text-align:left;font-weight:700;font-size:.9rem}
+.bf-promo .bf-list li{margin-bottom:8px}
+.bf-promo .bf-list i{color:#8b00ff;margin-right:8px}
+.bf-promo .bf-txt{text-align:left;font-weight:700;font-size:.9rem}
+</style>
+
+<div class="container-fluid banner-precio margin-menu-principal bf-promo">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center fade-in">
                 <h2 class="titulo-h2">MathPal’s Monthly Promos <font>&</font> Programs</h2>
-                <p class="d-none"><b>New! Back to School at MathPal: </b>August is your window to give your child a head start in math — <b>with free bonus hours on every monthly plan*</b>, before the school year gets harder.</p>
+                <p class="bf-sub">Explore our special promotions and programs, designed to boost every student’s progress.</p>
             </div>
         </div>
-        <div class="row mt-4 fade-in">
-            <div class="col-md-6 img d-none">
-                <img src="<?php echo bloginfo('template_url') . '/' ?>assets/img/joven.png" alt="" class="img-fluid" style="margin-top:-50px">
+        <div class="row mt-4 fade-in align-items-center">
+            <div class="col-md-6 img">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/bd-banner.png" alt="Black Friday" class="img-fluid">
             </div>
-            <div class="col-md-5 txt d-none">
+            <div class="col-md-5 txt">
                 <div class="c-block">
-
-
-                    <div class="new-badge">NEW!</div>
-
-                    <h3>
-                        <span>Choose your child’s plan:</span>
-                        <span class="small"></span>
-                    </h3>
-
-                    <h3>4,6, or 8 tutoring <br>hours per month</h3>
-
-                    <h3 style="background: #8b00ff; color: #ffff">*Free hours worth up to:</h3>
-
-                    <div class="precio1">
-                        <div class="row justify-content-center">
-                        </div>
-                        <div class="col-12 text-center px-0">
-                            <div class="price-stack text-center">
-                                <img class="img-fluid" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Layer_1.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fa-solid fa-clock color-verde"></i></span>Live sessions with an expert bilingual tutor </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-chart-line color-verde"></i></span>Custom study plans to target specific challenges</li>
-                        <li><span class="fa-li"><i class="fa-regular fa-chalkboard-user color-verde"></i></span>Free IXL access</li>
-
+                    <p class="bf-q"><b>Are you ready for our amazing</b><br><b>Black Friday bonus?</b></p>
+                    <p class="bf-date"><b>Only from November 25 to 30!</b></p>
+                    <p class="bf-upto"><b>Up to</b></p>
+                    <p class="bf-price"><b><small>$</small>160<sup>*</sup></b></p>
+                    <p class="bf-free">in free tutoring hours</p>
+                    <p class="bf-txt">Get free tutoring hours* with these plans:</p>
+                    <ul class="bf-list">
+                        <li><i class="fa-solid fa-circle"></i>ACT/SAT Prep Courses (6, 12, or 18 hours)</li>
+                        <li><i class="fa-solid fa-circle"></i>Monthly Subscription Plans (4, 6, or 8 hours)</li>
                     </ul>
+                    <p class="bf-txt">More plan hours, more free hours.*</p>
                     <a href="#monthly" class="btn-1 bg-verde color-negro c-hover-2">
-                        Buy now &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
+                        Get offer! &nbsp;<i class="fa-solid fa-circle-arrow-right ani_fa_balanceo"></i>
                     </a>
                 </div>
             </div>
@@ -60,7 +59,7 @@ include get_template_directory() . '/template-parts/header-default.php';
 
 
 
-<div class="container-fluid header-title header-title-shop">
+<div class="container-fluid header-title header-title-shop d-none">
     <div class="container">
         <div class="row align-items-center">
             <div class="container-fluid banner-precio banner-precio2">

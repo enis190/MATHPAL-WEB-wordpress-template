@@ -186,7 +186,7 @@ include(TEMPLATEPATH . '/template-parts/header-default.php');
                                         data-textAlign="['left','left','left','left']"
                                         data-responsive_offset="on" data-start="500"
                                         data-frames='[{"delay":700,"speed":300,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'>
-                                         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/banner_hero_mathpal.png" alt="Online Math Tutoring" title="Online Math Tutoring | Mathpal" class="img-fluid jhon3" style="width:480px; max-width:none; height:auto;">
+                                         <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/banner_hero_mathpal.png" alt="Online Math Tutoring" title="Online Math Tutoring | Mathpal" class="img-fluid jhon3 no-lazy" style="width:480px; max-width:none; height:auto;">
                                                                                
                                         
                                             

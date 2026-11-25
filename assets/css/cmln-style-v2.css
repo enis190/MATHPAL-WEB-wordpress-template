@@ -357,6 +357,11 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .c-slider-3 .slider .item {
   padding: 50px 25px 25px 25px;
-}
 
+}
+.c-slider .jhon3 {
+  width: 480px !important;
+  max-width: none !important;
+  height: auto !important;
+}
 /*# sourceMappingURL=cmln-style-v2.css.map */
